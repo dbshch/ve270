@@ -1,0 +1,4 @@
+select figure at 475 835 24 -branches -sn=1
+select figure at 463 823 24 -branches -sn=1
+add instance and2 784 176 R0 -sn=1
+add instance xor2 880 512 R0 -sn=1
