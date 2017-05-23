@@ -1,0 +1,3 @@
+MODULE full_adder_macro
+	SUBMODULE Circuit1
+		INSTANCE XLXI_1

@@ -1,0 +1,7 @@
+sch2vhdl -intstyle ise -family spartan3e -flat -suppress -w "C:/270/Lab1/full_adder_macro.sch" full_adder_macro.vhf
+xst -ise "C:/270/Lab1/Lab1.ise" -intstyle ise -ifn "C:/270/Lab1/full_adder_macro.xst" -ofn "C:/270/Lab1/full_adder_macro.syr"
+ngdbuild -ise "C:/270/Lab1/Lab1.ise" -intstyle ise -dd _ngo  -nt timestamp -i -p xc3s1200e-fg320-4 "full_adder_macro.ngc" full_adder_macro.ngd
+map -ise "C:/270/Lab1/Lab1.ise" -intstyle ise -p xc3s1200e-fg320-4 -cm area -pr off -k 4 -c 100 -o full_adder_macro_map.ncd full_adder_macro.ngd full_adder_macro.pcf
+par -ise "C:/270/Lab1/Lab1.ise" -w -intstyle ise -ol std -t 1 full_adder_macro_map.ncd full_adder_macro.ncd full_adder_macro.pcf
+trce -ise "C:/270/Lab1/Lab1.ise" -intstyle ise -e 3 -s 4 -xml full_adder_macro full_adder_macro.ncd -o full_adder_macro.twr full_adder_macro.pcf -ucf full_adder_macro.ucf
+bitgen -ise "C:/270/Lab1/Lab1.ise" -intstyle ise -f full_adder_macro.ut full_adder_macro.ncd

@@ -2,7 +2,7 @@ CommandLine-Map
 
 s
 CommandLine-Ngdbuild
-
+C:\Xilinx\10.1\ISE\bin\nt\unwrapped\ngdbuild.exe -ise C:/270/Lab1/Lab1.ise -intstyle ise -dd _ngo -nt timestamp -i -p xc3s1200e-fg320-4 full_adder_macro.ngc full_adder_macro.ngd
 s
 CommandLine-Par
 
@@ -11,7 +11,7 @@ CommandLine-Xst
 
 s
 Previous-NGD
-
+full_adder_macro_prev_built.ngd
 s
 Previous-NGM
 

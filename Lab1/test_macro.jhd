@@ -1,0 +1,3 @@
+MODULE test_macro
+SUBMODULE full_adder_macro
+INSTANCE UUT

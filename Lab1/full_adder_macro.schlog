@@ -1,0 +1,6 @@
+select figure at -144 1208 24 -branches -sn=1
+select figure at -156 1196 24 -branches -sn=1
+select figure at 1477 641 10 -branches -sn=1
+select all in 1404 636 1472 817 -branches -enclosed -noattrwin -sn=1
+select figure at 1409 822 10 -branches -sn=1
+select figure at 1404 817 10 -branches -sn=1

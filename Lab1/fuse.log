@@ -8,7 +8,8 @@ Restoring VHDL parse-tree ieee.numeric_std from
 c:/xilinx/10.1/ise/vhdl/hdp/nt/ieee/numeric_std.vdb
 Restoring VHDL parse-tree unisim.vcomponents from
 c:/xilinx/10.1/ise/vhdl/hdp/nt/unisim/unisim.vdbl
-Analyzing VHDL file test.vhw
+Analyzing VHDL file full_adder_macro.vhf
+Analyzing VHDL file test_macro.vhw
 Restoring VHDL parse-tree ieee.std_logic_textio from
 c:/xilinx/10.1/ise/vhdl/hdp/nt/ieee/std_logic_textio.vdb
 Restoring VHDL parse-tree std.textio from
@@ -18,7 +19,9 @@ c:/xilinx/10.1/ise/vhdl/hdp/nt/ieee/std_logic_arith.vdb
 Restoring VHDL parse-tree ieee.std_logic_unsigned from
 c:/xilinx/10.1/ise/vhdl/hdp/nt/ieee/std_logic_unsigned.vdb
 Saving VHDL parse-tree work.circuit1 into c:/270/lab1/isim/work/circuit1.vdb
-Saving VHDL parse-tree work.test into c:/270/lab1/isim/work/test.vdb
+Saving VHDL parse-tree work.full_adder_macro into
+c:/270/lab1/isim/work/full_adder_macro.vdb
+Saving VHDL parse-tree work.test_macro into c:/270/lab1/isim/work/test_macro.vdb
 Starting static elaboration
 WARNING:HDLCompiler:746 - "N:/K.31/rtf/vhdl/src/ieee/numeric_std.vhd" Line 867.
    Range is empty (null range)
@@ -32,7 +35,7 @@ Restoring VHDL parse-tree unisim.or2 from
 c:/xilinx/10.1/ise/vhdl/hdp/nt/unisim/unisim.vdbl
 Completed static elaboration
 Fuse Memory Usage: 61952 Kb
-Fuse CPU Usage: 484 ms
+Fuse CPU Usage: 468 ms
 Using precompiled package standard from library std
 Using precompiled package std_logic_1164 from library ieee
 Using precompiled package numeric_std from library ieee
@@ -45,8 +48,10 @@ Compiling architecture and2_v of entity and2 [and2_default]
 Compiling architecture xor2_v of entity xor2 [xor2_default]
 Compiling architecture or2_v of entity or2 [or2_default]
 Compiling architecture behavioral of entity circuit1 [circuit1_default]
-Compiling architecture testbench_arch of entity test
-Compiled 17 VHDL Units
-Built simulation executable test_isim_beh.exe
+Compiling architecture behavioral of entity full_adder_macro
+[full_adder_macro_default]
+Compiling architecture testbench_arch of entity test_macro
+Compiled 19 VHDL Units
+Built simulation executable test_macro_isim_beh.exe
 Fuse Memory Usage: 63236 Kb
-Fuse CPU Usage: 561 ms
+Fuse CPU Usage: 531 ms

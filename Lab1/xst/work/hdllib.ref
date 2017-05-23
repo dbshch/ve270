@@ -1,0 +1,4 @@
+AR circuit1 behavioral C:/270/Lab1/Circuit1.vhf sub00/vhpl01 1495536425
+EN circuit1 NULL C:/270/Lab1/Circuit1.vhf sub00/vhpl00 1495536424
+EN full_adder_macro NULL C:/270/Lab1/full_adder_macro.vhf sub00/vhpl02 1495536426
+AR full_adder_macro behavioral C:/270/Lab1/full_adder_macro.vhf sub00/vhpl03 1495536427
