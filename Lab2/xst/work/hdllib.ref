@@ -1,0 +1,16 @@
+EN ssd_driver NULL C:/270/Lab2_inv/SSD_Driver.vhf sub00/vhpl14 1496400684
+AR c6 behavioral C:/270/Lab2_inv/C6.vhf sub00/vhpl11 1496400681
+AR c4 behavioral C:/270/Lab2_inv/C4.vhf sub00/vhpl07 1496400677
+AR c2 behavioral C:/270/Lab2_inv/C2.vhf sub00/vhpl03 1496400673
+AR c7 behavioral C:/270/Lab2_inv/C7.vhf sub00/vhpl13 1496400683
+AR c5 behavioral C:/270/Lab2_inv/C5.vhf sub00/vhpl09 1496400679
+AR ssd_driver behavioral C:/270/Lab2_inv/SSD_Driver.vhf sub00/vhpl15 1496400685
+EN c1 NULL C:/270/Lab2_inv/C1.vhf sub00/vhpl00 1496400670
+EN c2 NULL C:/270/Lab2_inv/C2.vhf sub00/vhpl02 1496400672
+EN c3 NULL C:/270/Lab2_inv/C3.vhf sub00/vhpl04 1496400674
+AR c3 behavioral C:/270/Lab2_inv/C3.vhf sub00/vhpl05 1496400675
+EN c4 NULL C:/270/Lab2_inv/C4.vhf sub00/vhpl06 1496400676
+EN c5 NULL C:/270/Lab2_inv/C5.vhf sub00/vhpl08 1496400678
+EN c6 NULL C:/270/Lab2_inv/C6.vhf sub00/vhpl10 1496400680
+EN c7 NULL C:/270/Lab2_inv/C7.vhf sub00/vhpl12 1496400682
+AR c1 behavioral C:/270/Lab2_inv/C1.vhf sub00/vhpl01 1496400671

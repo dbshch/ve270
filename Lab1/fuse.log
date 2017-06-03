@@ -35,7 +35,7 @@ Restoring VHDL parse-tree unisim.or2 from
 c:/xilinx/10.1/ise/vhdl/hdp/nt/unisim/unisim.vdbl
 Completed static elaboration
 Fuse Memory Usage: 61952 Kb
-Fuse CPU Usage: 468 ms
+Fuse CPU Usage: 515 ms
 Using precompiled package standard from library std
 Using precompiled package std_logic_1164 from library ieee
 Using precompiled package numeric_std from library ieee
@@ -54,4 +54,4 @@ Compiling architecture testbench_arch of entity test_macro
 Compiled 19 VHDL Units
 Built simulation executable test_macro_isim_beh.exe
 Fuse Memory Usage: 63236 Kb
-Fuse CPU Usage: 531 ms
+Fuse CPU Usage: 593 ms

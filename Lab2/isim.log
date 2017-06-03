@@ -1,0 +1,44 @@
+Command line:
+   ./tb_SSD_Driver_isim_beh.exe
+     -intstyle  ise
+     -ipchost  localhost
+     -ipcport  1297
+
+Fri Jun 02 19:09:01 2017
+
+Total Line Count : 47
+
+ Elaboration Time: 0 sec
+
+ Current Memory Usage: 142.27 Meg
+
+ Total Signals          : 163
+ Total Nets             : 47
+ Total Signal Drivers   : 23
+ Total Blocks           : 35
+ Total Primitive Blocks : 19
+ Total Processes        : 20
+ Total Traceable Variables  : 18
+ Total Scalar Nets and Variables : 1069
+ntrace select -o on -n /tb_ssd_driver/b0 
+ntrace select -o on -n /tb_ssd_driver/b1 
+ntrace select -o on -n /tb_ssd_driver/b2 
+ntrace select -o on -n /tb_ssd_driver/b3 
+ntrace select -o on -n /tb_ssd_driver/ca 
+ntrace select -o on -n /tb_ssd_driver/cb 
+ntrace select -o on -n /tb_ssd_driver/cc 
+ntrace select -o on -n /tb_ssd_driver/cd 
+ntrace select -o on -n /tb_ssd_driver/ce 
+ntrace select -o on -n /tb_ssd_driver/cf 
+ntrace select -o on -n /tb_ssd_driver/cg 
+ntrace start 
+isimrun 1000 ns 
+Simulator is doing circuit initialization process.
+Finished circuit initialization process.
+
+ Total Simulation Time: 0.03125 sec
+
+ Current Memory Usage: 152.756 Meg
+
+Sat Jun 03 00:44:03 2017
+

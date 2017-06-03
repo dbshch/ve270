@@ -1,0 +1,88 @@
+Determining compilation order of HDL files
+Analyzing VHDL file tb_SSD_Driver.vhw
+Restoring VHDL parse-tree unisim.vcomponents from
+c:/xilinx/10.1/ise/vhdl/hdp/nt/unisim/unisim.vdbl
+Restoring VHDL parse-tree std.standard from
+c:/xilinx/10.1/ise/vhdl/hdp/nt/std/standard.vdb
+Restoring VHDL parse-tree ieee.std_logic_1164 from
+c:/xilinx/10.1/ise/vhdl/hdp/nt/ieee/std_logic_1164.vdb
+Restoring VHDL parse-tree ieee.numeric_std from
+c:/xilinx/10.1/ise/vhdl/hdp/nt/ieee/numeric_std.vdb
+Restoring VHDL parse-tree ieee.std_logic_textio from
+c:/xilinx/10.1/ise/vhdl/hdp/nt/ieee/std_logic_textio.vdb
+Restoring VHDL parse-tree std.textio from
+c:/xilinx/10.1/ise/vhdl/hdp/nt/std/textio.vdb
+Restoring VHDL parse-tree ieee.std_logic_arith from
+c:/xilinx/10.1/ise/vhdl/hdp/nt/ieee/std_logic_arith.vdb
+Restoring VHDL parse-tree ieee.std_logic_unsigned from
+c:/xilinx/10.1/ise/vhdl/hdp/nt/ieee/std_logic_unsigned.vdb
+Saving VHDL parse-tree work.tb_ssd_driver into
+c:/270/lab2_inv/isim/work/tb_ssd_driver.vdb
+Starting static elaboration
+WARNING:HDLCompiler:746 - "N:/K.31/rtf/vhdl/src/ieee/numeric_std.vhd" Line 867.
+   Range is empty (null range)
+WARNING:HDLCompiler:746 - "N:/K.31/rtf/vhdl/src/ieee/numeric_std.vhd" Line 868.
+   Range is empty (null range)
+Restoring VHDL parse-tree work.ssd_driver from
+c:/270/lab2_inv/isim/work/ssd_driver.vdb
+Restoring VHDL parse-tree work.c1 from c:/270/lab2_inv/isim/work/c1.vdb
+Restoring VHDL parse-tree unisim.and3b2 from
+c:/xilinx/10.1/ise/vhdl/hdp/nt/unisim/unisim.vdbl
+Restoring VHDL parse-tree unisim.and4b3 from
+c:/xilinx/10.1/ise/vhdl/hdp/nt/unisim/unisim.vdbl
+Restoring VHDL parse-tree unisim.nor2 from
+c:/xilinx/10.1/ise/vhdl/hdp/nt/unisim/unisim.vdbl
+Restoring VHDL parse-tree work.c2 from c:/270/lab2_inv/isim/work/c2.vdb
+Restoring VHDL parse-tree unisim.xor2 from
+c:/xilinx/10.1/ise/vhdl/hdp/nt/unisim/unisim.vdbl
+Restoring VHDL parse-tree unisim.nand2 from
+c:/xilinx/10.1/ise/vhdl/hdp/nt/unisim/unisim.vdbl
+Restoring VHDL parse-tree work.c3 from c:/270/lab2_inv/isim/work/c3.vdb
+Restoring VHDL parse-tree unisim.nand3b2 from
+c:/xilinx/10.1/ise/vhdl/hdp/nt/unisim/unisim.vdbl
+Restoring VHDL parse-tree work.c4 from c:/270/lab2_inv/isim/work/c4.vdb
+Restoring VHDL parse-tree unisim.and3 from
+c:/xilinx/10.1/ise/vhdl/hdp/nt/unisim/unisim.vdbl
+Restoring VHDL parse-tree unisim.nor3 from
+c:/xilinx/10.1/ise/vhdl/hdp/nt/unisim/unisim.vdbl
+Restoring VHDL parse-tree work.c5 from c:/270/lab2_inv/isim/work/c5.vdb
+Restoring VHDL parse-tree work.c6 from c:/270/lab2_inv/isim/work/c6.vdb
+Restoring VHDL parse-tree unisim.and2 from
+c:/xilinx/10.1/ise/vhdl/hdp/nt/unisim/unisim.vdbl
+Restoring VHDL parse-tree work.c7 from c:/270/lab2_inv/isim/work/c7.vdb
+Restoring VHDL parse-tree unisim.and3b3 from
+c:/xilinx/10.1/ise/vhdl/hdp/nt/unisim/unisim.vdbl
+Completed static elaboration
+Fuse Memory Usage: 61952 Kb
+Fuse CPU Usage: 499 ms
+Using precompiled package standard from library std
+Using precompiled package std_logic_1164 from library ieee
+Using precompiled package numeric_std from library ieee
+Using precompiled package textio from library std
+Using precompiled package std_logic_textio from library ieee
+Using precompiled package std_logic_arith from library ieee
+Using precompiled package std_logic_unsigned from library ieee
+Compiling package vcomponents
+Compiling architecture and3b2_v of entity and3b2 [and3b2_default]
+Compiling architecture and4b3_v of entity and4b3 [and4b3_default]
+Compiling architecture nor2_v of entity nor2 [nor2_default]
+Compiling architecture behavioral of entity c1 [c1_default]
+Compiling architecture xor2_v of entity xor2 [xor2_default]
+Compiling architecture nand2_v of entity nand2 [nand2_default]
+Compiling architecture behavioral of entity c2 [c2_default]
+Compiling architecture nand3b2_v of entity nand3b2 [nand3b2_default]
+Compiling architecture behavioral of entity c3 [c3_default]
+Compiling architecture and3_v of entity and3 [and3_default]
+Compiling architecture nor3_v of entity nor3 [nor3_default]
+Compiling architecture behavioral of entity c4 [c4_default]
+Compiling architecture behavioral of entity c5 [c5_default]
+Compiling architecture and2_v of entity and2 [and2_default]
+Compiling architecture behavioral of entity c6 [c6_default]
+Compiling architecture and3b3_v of entity and3b3 [and3b3_default]
+Compiling architecture behavioral of entity c7 [c7_default]
+Compiling architecture behavioral of entity ssd_driver [ssd_driver_default]
+Compiling architecture testbench_arch of entity tb_ssd_driver
+Compiled 45 VHDL Units
+Built simulation executable tb_SSD_Driver_isim_beh.exe
+Fuse Memory Usage: 63236 Kb
+Fuse CPU Usage: 609 ms

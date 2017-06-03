@@ -2,13 +2,13 @@ Command line:
    ./test_macro_isim_beh.exe
      -intstyle  ise
      -ipchost  localhost
-     -ipcport  1060
+     -ipcport  1046
 
-Sat May 20 09:58:29 2017
+Fri May 26 02:31:47 2017
 
 Total Line Count : 22
 
- Elaboration Time: 0 sec
+ Elaboration Time: 0.015625 sec
 
  Current Memory Usage: 142.262 Meg
 
@@ -20,15 +20,19 @@ Total Line Count : 22
  Total Processes        : 6
  Total Traceable Variables  : 18
  Total Scalar Nets and Variables : 1050
-ntrace select -o on -m / -l this 
+ntrace select -o on -n /test_macro/a 
+ntrace select -o on -n /test_macro/b 
+ntrace select -o on -n /test_macro/cin 
+ntrace select -o on -n /test_macro/cout 
+ntrace select -o on -n /test_macro/sum 
 ntrace start 
 isimrun 1000 ns 
 Simulator is doing circuit initialization process.
 Finished circuit initialization process.
 
- Total Simulation Time: 0.078125 sec
+ Total Simulation Time: 0.0625 sec
 
  Current Memory Usage: 152.748 Meg
 
-Sat May 20 09:58:47 2017
+Fri May 26 02:31:51 2017
 

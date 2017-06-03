@@ -1,0 +1,7 @@
+sch2vhdl -intstyle ise -family spartan3e -flat -suppress -w "C:/Users/xiongzeyu/Desktop/Lab2_inv/C6.sch" C6.vhf
+sch2vhdl -intstyle ise -family spartan3e -flat -suppress -w "C:/Documents and Settings/wcg/桌面/Lab2_inv/C6.sch" C6.vhf
+sch2vhdl -intstyle ise -family spartan3e -flat -suppress -w "C:/Documents and Settings/wcg/桌面/Lab2_inv/C6.sch" C6.vhf
+sch2vhdl -intstyle ise -family spartan3e -flat -suppress -w "C:/Documents and Settings/wcg/桌面/Lab2_inv/C6.sch" C6.vhf
+sch2vhdl -intstyle ise -family spartan3e -flat -suppress -w "C:/Documents and Settings/wcg/桌面/Lab2_inv/C6.sch" C6.vhf
+sch2vhdl -intstyle ise -family spartan3e -flat -suppress -w "C:/Documents and Settings/wcg/桌面/Lab2_inv/C6.sch" C6.vhf
+sch2vhdl -intstyle ise -family spartan3e -flat -suppress -w "C:/270/Lab2_inv/C6.sch" C6.vhf
