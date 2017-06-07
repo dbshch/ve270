@@ -1,9 +1,9 @@
 version 3
-C:/270/Lab2_inv/SSD_Driver.vhf
+C:/270/Lab2/SSD_Driver.vhf
 SSD_Driver
 VHDL
 VHDL
-C:/270/Lab2_inv/tb_SSD_Driver.xwv
+C:/270/Lab2/tb_SSD_Driver.xwv
 Comb
 1000000
 50000000
@@ -19,7 +19,6 @@ SIGNAL_LIST_END
 SIGNALS_NOT_ON_DISPLAY
 AN0
 AN0_DIFF
-AN1
 AN1_DIFF
 AN2
 AN2_DIFF

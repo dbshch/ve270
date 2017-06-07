@@ -1,0 +1,2 @@
+vhdl work "netgen/par/SSD_Driver_timesim.vhd"
+vhdl work "tb_SSD_Driver.vhw"

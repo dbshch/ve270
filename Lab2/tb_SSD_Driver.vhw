@@ -8,7 +8,7 @@
 -- \   \   \/     Version : 10.1
 --  \   \         Application : ISE
 --  /   /         Filename : tb_SSD_Driver.vhw
--- /___/   /\     Timestamp : Fri Jun 02 19:03:48 2017
+-- /___/   /\     Timestamp : Thu Jun 08 01:23:15 2017
 -- \   \  /  \ 
 --  \___\/\___\ 
 --
@@ -31,14 +31,16 @@ ENTITY tb_SSD_Driver IS
 END tb_SSD_Driver;
 
 ARCHITECTURE testbench_arch OF tb_SSD_Driver IS
-    FILE RESULTS: TEXT OPEN WRITE_MODE IS "results.txt";
-
     COMPONENT SSD_Driver
         PORT (
             B0 : In std_logic;
             B1 : In std_logic;
             B2 : In std_logic;
             B3 : In std_logic;
+            AN0 : Out std_logic;
+            AN1 : Out std_logic;
+            AN2 : Out std_logic;
+            AN3 : Out std_logic;
             CA : Out std_logic;
             CB : Out std_logic;
             CC : Out std_logic;
@@ -72,6 +74,10 @@ ARCHITECTURE testbench_arch OF tb_SSD_Driver IS
             B1 => B1,
             B2 => B2,
             B3 => B3,
+            AN0 => AN0,
+            AN1 => AN1,
+            AN2 => AN2,
+            AN3 => AN3,
             CA => CA,
             CB => CB,
             CC => CC,

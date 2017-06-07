@@ -1,60 +1,57 @@
 Determining compilation order of HDL files
+Analyzing VHDL file netgen/par/SSD_Driver_timesim.vhd
+Restoring VHDL parse-tree ieee.std_logic_1164 from
+c:/xilinx/10.1/ise/vhdl/hdp/nt/ieee/std_logic_1164.vdb
+Restoring VHDL parse-tree std.standard from
+c:/xilinx/10.1/ise/vhdl/hdp/nt/std/standard.vdb
+Restoring VHDL parse-tree simprim.vcomponents from
+c:/xilinx/10.1/ise/vhdl/hdp/nt/simprim/simprim.vdbl
+Restoring VHDL parse-tree ieee.vital_timing from
+c:/xilinx/10.1/ise/vhdl/hdp/nt/ieee/vital_timing.vdb
+Restoring VHDL parse-tree std.textio from
+c:/xilinx/10.1/ise/vhdl/hdp/nt/std/textio.vdb
+Restoring VHDL parse-tree simprim.vpackage from
+c:/xilinx/10.1/ise/vhdl/hdp/nt/simprim/simprim.vdbl
+Restoring VHDL parse-tree ieee.vital_primitives from
+c:/xilinx/10.1/ise/vhdl/hdp/nt/ieee/vital_primitives.vdb
 Analyzing VHDL file tb_SSD_Driver.vhw
 Restoring VHDL parse-tree unisim.vcomponents from
 c:/xilinx/10.1/ise/vhdl/hdp/nt/unisim/unisim.vdbl
-Restoring VHDL parse-tree std.standard from
-c:/xilinx/10.1/ise/vhdl/hdp/nt/std/standard.vdb
-Restoring VHDL parse-tree ieee.std_logic_1164 from
-c:/xilinx/10.1/ise/vhdl/hdp/nt/ieee/std_logic_1164.vdb
 Restoring VHDL parse-tree ieee.numeric_std from
 c:/xilinx/10.1/ise/vhdl/hdp/nt/ieee/numeric_std.vdb
 Restoring VHDL parse-tree ieee.std_logic_textio from
 c:/xilinx/10.1/ise/vhdl/hdp/nt/ieee/std_logic_textio.vdb
-Restoring VHDL parse-tree std.textio from
-c:/xilinx/10.1/ise/vhdl/hdp/nt/std/textio.vdb
 Restoring VHDL parse-tree ieee.std_logic_arith from
 c:/xilinx/10.1/ise/vhdl/hdp/nt/ieee/std_logic_arith.vdb
 Restoring VHDL parse-tree ieee.std_logic_unsigned from
 c:/xilinx/10.1/ise/vhdl/hdp/nt/ieee/std_logic_unsigned.vdb
+Saving VHDL parse-tree work.ssd_driver into c:/270/lab2/isim/work/ssd_driver.vdb
 Saving VHDL parse-tree work.tb_ssd_driver into
-c:/270/lab2_inv/isim/work/tb_ssd_driver.vdb
+c:/270/lab2/isim/work/tb_ssd_driver.vdb
 Starting static elaboration
 WARNING:HDLCompiler:746 - "N:/K.31/rtf/vhdl/src/ieee/numeric_std.vhd" Line 867.
    Range is empty (null range)
 WARNING:HDLCompiler:746 - "N:/K.31/rtf/vhdl/src/ieee/numeric_std.vhd" Line 868.
    Range is empty (null range)
-Restoring VHDL parse-tree work.ssd_driver from
-c:/270/lab2_inv/isim/work/ssd_driver.vdb
-Restoring VHDL parse-tree work.c1 from c:/270/lab2_inv/isim/work/c1.vdb
-Restoring VHDL parse-tree unisim.and3b2 from
-c:/xilinx/10.1/ise/vhdl/hdp/nt/unisim/unisim.vdbl
-Restoring VHDL parse-tree unisim.and4b3 from
-c:/xilinx/10.1/ise/vhdl/hdp/nt/unisim/unisim.vdbl
-Restoring VHDL parse-tree unisim.nor2 from
-c:/xilinx/10.1/ise/vhdl/hdp/nt/unisim/unisim.vdbl
-Restoring VHDL parse-tree work.c2 from c:/270/lab2_inv/isim/work/c2.vdb
-Restoring VHDL parse-tree unisim.xor2 from
-c:/xilinx/10.1/ise/vhdl/hdp/nt/unisim/unisim.vdbl
-Restoring VHDL parse-tree unisim.nand2 from
-c:/xilinx/10.1/ise/vhdl/hdp/nt/unisim/unisim.vdbl
-Restoring VHDL parse-tree work.c3 from c:/270/lab2_inv/isim/work/c3.vdb
-Restoring VHDL parse-tree unisim.nand3b2 from
-c:/xilinx/10.1/ise/vhdl/hdp/nt/unisim/unisim.vdbl
-Restoring VHDL parse-tree work.c4 from c:/270/lab2_inv/isim/work/c4.vdb
-Restoring VHDL parse-tree unisim.and3 from
-c:/xilinx/10.1/ise/vhdl/hdp/nt/unisim/unisim.vdbl
-Restoring VHDL parse-tree unisim.nor3 from
-c:/xilinx/10.1/ise/vhdl/hdp/nt/unisim/unisim.vdbl
-Restoring VHDL parse-tree work.c5 from c:/270/lab2_inv/isim/work/c5.vdb
-Restoring VHDL parse-tree work.c6 from c:/270/lab2_inv/isim/work/c6.vdb
-Restoring VHDL parse-tree unisim.and2 from
-c:/xilinx/10.1/ise/vhdl/hdp/nt/unisim/unisim.vdbl
-Restoring VHDL parse-tree work.c7 from c:/270/lab2_inv/isim/work/c7.vdb
-Restoring VHDL parse-tree unisim.and3b3 from
-c:/xilinx/10.1/ise/vhdl/hdp/nt/unisim/unisim.vdbl
+Restoring VHDL parse-tree simprim.x_obuf from
+c:/xilinx/10.1/ise/vhdl/hdp/nt/simprim/simprim.vdbl
+Restoring VHDL parse-tree simprim.x_buf from
+c:/xilinx/10.1/ise/vhdl/hdp/nt/simprim/simprim.vdbl
+Restoring VHDL parse-tree simprim.x_lut4 from
+c:/xilinx/10.1/ise/vhdl/hdp/nt/simprim/simprim.vdbl
+Restoring VHDL parse-tree simprim.x_one from
+c:/xilinx/10.1/ise/vhdl/hdp/nt/simprim/simprim.vdbl
+Restoring VHDL parse-tree simprim.x_zero from
+c:/xilinx/10.1/ise/vhdl/hdp/nt/simprim/simprim.vdbl
+Restoring VHDL parse-tree simprim.x_inv from
+c:/xilinx/10.1/ise/vhdl/hdp/nt/simprim/simprim.vdbl
+Restoring VHDL parse-tree simprim.x_roc from
+c:/xilinx/10.1/ise/vhdl/hdp/nt/simprim/simprim.vdbl
+Restoring VHDL parse-tree simprim.x_toc from
+c:/xilinx/10.1/ise/vhdl/hdp/nt/simprim/simprim.vdbl
 Completed static elaboration
-Fuse Memory Usage: 61952 Kb
-Fuse CPU Usage: 499 ms
+Fuse Memory Usage: 85948 Kb
+Fuse CPU Usage: 1030 ms
 Using precompiled package standard from library std
 Using precompiled package std_logic_1164 from library ieee
 Using precompiled package numeric_std from library ieee
@@ -62,27 +59,69 @@ Using precompiled package textio from library std
 Using precompiled package std_logic_textio from library ieee
 Using precompiled package std_logic_arith from library ieee
 Using precompiled package std_logic_unsigned from library ieee
+Using precompiled package vital_timing from library ieee
+Using precompiled package vital_primitives from library ieee
 Compiling package vcomponents
-Compiling architecture and3b2_v of entity and3b2 [and3b2_default]
-Compiling architecture and4b3_v of entity and4b3 [and4b3_default]
-Compiling architecture nor2_v of entity nor2 [nor2_default]
-Compiling architecture behavioral of entity c1 [c1_default]
-Compiling architecture xor2_v of entity xor2 [xor2_default]
-Compiling architecture nand2_v of entity nand2 [nand2_default]
-Compiling architecture behavioral of entity c2 [c2_default]
-Compiling architecture nand3b2_v of entity nand3b2 [nand3b2_default]
-Compiling architecture behavioral of entity c3 [c3_default]
-Compiling architecture and3_v of entity and3 [and3_default]
-Compiling architecture nor3_v of entity nor3 [nor3_default]
-Compiling architecture behavioral of entity c4 [c4_default]
-Compiling architecture behavioral of entity c5 [c5_default]
-Compiling architecture and2_v of entity and2 [and2_default]
-Compiling architecture behavioral of entity c6 [c6_default]
-Compiling architecture and3b3_v of entity and3b3 [and3b3_default]
-Compiling architecture behavioral of entity c7 [c7_default]
-Compiling architecture behavioral of entity ssd_driver [ssd_driver_default]
+Compiling package vcomponents
+Compiling package vpackage
+Compiling architecture x_obuf_v of entity x_obuf
+[\X_OBUF(true,true,"DONT_CARE",12...]
+Compiling architecture x_obuf_v of entity x_obuf
+[\X_OBUF(true,true,"DONT_CARE",12...]
+Compiling architecture x_obuf_v of entity x_obuf
+[\X_OBUF(true,true,"DONT_CARE",12...]
+Compiling architecture x_obuf_v of entity x_obuf
+[\X_OBUF(true,true,"DONT_CARE",12...]
+Compiling architecture x_obuf_v of entity x_obuf
+[\X_OBUF(true,true,"DONT_CARE",12...]
+Compiling architecture x_obuf_v of entity x_obuf
+[\X_OBUF(true,true,"DONT_CARE",12...]
+Compiling architecture x_obuf_v of entity x_obuf
+[\X_OBUF(true,true,"DONT_CARE",12...]
+Compiling architecture x_obuf_v of entity x_obuf
+[\X_OBUF(true,true,"DONT_CARE",12...]
+Compiling architecture x_obuf_v of entity x_obuf
+[\X_OBUF(true,true,"DONT_CARE",12...]
+Compiling architecture x_obuf_v of entity x_obuf
+[\X_OBUF(true,true,"DONT_CARE",12...]
+Compiling architecture x_obuf_v of entity x_obuf
+[\X_OBUF(true,true,"DONT_CARE",12...]
+Compiling architecture x_buf_v of entity x_buf [\X_BUF(true,true,"IPAD106")\]
+Compiling architecture x_buf_v of entity x_buf [\X_BUF(true,true,"IPAD111")\]
+Compiling architecture x_buf_v of entity x_buf [\X_BUF(true,true,"IPAD116")\]
+Compiling architecture x_buf_v of entity x_buf [\X_BUF(true,true,"IPAD121")\]
+Compiling architecture x_buf_v of entity x_buf [\X_BUF(true,true,"PAD99")\]
+Compiling architecture x_buf_v of entity x_buf [\X_BUF(true,true,"PAD107")\]
+Compiling architecture x_buf_v of entity x_buf [\X_BUF(true,true,"PAD81")\]
+Compiling architecture x_buf_v of entity x_buf [\X_BUF(true,true,"PAD93")\]
+Compiling architecture x_lut4_v of entity x_lut4
+[\X_LUT4(true,true,"SLICE_X91Y74"...]
+Compiling architecture x_lut4_v of entity x_lut4
+[\X_LUT4(true,true,"SLICE_X90Y76"...]
+Compiling architecture x_lut4_v of entity x_lut4
+[\X_LUT4(true,true,"SLICE_X91Y73"...]
+Compiling architecture x_lut4_v of entity x_lut4
+[\X_LUT4(true,true,"SLICE_X90Y69"...]
+Compiling architecture x_lut4_v of entity x_lut4
+[\X_LUT4(true,true,"SLICE_X91Y74"...]
+Compiling architecture x_lut4_v of entity x_lut4
+[\X_LUT4(true,true,"SLICE_X90Y76"...]
+Compiling architecture x_lut4_v of entity x_lut4
+[\X_LUT4(true,true,"SLICE_X91Y73"...]
+Compiling architecture x_one_v of entity x_one [\X_ONE("UNPLACED")\]
+Compiling architecture x_zero_v of entity x_zero [\X_ZERO("UNPLACED")\]
+Compiling architecture x_inv_v of entity x_inv [\X_INV(true,true,"PAD82")\]
+Compiling architecture x_inv_v of entity x_inv [\X_INV(true,true,"PAD98")\]
+Compiling architecture x_inv_v of entity x_inv [\X_INV(true,true,"PAD115")\]
+Compiling architecture x_inv_v of entity x_inv [\X_INV(true,true,"PAD105")\]
+Compiling architecture x_inv_v of entity x_inv [\X_INV(true,true,"PAD123")\]
+Compiling architecture x_inv_v of entity x_inv [\X_INV(true,true,"PAD100")\]
+Compiling architecture x_inv_v of entity x_inv [\X_INV(true,true,"PAD83")\]
+Compiling architecture x_roc_v of entity x_roc [\X_ROC("UNPLACED","*")\]
+Compiling architecture x_toc_v of entity x_toc [\X_TOC("UNPLACED","*")\]
+Compiling architecture structure of entity ssd_driver [ssd_driver_default]
 Compiling architecture testbench_arch of entity tb_ssd_driver
-Compiled 45 VHDL Units
-Built simulation executable tb_SSD_Driver_isim_beh.exe
-Fuse Memory Usage: 63236 Kb
-Fuse CPU Usage: 609 ms
+Compiled 89 VHDL Units
+Built simulation executable tb_SSD_Driver_isim_par.exe
+Fuse Memory Usage: 88256 Kb
+Fuse CPU Usage: 1171 ms

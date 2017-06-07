@@ -7,7 +7,7 @@
 -- \   \   \/     Version : 10.1
 --  \   \         Application : sch2vhdl
 --  /   /         Filename : SSD_Driver.vhf
--- /___/   /\     Timestamp : 06/02/2017 00:51:00
+-- /___/   /\     Timestamp : 06/02/2017 18:51:08
 -- \   \  /  \ 
 --  \___\/\___\ 
 --
@@ -45,6 +45,13 @@ end SSD_Driver;
 
 architecture BEHAVIORAL of SSD_Driver is
    attribute BOX_TYPE   : string ;
+   signal XLXN_1 : std_logic;
+   signal XLXN_2 : std_logic;
+   signal XLXN_3 : std_logic;
+   signal XLXN_4 : std_logic;
+   signal XLXN_5 : std_logic;
+   signal XLXN_6 : std_logic;
+   signal XLXN_7 : std_logic;
    component C1
       port ( B0 : in    std_logic; 
              B1 : in    std_logic; 
@@ -109,65 +116,99 @@ architecture BEHAVIORAL of SSD_Driver is
    end component;
    attribute BOX_TYPE of VCC : component is "BLACK_BOX";
    
+   component INV
+      port ( I : in    std_logic; 
+             O : out   std_logic);
+   end component;
+   attribute BOX_TYPE of INV : component is "BLACK_BOX";
+   
 begin
    XLXI_1 : C1
       port map (B0=>B0,
                 B1=>B1,
                 B2=>B2,
                 B3=>B3,
-                CA=>CA);
+                CA=>XLXN_1);
    
    XLXI_2 : C2
       port map (B0=>B0,
                 B1=>B1,
                 B2=>B2,
-                CB=>CB);
+                CB=>XLXN_2);
    
    XLXI_3 : C3
       port map (B0=>B0,
                 B1=>B1,
                 B2=>B2,
-                CC=>CC);
+                CC=>XLXN_3);
    
    XLXI_4 : C4
       port map (B0=>B0,
                 B1=>B1,
                 B2=>B2,
                 B3=>B3,
-                CD=>CD);
+                CD=>XLXN_4);
    
    XLXI_5 : C5
       port map (B0=>B0,
                 B1=>B1,
                 B2=>B2,
                 B3=>B3,
-                CE=>CE);
+                CE=>XLXN_5);
    
    XLXI_6 : C6
       port map (B0=>B0,
                 B1=>B1,
                 B2=>B2,
                 B3=>B3,
-                CF=>CF);
+                CF=>XLXN_6);
    
    XLXI_7 : C7
       port map (B0=>B0,
                 B1=>B1,
                 B2=>B2,
                 B3=>B3,
-                CG=>CG);
+                CG=>XLXN_7);
    
    XLXI_8 : GND
-      port map (G=>AN0);
+      port map (G=>AN1);
    
    XLXI_9 : VCC
-      port map (P=>AN1);
+      port map (P=>AN0);
    
    XLXI_10 : VCC
       port map (P=>AN2);
    
    XLXI_11 : VCC
       port map (P=>AN3);
+   
+   XLXI_13 : INV
+      port map (I=>XLXN_1,
+                O=>CA);
+   
+   XLXI_14 : INV
+      port map (I=>XLXN_2,
+                O=>CB);
+   
+   XLXI_15 : INV
+      port map (I=>XLXN_3,
+                O=>CC);
+   
+   XLXI_16 : INV
+      port map (I=>XLXN_4,
+                O=>CD);
+   
+   XLXI_17 : INV
+      port map (I=>XLXN_5,
+                O=>CE);
+   
+   XLXI_18 : INV
+      port map (I=>XLXN_6,
+                O=>CF);
+   
+   XLXI_19 : INV
+      port map (I=>XLXN_7,
+                O=>CG);
    
 end BEHAVIORAL;
 
