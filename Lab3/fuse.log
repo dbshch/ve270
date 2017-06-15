@@ -1,0 +1,98 @@
+Determining compilation order of HDL files
+Analyzing VHDL file C2.vhf
+Restoring VHDL parse-tree ieee.std_logic_1164 from
+c:/xilinx/10.1/ise/vhdl/hdp/nt/ieee/std_logic_1164.vdb
+Restoring VHDL parse-tree std.standard from
+c:/xilinx/10.1/ise/vhdl/hdp/nt/std/standard.vdb
+Restoring VHDL parse-tree ieee.numeric_std from
+c:/xilinx/10.1/ise/vhdl/hdp/nt/ieee/numeric_std.vdb
+Restoring VHDL parse-tree unisim.vcomponents from
+c:/xilinx/10.1/ise/vhdl/hdp/nt/unisim/unisim.vdbl
+Analyzing VHDL file C1.vhf
+Analyzing VHDL file C3.vhf
+Analyzing VHDL file C3_sim.vhw
+Restoring VHDL parse-tree ieee.std_logic_textio from
+c:/xilinx/10.1/ise/vhdl/hdp/nt/ieee/std_logic_textio.vdb
+Restoring VHDL parse-tree std.textio from
+c:/xilinx/10.1/ise/vhdl/hdp/nt/std/textio.vdb
+Restoring VHDL parse-tree ieee.std_logic_arith from
+c:/xilinx/10.1/ise/vhdl/hdp/nt/ieee/std_logic_arith.vdb
+Restoring VHDL parse-tree ieee.std_logic_unsigned from
+c:/xilinx/10.1/ise/vhdl/hdp/nt/ieee/std_logic_unsigned.vdb
+Saving VHDL parse-tree work.m2_1_mxilinx_c2 into
+c:/270/lab3/isim/work/m2_1_mxilinx_c2.vdb
+Saving VHDL parse-tree work.c2 into c:/270/lab3/isim/work/c2.vdb
+Saving VHDL parse-tree work.m2_1b1_mxilinx_c1 into
+c:/270/lab3/isim/work/m2_1b1_mxilinx_c1.vdb
+Saving VHDL parse-tree work.add4_mxilinx_c1 into
+c:/270/lab3/isim/work/add4_mxilinx_c1.vdb
+Saving VHDL parse-tree work.c1 into c:/270/lab3/isim/work/c1.vdb
+Saving VHDL parse-tree work.m2_1_mxilinx_c3 into
+c:/270/lab3/isim/work/m2_1_mxilinx_c3.vdb
+Saving VHDL parse-tree work.c3 into c:/270/lab3/isim/work/c3.vdb
+Saving VHDL parse-tree work.c3_sim into c:/270/lab3/isim/work/c3_sim.vdb
+Starting static elaboration
+WARNING:HDLCompiler:746 - "N:/K.31/rtf/vhdl/src/ieee/numeric_std.vhd" Line 867.
+   Range is empty (null range)
+WARNING:HDLCompiler:746 - "N:/K.31/rtf/vhdl/src/ieee/numeric_std.vhd" Line 868.
+   Range is empty (null range)
+Restoring VHDL parse-tree unisim.muxcy_l from
+c:/xilinx/10.1/ise/vhdl/hdp/nt/unisim/unisim.vdbl
+Restoring VHDL parse-tree unisim.muxcy from
+c:/xilinx/10.1/ise/vhdl/hdp/nt/unisim/unisim.vdbl
+Restoring VHDL parse-tree unisim.muxcy_d from
+c:/xilinx/10.1/ise/vhdl/hdp/nt/unisim/unisim.vdbl
+Restoring VHDL parse-tree unisim.xorcy from
+c:/xilinx/10.1/ise/vhdl/hdp/nt/unisim/unisim.vdbl
+Restoring VHDL parse-tree unisim.fmap from
+c:/xilinx/10.1/ise/vhdl/hdp/nt/unisim/unisim.vdbl
+Restoring VHDL parse-tree unisim.xor2 from
+c:/xilinx/10.1/ise/vhdl/hdp/nt/unisim/unisim.vdbl
+Restoring VHDL parse-tree unisim.and2b2 from
+c:/xilinx/10.1/ise/vhdl/hdp/nt/unisim/unisim.vdbl
+Restoring VHDL parse-tree unisim.or2 from
+c:/xilinx/10.1/ise/vhdl/hdp/nt/unisim/unisim.vdbl
+Restoring VHDL parse-tree unisim.and2 from
+c:/xilinx/10.1/ise/vhdl/hdp/nt/unisim/unisim.vdbl
+Restoring VHDL parse-tree unisim.inv from
+c:/xilinx/10.1/ise/vhdl/hdp/nt/unisim/unisim.vdbl
+Restoring VHDL parse-tree unisim.and2b1 from
+c:/xilinx/10.1/ise/vhdl/hdp/nt/unisim/unisim.vdbl
+Completed static elaboration
+Fuse Memory Usage: 74684 Kb
+Fuse CPU Usage: 483 ms
+Using precompiled package standard from library std
+Using precompiled package std_logic_1164 from library ieee
+Using precompiled package numeric_std from library ieee
+Using precompiled package textio from library std
+Using precompiled package std_logic_textio from library ieee
+Using precompiled package std_logic_arith from library ieee
+Using precompiled package std_logic_unsigned from library ieee
+Compiling package vcomponents
+Compiling architecture muxcy_l_v of entity muxcy_l [muxcy_l_default]
+Compiling architecture muxcy_v of entity muxcy [muxcy_default]
+Compiling architecture muxcy_d_v of entity muxcy_d [muxcy_d_default]
+Compiling architecture xorcy_v of entity xorcy [xorcy_default]
+Compiling architecture fmap_v of entity fmap [fmap_default]
+Compiling architecture xor2_v of entity xor2 [xor2_default]
+Compiling architecture behavioral of entity add4_mxilinx_c1
+[add4_mxilinx_c1_default]
+Compiling architecture and2b2_v of entity and2b2 [and2b2_default]
+Compiling architecture or2_v of entity or2 [or2_default]
+Compiling architecture and2_v of entity and2 [and2_default]
+Compiling architecture behavioral of entity m2_1b1_mxilinx_c1
+[m2_1b1_mxilinx_c1_default]
+Compiling architecture inv_v of entity inv [inv_default]
+Compiling architecture behavioral of entity c1 [c1_default]
+Compiling architecture and2b1_v of entity and2b1 [and2b1_default]
+Compiling architecture behavioral of entity m2_1_mxilinx_c2
+[m2_1_mxilinx_c2_default]
+Compiling architecture behavioral of entity c2 [c2_default]
+Compiling architecture behavioral of entity m2_1_mxilinx_c3
+[m2_1_mxilinx_c3_default]
+Compiling architecture behavioral of entity c3 [c3_default]
+Compiling architecture testbench_arch of entity c3_sim
+Compiled 45 VHDL Units
+Built simulation executable C3_sim_isim_beh.exe
+Fuse Memory Usage: 75968 Kb
+Fuse CPU Usage: 624 ms

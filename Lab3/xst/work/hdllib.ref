@@ -1,0 +1,14 @@
+AR m2_1_mxilinx_c3 behavioral C:/270/Lab3/C3.vhf sub00/vhpl11 1497527105
+AR m2_1b1_mxilinx_c1 behavioral C:/270/Lab3/C1.vhf sub00/vhpl01 1497527095
+AR c2 behavioral C:/270/Lab3/C2.vhf sub00/vhpl09 1497527103
+EN m2_1b1_mxilinx_c1 NULL C:/270/Lab3/C1.vhf sub00/vhpl00 1497527094
+AR m2_1_mxilinx_c2 behavioral C:/270/Lab3/C2.vhf sub00/vhpl07 1497527101
+AR add4_mxilinx_c1 behavioral C:/270/Lab3/C1.vhf sub00/vhpl03 1497527097
+EN m2_1_mxilinx_c2 NULL C:/270/Lab3/C2.vhf sub00/vhpl06 1497527100
+EN m2_1_mxilinx_c3 NULL C:/270/Lab3/C3.vhf sub00/vhpl10 1497527104
+EN add4_mxilinx_c1 NULL C:/270/Lab3/C1.vhf sub00/vhpl02 1497527096
+EN c1 NULL C:/270/Lab3/C1.vhf sub00/vhpl04 1497527098
+EN c2 NULL C:/270/Lab3/C2.vhf sub00/vhpl08 1497527102
+EN c3 NULL C:/270/Lab3/C3.vhf sub00/vhpl12 1497527106
+AR c3 behavioral C:/270/Lab3/C3.vhf sub00/vhpl13 1497527107
+AR c1 behavioral C:/270/Lab3/C1.vhf sub00/vhpl05 1497527099

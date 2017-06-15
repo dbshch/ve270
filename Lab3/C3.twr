@@ -1,0 +1,90 @@
+--------------------------------------------------------------------------------
+Release 10.1 Trace  (nt)
+Copyright (c) 1995-2008 Xilinx, Inc.  All rights reserved.
+
+C:\Xilinx\10.1\ISE\bin\nt\unwrapped\trce.exe -ise C:/270/Lab3/Lab3.ise
+-intstyle ise -e 3 -s 4 -xml C3 C3.ncd -o C3.twr C3.pcf -ucf C3.ucf
+
+Design file:              C3.ncd
+Physical constraint file: C3.pcf
+Device,package,speed:     xc3s1200e,fg320,-4 (PRODUCTION 1.27 2008-01-09)
+Report level:             error report
+
+Environment Variable      Effect 
+--------------------      ------ 
+NONE                      No environment variables were set
+--------------------------------------------------------------------------------
+
+INFO:Timing:2698 - No timing constraints found, doing default enumeration.
+INFO:Timing:2752 - To get complete path coverage, use the unconstrained paths 
+   option. All paths that are not constrained will be reported in the 
+   unconstrained paths section(s) of the report.
+INFO:Timing:3339 - The clock-to-out numbers in this timing report are based on 
+   a 50 Ohm transmission line loading model.  For the details of this model, 
+   and for more information on accounting for different loading conditions, 
+   please see the device datasheet.
+
+
+
+Data Sheet report:
+-----------------
+All values displayed in nanoseconds (ns)
+
+Pad to Pad
+---------------+---------------+---------+
+Source Pad     |Destination Pad|  Delay  |
+---------------+---------------+---------+
+A0             |Cout           |   10.769|
+A0             |F0             |    8.733|
+A0             |F1             |    8.471|
+A0             |F2             |    9.271|
+A0             |F3             |    9.165|
+A1             |Cout           |   11.200|
+A1             |F0             |    8.915|
+A1             |F1             |    8.186|
+A1             |F2             |    9.702|
+A1             |F3             |    9.596|
+A2             |Cout           |   11.120|
+A2             |F2             |    9.176|
+A2             |F3             |    9.244|
+A3             |Cout           |   11.460|
+A3             |F3             |    9.335|
+B0             |Cout           |   10.837|
+B0             |F0             |    8.801|
+B0             |F1             |    8.539|
+B0             |F2             |    9.339|
+B0             |F3             |    9.233|
+B1             |Cout           |   10.014|
+B1             |F0             |    7.729|
+B1             |F1             |    7.295|
+B1             |F2             |    8.516|
+B1             |F3             |    8.410|
+B2             |Cout           |    9.857|
+B2             |F2             |    7.913|
+B2             |F3             |    7.981|
+B3             |Cout           |   10.178|
+B3             |F3             |    8.053|
+S0             |Cout           |   14.822|
+S0             |F0             |   12.144|
+S0             |F1             |   11.929|
+S0             |F2             |   13.324|
+S0             |F3             |   13.218|
+S1             |Cout           |    7.506|
+S1             |F0             |    7.584|
+S1             |F1             |    8.159|
+S1             |F2             |    8.080|
+S1             |F3             |    8.080|
+---------------+---------------+---------+
+
+
+Analysis completed Thu Jun 15 20:01:27 2017 
+--------------------------------------------------------------------------------
+
+Trace Settings:
+-------------------------
+Trace Settings 
+
+Peak Memory Usage: 115 MB
+
+
+

@@ -1,0 +1,22 @@
+sch2vhdl -intstyle ise -family spartan3e -flat -suppress -w "C:/Users/xiongzeyu/Desktop/Lab3/C3.sch" C3.vhf
+sch2vhdl -intstyle ise -family spartan3e -flat -suppress -w "C:/270/Lab3/C3.sch" C3.vhf
+xst -ise "C:/270/Lab3/Lab3.ise" -intstyle ise -ifn "C:/270/Lab3/C3.xst" -ofn "C:/270/Lab3/C3.syr"
+ngdbuild -ise "C:/270/Lab3/Lab3.ise" -intstyle ise -dd _ngo  -nt timestamp -i -p xc3s1200e-fg320-4 "C3.ngc" C3.ngd
+map -ise "C:/270/Lab3/Lab3.ise" -intstyle ise -p xc3s1200e-fg320-4 -cm area -pr off -k 4 -c 100 -o C3_map.ncd C3.ngd C3.pcf
+par -ise "C:/270/Lab3/Lab3.ise" -w -intstyle ise -ol std -t 1 C3_map.ncd C3.ncd C3.pcf
+trce -ise "C:/270/Lab3/Lab3.ise" -intstyle ise -e 3 -s 4 -xml C3 C3.ncd -o C3.twr C3.pcf -ucf C3.ucf
+bitgen -ise "C:/270/Lab3/Lab3.ise" -intstyle ise -f C3.ut C3.ncd
+xst -ise "C:/270/Lab3/Lab3.ise" -intstyle ise -ifn "C:/270/Lab3/C3.xst" -ofn "C:/270/Lab3/C3.syr"
+ngdbuild -ise "C:/270/Lab3/Lab3.ise" -intstyle ise -dd _ngo  -nt timestamp -i -p xc3s1200e-fg320-4 "C3.ngc" C3.ngd
+sch2vhdl -intstyle ise -family spartan3e -flat -suppress -w "C:/270/Lab3/C3.sch" C3.vhf
+xst -ise "C:/270/Lab3/Lab3.ise" -intstyle ise -ifn "C:/270/Lab3/C3.xst" -ofn "C:/270/Lab3/C3.syr"
+ngdbuild -ise "C:/270/Lab3/Lab3.ise" -intstyle ise -dd _ngo  -nt timestamp -i -p xc3s1200e-fg320-4 "C3.ngc" C3.ngd
+map -ise "C:/270/Lab3/Lab3.ise" -intstyle ise -p xc3s1200e-fg320-4 -cm area -pr off -k 4 -c 100 -o C3_map.ncd C3.ngd C3.pcf
+par -ise "C:/270/Lab3/Lab3.ise" -w -intstyle ise -ol std -t 1 C3_map.ncd C3.ncd C3.pcf
+trce -ise "C:/270/Lab3/Lab3.ise" -intstyle ise -e 3 -s 4 -xml C3 C3.ncd -o C3.twr C3.pcf -ucf C3.ucf
+ngdbuild -ise "C:/270/Lab3/Lab3.ise" -intstyle ise -dd _ngo  -nt timestamp -i -p xc3s1200e-fg320-4 "C3.ngc" C3.ngd
+ngdbuild -ise "C:/270/Lab3/Lab3.ise" -intstyle ise -dd _ngo  -nt timestamp -i -p xc3s1200e-fg320-4 "C3.ngc" C3.ngd
+map -ise "C:/270/Lab3/Lab3.ise" -intstyle ise -p xc3s1200e-fg320-4 -cm area -pr off -k 4 -c 100 -o C3_map.ncd C3.ngd C3.pcf
+par -ise "C:/270/Lab3/Lab3.ise" -w -intstyle ise -ol std -t 1 C3_map.ncd C3.ncd C3.pcf
+trce -ise "C:/270/Lab3/Lab3.ise" -intstyle ise -e 3 -s 4 -xml C3 C3.ncd -o C3.twr C3.pcf -ucf C3.ucf
+bitgen -ise "C:/270/Lab3/Lab3.ise" -intstyle ise -f C3.ut C3.ncd

@@ -1,0 +1,4 @@
+vhdl work "C2.vhf"
+vhdl work "C1.vhf"
+vhdl work "C3.vhf"
+vhdl work "C3_sim.vhw"
