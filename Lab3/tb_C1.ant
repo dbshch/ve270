@@ -8,7 +8,7 @@
 -- \   \   \/     Version : 10.1
 --  \   \         Application : ISE
 --  /   /         Filename : tb_C1.ant
--- /___/   /\     Timestamp : Thu Jun 15 20:14:50 2017
+-- /___/   /\     Timestamp : Fri Jun 16 22:33:32 2017
 -- \   \  /  \ 
 --  \___\/\___\ 
 --
@@ -246,6 +246,7 @@ ARCHITECTURE testbench_arch OF tb_C1 IS
                 A1 <= '0';
                 A3 <= '0';
                 B0 <= '0';
+                B1 <= '1';
                 B3 <= '0';
                 S0 <= '0';
                 -- -------------------------------------

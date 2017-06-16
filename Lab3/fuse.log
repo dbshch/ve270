@@ -60,7 +60,7 @@ Restoring VHDL parse-tree unisim.and2b1 from
 c:/xilinx/10.1/ise/vhdl/hdp/nt/unisim/unisim.vdbl
 Completed static elaboration
 Fuse Memory Usage: 74684 Kb
-Fuse CPU Usage: 483 ms
+Fuse CPU Usage: 499 ms
 Using precompiled package standard from library std
 Using precompiled package std_logic_1164 from library ieee
 Using precompiled package numeric_std from library ieee
@@ -95,4 +95,4 @@ Compiling architecture testbench_arch of entity c3_sim
 Compiled 45 VHDL Units
 Built simulation executable C3_sim_isim_beh.exe
 Fuse Memory Usage: 75968 Kb
-Fuse CPU Usage: 624 ms
+Fuse CPU Usage: 608 ms

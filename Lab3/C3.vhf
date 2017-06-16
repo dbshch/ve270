@@ -7,7 +7,7 @@
 -- \   \   \/     Version : 10.1
 --  \   \         Application : sch2vhdl
 --  /   /         Filename : C3.vhf
--- /___/   /\     Timestamp : 06/15/2017 19:41:54
+-- /___/   /\     Timestamp : 06/16/2017 18:13:17
 -- \   \  /  \ 
 --  \___\/\___\ 
 --
@@ -106,14 +106,14 @@ architecture BEHAVIORAL of C3 is
    attribute BOX_TYPE   : string ;
    signal XLXN_19 : std_logic;
    signal XLXN_20 : std_logic;
-   signal XLXN_21 : std_logic;
-   signal XLXN_22 : std_logic;
    signal XLXN_23 : std_logic;
    signal XLXN_24 : std_logic;
    signal XLXN_25 : std_logic;
    signal XLXN_26 : std_logic;
    signal XLXN_30 : std_logic;
    signal XLXN_37 : std_logic;
+   signal XLXN_38 : std_logic;
+   signal XLXN_39 : std_logic;
    component C1
       port ( A0   : in    std_logic; 
              A1   : in    std_logic; 
@@ -177,8 +177,8 @@ begin
                 B3=>B3,
                 S0=>S0,
                 Cout=>XLXN_30,
-                F0=>XLXN_21,
-                F1=>XLXN_22,
+                F0=>XLXN_38,
+                F1=>XLXN_39,
                 F2=>XLXN_20,
                 F3=>XLXN_19);
    
@@ -210,13 +210,13 @@ begin
                 O=>F2);
    
    XLXI_5 : M2_1_MXILINX_C3
-      port map (D0=>XLXN_21,
+      port map (D0=>XLXN_39,
                 D1=>XLXN_25,
                 S0=>S1,
                 O=>F1);
    
    XLXI_6 : M2_1_MXILINX_C3
-      port map (D0=>XLXN_22,
+      port map (D0=>XLXN_38,
                 D1=>XLXN_26,
                 S0=>S1,
                 O=>F0);

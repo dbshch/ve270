@@ -9,7 +9,7 @@ Target Device  : xc3s1200e
 Target Package : fg320
 Target Speed   : -4
 Mapper Version : spartan3e -- $Revision: 1.46 $
-Mapped Date    : Thu Jun 15 20:01:17 2017
+Mapped Date    : Fri Jun 16 18:13:32 2017
 
 Design Summary
 --------------
@@ -27,7 +27,7 @@ Logic Distribution:
 
   Number of RPM macros:            1
 Peak Memory Usage:  153 MB
-Total REAL time to MAP completion:  2 secs 
+Total REAL time to MAP completion:  1 secs 
 Total CPU time to MAP completion:   1 secs 
 
 NOTES:

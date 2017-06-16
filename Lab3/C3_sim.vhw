@@ -8,7 +8,7 @@
 -- \   \   \/     Version : 10.1
 --  \   \         Application : ISE
 --  /   /         Filename : C3_sim.vhw
--- /___/   /\     Timestamp : Thu Jun 15 20:14:41 2017
+-- /___/   /\     Timestamp : Fri Jun 16 22:36:59 2017
 -- \   \  /  \ 
 --  \___\/\___\ 
 --
@@ -31,8 +31,6 @@ ENTITY C3_sim IS
 END C3_sim;
 
 ARCHITECTURE testbench_arch OF C3_sim IS
-    FILE RESULTS: TEXT OPEN WRITE_MODE IS "results.txt";
-
     COMPONENT C3
         PORT (
             A0 : In std_logic;
@@ -133,15 +131,14 @@ ARCHITECTURE testbench_arch OF C3_sim IS
                 -- -------------------------------------
                 -- -------------  Current Time:  357ns
                 WAIT FOR 51 ns;
-                A0 <= '1';
+                A1 <= '0';
+                A3 <= '0';
                 B1 <= '1';
+                B2 <= '0';
                 -- -------------------------------------
                 -- -------------  Current Time:  408ns
                 WAIT FOR 51 ns;
-                A0 <= '0';
-                A1 <= '0';
                 A2 <= '0';
-                A3 <= '0';
                 B0 <= '1';
                 B1 <= '0';
                 B3 <= '1';
@@ -154,7 +151,6 @@ ARCHITECTURE testbench_arch OF C3_sim IS
                 A2 <= '1';
                 A3 <= '1';
                 B1 <= '1';
-                B2 <= '0';
                 -- -------------------------------------
                 -- -------------  Current Time:  510ns
                 WAIT FOR 51 ns;

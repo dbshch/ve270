@@ -1,7 +1,7 @@
 Release 10.1 par K.31 (nt)
 Copyright (c) 1995-2008 Xilinx, Inc.  All rights reserved.
 
-USER-20170307ZL::  Thu Jun 15 20:01:20 2017
+USER-20170307ZL::  Fri Jun 16 18:13:34 2017
 
 par -w -intstyle ise -ol std -t 1 C3_map.ncd C3.ncd C3.pcf 
 
@@ -133,7 +133,7 @@ Generating Pad Report.
 
 All signals are completely routed.
 
-Total REAL time to PAR completion: 4 secs 
+Total REAL time to PAR completion: 3 secs 
 Total CPU time to PAR completion: 3 secs 
 
 Peak Memory Usage:  150 MB

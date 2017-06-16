@@ -2,11 +2,11 @@ Command line:
    ./C3_sim_isim_beh.exe
      -intstyle  ise
      -ipchost  localhost
-     -ipcport  1656
+     -ipcport  3336
 
-Thu Jun 15 20:14:59 2017
+Fri Jun 16 22:37:04 2017
 
-Total Line Count : 93
+Total Line Count : 91
 
  Elaboration Time: 0.015625 sec
 
@@ -20,8 +20,29 @@ Total Line Count : 93
  Total Processes        : 64
  Total Traceable Variables  : 18
  Total Scalar Nets and Variables : 1117
-ntrace select -o on -m / -l this 
+ntrace select -o on -n /c3_sim/a0 
+ntrace select -o on -n /c3_sim/a1 
+ntrace select -o on -n /c3_sim/a2 
+ntrace select -o on -n /c3_sim/a3 
+ntrace select -o on -n /c3_sim/b0 
+ntrace select -o on -n /c3_sim/b1 
+ntrace select -o on -n /c3_sim/b2 
+ntrace select -o on -n /c3_sim/b3 
+ntrace select -o on -n /c3_sim/s0 
+ntrace select -o on -n /c3_sim/s1 
+ntrace select -o on -n /c3_sim/cout 
+ntrace select -o on -n /c3_sim/f0 
+ntrace select -o on -n /c3_sim/f1 
+ntrace select -o on -n /c3_sim/f2 
+ntrace select -o on -n /c3_sim/f3 
 ntrace start 
 isimrun 1000 ns 
 Simulator is doing circuit initialization process.
 Finished circuit initialization process.
+
+ Total Simulation Time: 0.09375 sec
+
+ Current Memory Usage: 166.646 Meg
+
+Fri Jun 16 22:46:10 2017
+

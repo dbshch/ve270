@@ -16,8 +16,6 @@ BEGIN SCHEMATIC
         SIGNAL B0
         SIGNAL XLXN_19
         SIGNAL XLXN_20
-        SIGNAL XLXN_21
-        SIGNAL XLXN_22
         SIGNAL XLXN_23
         SIGNAL XLXN_24
         SIGNAL XLXN_25
@@ -31,6 +29,8 @@ BEGIN SCHEMATIC
         SIGNAL F1
         SIGNAL F0
         SIGNAL Cout
+        SIGNAL XLXN_38
+        SIGNAL XLXN_39
         PORT Input A3
         PORT Input A2
         PORT Input A1
@@ -113,8 +113,8 @@ BEGIN SCHEMATIC
             PIN B2 B2
             PIN B3 B3
             PIN Cout XLXN_30
-            PIN F0 XLXN_21
-            PIN F1 XLXN_22
+            PIN F0 XLXN_38
+            PIN F1 XLXN_39
             PIN F2 XLXN_20
             PIN F3 XLXN_19
             PIN S0 S0
@@ -147,13 +147,13 @@ BEGIN SCHEMATIC
             PIN O F2
         END BLOCK
         BEGIN BLOCK XLXI_5 m2_1
-            PIN D0 XLXN_21
+            PIN D0 XLXN_39
             PIN D1 XLXN_25
             PIN S0 S1
             PIN O F1
         END BLOCK
         BEGIN BLOCK XLXI_6 m2_1
-            PIN D0 XLXN_22
+            PIN D0 XLXN_38
             PIN D1 XLXN_26
             PIN S0 S1
             PIN O F0
@@ -237,16 +237,6 @@ BEGIN SCHEMATIC
             WIRE 1952 640 1952 992
             WIRE 1952 992 2304 992
         END BRANCH
-        BEGIN BRANCH XLXN_21
-            WIRE 1632 704 1936 704
-            WIRE 1936 704 1936 1264
-            WIRE 1936 1264 2304 1264
-        END BRANCH
-        BEGIN BRANCH XLXN_22
-            WIRE 1632 768 1920 768
-            WIRE 1920 768 1920 1520
-            WIRE 1920 1520 2304 1520
-        END BRANCH
         BEGIN BRANCH XLXN_23
             WIRE 1632 1472 1904 1472
             WIRE 1904 784 1904 1472
@@ -275,7 +265,8 @@ BEGIN SCHEMATIC
             WIRE 1232 1984 1232 2224
         END BRANCH
         BEGIN BRANCH XLXN_30
-            WIRE 1632 832 1984 832
+            WIRE 1632 832 1696 832
+            WIRE 1696 832 1984 832
             WIRE 1984 832 1984 1760
             WIRE 1984 1760 2304 1760
         END BRANCH
@@ -329,5 +320,15 @@ BEGIN SCHEMATIC
         IOMARKER 2848 1296 F1 R0 28
         IOMARKER 2800 752 F3 R0 28
         IOMARKER 2800 1024 F2 R0 28
+        BEGIN BRANCH XLXN_38
+            WIRE 1632 704 1936 704
+            WIRE 1936 704 1936 1520
+            WIRE 1936 1520 2304 1520
+        END BRANCH
+        BEGIN BRANCH XLXN_39
+            WIRE 1632 768 1920 768
+            WIRE 1920 768 1920 1264
+            WIRE 1920 1264 2304 1264
+        END BRANCH
     END SHEET
 END SCHEMATIC
