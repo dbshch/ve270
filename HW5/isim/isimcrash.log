@@ -1,0 +1,14 @@
+Unable to capture context for thread 7028 in process 8752, can not generate back trace
+Unable to capture context for thread 9236 in process 8752, can not generate back trace
+Unable to capture context for thread 6196 in process 8752, can not generate back trace
+Exception at PC 0x7C812FD3
+Unknown signal -529697949 received
+Printing stacktrace...
+
+Done
+Exception at PC 0x00512171
+Signal EXCEPTION_ACCESS_VIOLATION received
+Attemped to read address 0x00000004
+Printing stacktrace...
+
+Done

@@ -1,0 +1,160 @@
+xst -ise "C:/270/Lab5/Lab5.ise" -intstyle ise -ifn "C:/270/Lab5/Digital_Clock.xst" -ofn "C:/270/Lab5/Digital_Clock.syr"
+xst -ise "C:/270/Lab5/Lab5.ise" -intstyle ise -ifn "C:/270/Lab5/Digital_Clock.xst" -ofn "C:/270/Lab5/Digital_Clock.syr"
+xst -ise "C:/270/Lab5/Lab5.ise" -intstyle ise -ifn "C:/270/Lab5/Digital_Clock.xst" -ofn "C:/270/Lab5/Digital_Clock.syr"
+xst -ise "C:/270/Lab5/Lab5.ise" -intstyle ise -ifn "C:/270/Lab5/Digital_Clock.xst" -ofn "C:/270/Lab5/Digital_Clock.syr"
+xst -ise "C:/270/Lab5/Lab5.ise" -intstyle ise -ifn "C:/270/Lab5/Digital_Clock.xst" -ofn "C:/270/Lab5/Digital_Clock.syr"
+xst -ise "C:/270/Lab5/Lab5.ise" -intstyle ise -ifn "C:/270/Lab5/Digital_Clock.xst" -ofn "C:/270/Lab5/Digital_Clock.syr"
+xst -ise "C:/270/Lab5/Lab5.ise" -intstyle ise -ifn "C:/270/Lab5/Digital_Clock.xst" -ofn "C:/270/Lab5/Digital_Clock.syr"
+xst -ise "C:/270/Lab5/Lab5.ise" -intstyle ise -ifn "C:/270/Lab5/Digital_Clock.xst" -ofn "C:/270/Lab5/Digital_Clock.syr"
+xst -ise "C:/270/Lab5/Lab5.ise" -intstyle ise -ifn "C:/270/Lab5/Digital_Clock.xst" -ofn "C:/270/Lab5/Digital_Clock.syr"
+xst -ise "C:/270/Lab5/Lab5.ise" -intstyle ise -ifn "C:/270/Lab5/Digital_Clock.xst" -ofn "C:/270/Lab5/Digital_Clock.syr"
+xst -ise "C:/270/Lab5/Lab5.ise" -intstyle ise -ifn "C:/270/Lab5/Digital_Clock.xst" -ofn "C:/270/Lab5/Digital_Clock.syr"
+ngdbuild -ise "C:/270/Lab5/Lab5.ise" -intstyle ise -dd _ngo  -nt timestamp -i -p xc3s1200e-fg320-4 "Digital_Clock.ngc" Digital_Clock.ngd
+map -ise "C:/270/Lab5/Lab5.ise" -intstyle ise -p xc3s1200e-fg320-4 -cm area -pr off -k 4 -c 100 -o Digital_Clock_map.ncd Digital_Clock.ngd Digital_Clock.pcf
+par -ise "C:/270/Lab5/Lab5.ise" -w -intstyle ise -ol std -t 1 Digital_Clock_map.ncd Digital_Clock.ncd Digital_Clock.pcf
+trce -ise "C:/270/Lab5/Lab5.ise" -intstyle ise -e 3 -s 4 -xml Digital_Clock Digital_Clock.ncd -o Digital_Clock.twr Digital_Clock.pcf -ucf Digital_Clock.ucf
+bitgen -ise "C:/270/Lab5/Lab5.ise" -intstyle ise -f Digital_Clock.ut Digital_Clock.ncd
+xst -ise "C:/270/Lab5/Lab5.ise" -intstyle ise -ifn "C:/270/Lab5/Digital_Clock.xst" -ofn "C:/270/Lab5/Digital_Clock.syr"
+ngdbuild -ise "C:/270/Lab5/Lab5.ise" -intstyle ise -dd _ngo  -nt timestamp -i -p xc3s1200e-fg320-4 "Digital_Clock.ngc" Digital_Clock.ngd
+map -ise "C:/270/Lab5/Lab5.ise" -intstyle ise -p xc3s1200e-fg320-4 -cm area -pr off -k 4 -c 100 -o Digital_Clock_map.ncd Digital_Clock.ngd Digital_Clock.pcf
+par -ise "C:/270/Lab5/Lab5.ise" -w -intstyle ise -ol std -t 1 Digital_Clock_map.ncd Digital_Clock.ncd Digital_Clock.pcf
+trce -ise "C:/270/Lab5/Lab5.ise" -intstyle ise -e 3 -s 4 -xml Digital_Clock Digital_Clock.ncd -o Digital_Clock.twr Digital_Clock.pcf -ucf Digital_Clock.ucf
+bitgen -ise "C:/270/Lab5/Lab5.ise" -intstyle ise -f Digital_Clock.ut Digital_Clock.ncd
+xst -ise "C:/270/Lab5/Lab5.ise" -intstyle ise -ifn "C:/270/Lab5/Digital_Clock.xst" -ofn "C:/270/Lab5/Digital_Clock.syr"
+ngdbuild -ise "C:/270/Lab5/Lab5.ise" -intstyle ise -dd _ngo  -nt timestamp -i -p xc3s1200e-fg320-4 "Digital_Clock.ngc" Digital_Clock.ngd
+map -ise "C:/270/Lab5/Lab5.ise" -intstyle ise -p xc3s1200e-fg320-4 -cm area -pr off -k 4 -c 100 -o Digital_Clock_map.ncd Digital_Clock.ngd Digital_Clock.pcf
+par -ise "C:/270/Lab5/Lab5.ise" -w -intstyle ise -ol std -t 1 Digital_Clock_map.ncd Digital_Clock.ncd Digital_Clock.pcf
+trce -ise "C:/270/Lab5/Lab5.ise" -intstyle ise -e 3 -s 4 -xml Digital_Clock Digital_Clock.ncd -o Digital_Clock.twr Digital_Clock.pcf -ucf Digital_Clock.ucf
+bitgen -ise "C:/270/Lab5/Lab5.ise" -intstyle ise -f Digital_Clock.ut Digital_Clock.ncd
+xst -ise "C:/270/Lab5/Lab5.ise" -intstyle ise -ifn "C:/270/Lab5/Digital_Clock.xst" -ofn "C:/270/Lab5/Digital_Clock.syr"
+xst -ise "C:/270/Lab5/Lab5.ise" -intstyle ise -ifn "C:/270/Lab5/Digital_Clock.xst" -ofn "C:/270/Lab5/Digital_Clock.syr"
+xst -ise "C:/270/Lab5/Lab5.ise" -intstyle ise -ifn "C:/270/Lab5/Digital_Clock.xst" -ofn "C:/270/Lab5/Digital_Clock.syr"
+xst -ise "C:/270/Lab5/Lab5.ise" -intstyle ise -ifn "C:/270/Lab5/Digital_Clock.xst" -ofn "C:/270/Lab5/Digital_Clock.syr"
+xst -ise "C:/270/Lab5/Lab5.ise" -intstyle ise -ifn "C:/270/Lab5/Digital_Clock.xst" -ofn "C:/270/Lab5/Digital_Clock.syr"
+xst -ise "C:/270/Lab5/Lab5.ise" -intstyle ise -ifn "C:/270/Lab5/Digital_Clock.xst" -ofn "C:/270/Lab5/Digital_Clock.syr"
+xst -ise "C:/270/Lab5/Lab5.ise" -intstyle ise -ifn "C:/270/Lab5/Digital_Clock.xst" -ofn "C:/270/Lab5/Digital_Clock.syr"
+xst -ise "C:/270/Lab5/Lab5.ise" -intstyle ise -ifn "C:/270/Lab5/Digital_Clock.xst" -ofn "C:/270/Lab5/Digital_Clock.syr"
+xst -ise "C:/270/Lab5/Lab5.ise" -intstyle ise -ifn "C:/270/Lab5/Digital_Clock.xst" -ofn "C:/270/Lab5/Digital_Clock.syr"
+xst -ise "C:/270/Lab5/Lab5.ise" -intstyle ise -ifn "C:/270/Lab5/Digital_Clock.xst" -ofn "C:/270/Lab5/Digital_Clock.syr"
+xst -ise "C:/270/Lab5/Lab5.ise" -intstyle ise -ifn "C:/270/Lab5/Digital_Clock.xst" -ofn "C:/270/Lab5/Digital_Clock.syr"
+xst -ise "C:/270/Lab5/Lab5.ise" -intstyle ise -ifn "C:/270/Lab5/Digital_Clock.xst" -ofn "C:/270/Lab5/Digital_Clock.syr"
+ngdbuild -ise "C:/270/Lab5/Lab5.ise" -intstyle ise -dd _ngo  -nt timestamp -i -p xc3s1200e-fg320-4 "Digital_Clock.ngc" Digital_Clock.ngd
+map -ise "C:/270/Lab5/Lab5.ise" -intstyle ise -p xc3s1200e-fg320-4 -cm area -pr off -k 4 -c 100 -o Digital_Clock_map.ncd Digital_Clock.ngd Digital_Clock.pcf
+par -ise "C:/270/Lab5/Lab5.ise" -w -intstyle ise -ol std -t 1 Digital_Clock_map.ncd Digital_Clock.ncd Digital_Clock.pcf
+trce -ise "C:/270/Lab5/Lab5.ise" -intstyle ise -e 3 -s 4 -xml Digital_Clock Digital_Clock.ncd -o Digital_Clock.twr Digital_Clock.pcf -ucf Digital_Clock.ucf
+bitgen -ise "C:/270/Lab5/Lab5.ise" -intstyle ise -f Digital_Clock.ut Digital_Clock.ncd
+xst -ise "C:/270/Lab5/Lab5.ise" -intstyle ise -ifn "C:/270/Lab5/Digital_Clock.xst" -ofn "C:/270/Lab5/Digital_Clock.syr"
+ngdbuild -ise "C:/270/Lab5/Lab5.ise" -intstyle ise -dd _ngo  -nt timestamp -i -p xc3s1200e-fg320-4 "Digital_Clock.ngc" Digital_Clock.ngd
+map -ise "C:/270/Lab5/Lab5.ise" -intstyle ise -p xc3s1200e-fg320-4 -cm area -pr off -k 4 -c 100 -o Digital_Clock_map.ncd Digital_Clock.ngd Digital_Clock.pcf
+par -ise "C:/270/Lab5/Lab5.ise" -w -intstyle ise -ol std -t 1 Digital_Clock_map.ncd Digital_Clock.ncd Digital_Clock.pcf
+trce -ise "C:/270/Lab5/Lab5.ise" -intstyle ise -e 3 -s 4 -xml Digital_Clock Digital_Clock.ncd -o Digital_Clock.twr Digital_Clock.pcf -ucf Digital_Clock.ucf
+bitgen -ise "C:/270/Lab5/Lab5.ise" -intstyle ise -f Digital_Clock.ut Digital_Clock.ncd
+xst -ise "C:/270/Lab5/Lab5.ise" -intstyle ise -ifn "C:/270/Lab5/Digital_Clock.xst" -ofn "C:/270/Lab5/Digital_Clock.syr"
+ngdbuild -ise "C:/270/Lab5/Lab5.ise" -intstyle ise -dd _ngo  -nt timestamp -i -p xc3s1200e-fg320-4 "Digital_Clock.ngc" Digital_Clock.ngd
+map -ise "C:/270/Lab5/Lab5.ise" -intstyle ise -p xc3s1200e-fg320-4 -cm area -pr off -k 4 -c 100 -o Digital_Clock_map.ncd Digital_Clock.ngd Digital_Clock.pcf
+par -ise "C:/270/Lab5/Lab5.ise" -w -intstyle ise -ol std -t 1 Digital_Clock_map.ncd Digital_Clock.ncd Digital_Clock.pcf
+trce -ise "C:/270/Lab5/Lab5.ise" -intstyle ise -e 3 -s 4 -xml Digital_Clock Digital_Clock.ncd -o Digital_Clock.twr Digital_Clock.pcf -ucf Digital_Clock.ucf
+xst -ise "C:/270/Lab5/Lab5.ise" -intstyle ise -ifn "C:/270/Lab5/Digital_Clock.xst" -ofn "C:/270/Lab5/Digital_Clock.syr"
+ngdbuild -ise "C:/270/Lab5/Lab5.ise" -intstyle ise -dd _ngo  -nt timestamp -i -p xc3s1200e-fg320-4 "Digital_Clock.ngc" Digital_Clock.ngd
+map -ise "C:/270/Lab5/Lab5.ise" -intstyle ise -p xc3s1200e-fg320-4 -cm area -pr off -k 4 -c 100 -o Digital_Clock_map.ncd Digital_Clock.ngd Digital_Clock.pcf
+par -ise "C:/270/Lab5/Lab5.ise" -w -intstyle ise -ol std -t 1 Digital_Clock_map.ncd Digital_Clock.ncd Digital_Clock.pcf
+trce -ise "C:/270/Lab5/Lab5.ise" -intstyle ise -e 3 -s 4 -xml Digital_Clock Digital_Clock.ncd -o Digital_Clock.twr Digital_Clock.pcf -ucf Digital_Clock.ucf
+bitgen -ise "C:/270/Lab5/Lab5.ise" -intstyle ise -f Digital_Clock.ut Digital_Clock.ncd
+xst -ise "C:/270/Lab5/Lab5.ise" -intstyle ise -ifn "C:/270/Lab5/Digital_Clock.xst" -ofn "C:/270/Lab5/Digital_Clock.syr"
+ngdbuild -ise "C:/270/Lab5/Lab5.ise" -intstyle ise -dd _ngo  -nt timestamp -i -p xc3s1200e-fg320-4 "Digital_Clock.ngc" Digital_Clock.ngd
+map -ise "C:/270/Lab5/Lab5.ise" -intstyle ise -p xc3s1200e-fg320-4 -cm area -pr off -k 4 -c 100 -o Digital_Clock_map.ncd Digital_Clock.ngd Digital_Clock.pcf
+par -ise "C:/270/Lab5/Lab5.ise" -w -intstyle ise -ol std -t 1 Digital_Clock_map.ncd Digital_Clock.ncd Digital_Clock.pcf
+trce -ise "C:/270/Lab5/Lab5.ise" -intstyle ise -e 3 -s 4 -xml Digital_Clock Digital_Clock.ncd -o Digital_Clock.twr Digital_Clock.pcf -ucf Digital_Clock.ucf
+bitgen -ise "C:/270/Lab5/Lab5.ise" -intstyle ise -f Digital_Clock.ut Digital_Clock.ncd
+xst -ise "C:/270/Lab5/Lab5.ise" -intstyle ise -ifn "C:/270/Lab5/Digital_Clock.xst" -ofn "C:/270/Lab5/Digital_Clock.syr"
+ngdbuild -ise "C:/270/Lab5/Lab5.ise" -intstyle ise -dd _ngo  -nt timestamp -i -p xc3s1200e-fg320-4 "Digital_Clock.ngc" Digital_Clock.ngd
+map -ise "C:/270/Lab5/Lab5.ise" -intstyle ise -p xc3s1200e-fg320-4 -cm area -pr off -k 4 -c 100 -o Digital_Clock_map.ncd Digital_Clock.ngd Digital_Clock.pcf
+par -ise "C:/270/Lab5/Lab5.ise" -w -intstyle ise -ol std -t 1 Digital_Clock_map.ncd Digital_Clock.ncd Digital_Clock.pcf
+trce -ise "C:/270/Lab5/Lab5.ise" -intstyle ise -e 3 -s 4 -xml Digital_Clock Digital_Clock.ncd -o Digital_Clock.twr Digital_Clock.pcf -ucf Digital_Clock.ucf
+bitgen -ise "C:/270/Lab5/Lab5.ise" -intstyle ise -f Digital_Clock.ut Digital_Clock.ncd
+xst -ise "C:/270/Lab5/Lab5.ise" -intstyle ise -ifn "C:/270/Lab5/Digital_Clock.xst" -ofn "C:/270/Lab5/Digital_Clock.syr"
+xst -ise "C:/270/Lab5/Lab5.ise" -intstyle ise -ifn "C:/270/Lab5/Digital_Clock.xst" -ofn "C:/270/Lab5/Digital_Clock.syr"
+xst -ise "C:/270/Lab5/Lab5.ise" -intstyle ise -ifn "C:/270/Lab5/Digital_Clock.xst" -ofn "C:/270/Lab5/Digital_Clock.syr"
+ngdbuild -ise "C:/270/Lab5/Lab5.ise" -intstyle ise -dd _ngo  -nt timestamp -i -p xc3s1200e-fg320-4 "Digital_Clock.ngc" Digital_Clock.ngd
+map -ise "C:/270/Lab5/Lab5.ise" -intstyle ise -p xc3s1200e-fg320-4 -cm area -pr off -k 4 -c 100 -o Digital_Clock_map.ncd Digital_Clock.ngd Digital_Clock.pcf
+par -ise "C:/270/Lab5/Lab5.ise" -w -intstyle ise -ol std -t 1 Digital_Clock_map.ncd Digital_Clock.ncd Digital_Clock.pcf
+trce -ise "C:/270/Lab5/Lab5.ise" -intstyle ise -e 3 -s 4 -xml Digital_Clock Digital_Clock.ncd -o Digital_Clock.twr Digital_Clock.pcf -ucf Digital_Clock.ucf
+bitgen -ise "C:/270/Lab5/Lab5.ise" -intstyle ise -f Digital_Clock.ut Digital_Clock.ncd
+xst -ise "C:/270/Lab5/Lab5.ise" -intstyle ise -ifn "C:/270/Lab5/Digital_Clock.xst" -ofn "C:/270/Lab5/Digital_Clock.syr"
+ngdbuild -ise "C:/270/Lab5/Lab5.ise" -intstyle ise -dd _ngo  -nt timestamp -i -p xc3s1200e-fg320-4 "Digital_Clock.ngc" Digital_Clock.ngd
+map -ise "C:/270/Lab5/Lab5.ise" -intstyle ise -p xc3s1200e-fg320-4 -cm area -pr off -k 4 -c 100 -o Digital_Clock_map.ncd Digital_Clock.ngd Digital_Clock.pcf
+par -ise "C:/270/Lab5/Lab5.ise" -w -intstyle ise -ol std -t 1 Digital_Clock_map.ncd Digital_Clock.ncd Digital_Clock.pcf
+trce -ise "C:/270/Lab5/Lab5.ise" -intstyle ise -e 3 -s 4 -xml Digital_Clock Digital_Clock.ncd -o Digital_Clock.twr Digital_Clock.pcf -ucf Digital_Clock.ucf
+bitgen -ise "C:/270/Lab5/Lab5.ise" -intstyle ise -f Digital_Clock.ut Digital_Clock.ncd
+xst -ise "C:/270/Lab5/Lab5.ise" -intstyle ise -ifn "C:/270/Lab5/Digital_Clock.xst" -ofn "C:/270/Lab5/Digital_Clock.syr"
+xst -ise "C:/270/Lab5/Lab5.ise" -intstyle ise -ifn "C:/270/Lab5/Digital_Clock.xst" -ofn "C:/270/Lab5/Digital_Clock.syr"
+xst -ise "C:/270/Lab5/Lab5.ise" -intstyle ise -ifn "C:/270/Lab5/Digital_Clock.xst" -ofn "C:/270/Lab5/Digital_Clock.syr"
+ngdbuild -ise "C:/270/Lab5/Lab5.ise" -intstyle ise -dd _ngo  -nt timestamp -i -p xc3s1200e-fg320-4 "Digital_Clock.ngc" Digital_Clock.ngd
+map -ise "C:/270/Lab5/Lab5.ise" -intstyle ise -p xc3s1200e-fg320-4 -cm area -pr off -k 4 -c 100 -o Digital_Clock_map.ncd Digital_Clock.ngd Digital_Clock.pcf
+par -ise "C:/270/Lab5/Lab5.ise" -w -intstyle ise -ol std -t 1 Digital_Clock_map.ncd Digital_Clock.ncd Digital_Clock.pcf
+trce -ise "C:/270/Lab5/Lab5.ise" -intstyle ise -e 3 -s 4 -xml Digital_Clock Digital_Clock.ncd -o Digital_Clock.twr Digital_Clock.pcf -ucf Digital_Clock.ucf
+bitgen -ise "C:/270/Lab5/Lab5.ise" -intstyle ise -f Digital_Clock.ut Digital_Clock.ncd
+xst -ise "C:/270/Lab5/Lab5.ise" -intstyle ise -ifn "C:/270/Lab5/Digital_Clock.xst" -ofn "C:/270/Lab5/Digital_Clock.syr"
+ngdbuild -ise "C:/270/Lab5/Lab5.ise" -intstyle ise -dd _ngo  -nt timestamp -i -p xc3s1200e-fg320-4 "Digital_Clock.ngc" Digital_Clock.ngd
+map -ise "C:/270/Lab5/Lab5.ise" -intstyle ise -p xc3s1200e-fg320-4 -cm area -pr off -k 4 -c 100 -o Digital_Clock_map.ncd Digital_Clock.ngd Digital_Clock.pcf
+par -ise "C:/270/Lab5/Lab5.ise" -w -intstyle ise -ol std -t 1 Digital_Clock_map.ncd Digital_Clock.ncd Digital_Clock.pcf
+trce -ise "C:/270/Lab5/Lab5.ise" -intstyle ise -e 3 -s 4 -xml Digital_Clock Digital_Clock.ncd -o Digital_Clock.twr Digital_Clock.pcf -ucf Digital_Clock.ucf
+bitgen -ise "C:/270/Lab5/Lab5.ise" -intstyle ise -f Digital_Clock.ut Digital_Clock.ncd
+xst -ise "C:/270/Lab5/Lab5.ise" -intstyle ise -ifn "C:/270/Lab5/Digital_Clock.xst" -ofn "C:/270/Lab5/Digital_Clock.syr"
+ngdbuild -ise "C:/270/Lab5/Lab5.ise" -intstyle ise -dd _ngo  -nt timestamp -i -p xc3s1200e-fg320-4 "Digital_Clock.ngc" Digital_Clock.ngd
+map -ise "C:/270/Lab5/Lab5.ise" -intstyle ise -p xc3s1200e-fg320-4 -cm area -pr off -k 4 -c 100 -o Digital_Clock_map.ncd Digital_Clock.ngd Digital_Clock.pcf
+par -ise "C:/270/Lab5/Lab5.ise" -w -intstyle ise -ol std -t 1 Digital_Clock_map.ncd Digital_Clock.ncd Digital_Clock.pcf
+trce -ise "C:/270/Lab5/Lab5.ise" -intstyle ise -e 3 -s 4 -xml Digital_Clock Digital_Clock.ncd -o Digital_Clock.twr Digital_Clock.pcf -ucf Digital_Clock.ucf
+bitgen -ise "C:/270/Lab5/Lab5.ise" -intstyle ise -f Digital_Clock.ut Digital_Clock.ncd
+xst -ise "C:/270/Lab5/Lab5.ise" -intstyle ise -ifn "C:/270/Lab5/Digital_Clock.xst" -ofn "C:/270/Lab5/Digital_Clock.syr"
+xst -ise "C:/270/Lab5/Lab5.ise" -intstyle ise -ifn "C:/270/Lab5/Digital_Clock.xst" -ofn "C:/270/Lab5/Digital_Clock.syr"
+xst -ise "C:/270/Lab5/Lab5.ise" -intstyle ise -ifn "C:/270/Lab5/Digital_Clock.xst" -ofn "C:/270/Lab5/Digital_Clock.syr"
+ngdbuild -ise "C:/270/Lab5/Lab5.ise" -intstyle ise -dd _ngo  -nt timestamp -i -p xc3s1200e-fg320-4 "Digital_Clock.ngc" Digital_Clock.ngd
+map -ise "C:/270/Lab5/Lab5.ise" -intstyle ise -p xc3s1200e-fg320-4 -cm area -pr off -k 4 -c 100 -o Digital_Clock_map.ncd Digital_Clock.ngd Digital_Clock.pcf
+par -ise "C:/270/Lab5/Lab5.ise" -w -intstyle ise -ol std -t 1 Digital_Clock_map.ncd Digital_Clock.ncd Digital_Clock.pcf
+trce -ise "C:/270/Lab5/Lab5.ise" -intstyle ise -e 3 -s 4 -xml Digital_Clock Digital_Clock.ncd -o Digital_Clock.twr Digital_Clock.pcf -ucf Digital_Clock.ucf
+bitgen -ise "C:/270/Lab5/Lab5.ise" -intstyle ise -f Digital_Clock.ut Digital_Clock.ncd
+xst -ise "C:/270/Lab5/Lab5.ise" -intstyle ise -ifn "C:/270/Lab5/Digital_Clock.xst" -ofn "C:/270/Lab5/Digital_Clock.syr"
+ngdbuild -ise "C:/270/Lab5/Lab5.ise" -intstyle ise -dd _ngo  -nt timestamp -i -p xc3s1200e-fg320-4 "Digital_Clock.ngc" Digital_Clock.ngd
+map -ise "C:/270/Lab5/Lab5.ise" -intstyle ise -p xc3s1200e-fg320-4 -cm area -pr off -k 4 -c 100 -o Digital_Clock_map.ncd Digital_Clock.ngd Digital_Clock.pcf
+par -ise "C:/270/Lab5/Lab5.ise" -w -intstyle ise -ol std -t 1 Digital_Clock_map.ncd Digital_Clock.ncd Digital_Clock.pcf
+trce -ise "C:/270/Lab5/Lab5.ise" -intstyle ise -e 3 -s 4 -xml Digital_Clock Digital_Clock.ncd -o Digital_Clock.twr Digital_Clock.pcf -ucf Digital_Clock.ucf
+bitgen -ise "C:/270/Lab5/Lab5.ise" -intstyle ise -f Digital_Clock.ut Digital_Clock.ncd
+xst -ise "C:/270/Lab5/Lab5.ise" -intstyle ise -ifn "C:/270/Lab5/Digital_Clock.xst" -ofn "C:/270/Lab5/Digital_Clock.syr"
+xst -ise "C:/270/Lab5/Lab5.ise" -intstyle ise -ifn "C:/270/Lab5/Digital_Clock.xst" -ofn "C:/270/Lab5/Digital_Clock.syr"
+ngdbuild -ise "C:/270/Lab5/Lab5.ise" -intstyle ise -dd _ngo  -nt timestamp -i -p xc3s1200e-fg320-4 "Digital_Clock.ngc" Digital_Clock.ngd
+map -ise "C:/270/Lab5/Lab5.ise" -intstyle ise -p xc3s1200e-fg320-4 -cm area -pr off -k 4 -c 100 -o Digital_Clock_map.ncd Digital_Clock.ngd Digital_Clock.pcf
+par -ise "C:/270/Lab5/Lab5.ise" -w -intstyle ise -ol std -t 1 Digital_Clock_map.ncd Digital_Clock.ncd Digital_Clock.pcf
+trce -ise "C:/270/Lab5/Lab5.ise" -intstyle ise -e 3 -s 4 -xml Digital_Clock Digital_Clock.ncd -o Digital_Clock.twr Digital_Clock.pcf -ucf Digital_Clock.ucf
+bitgen -ise "C:/270/Lab5/Lab5.ise" -intstyle ise -f Digital_Clock.ut Digital_Clock.ncd
+xst -ise "C:/270/Lab5/Lab5.ise" -intstyle ise -ifn "C:/270/Lab5/Digital_Clock.xst" -ofn "C:/270/Lab5/Digital_Clock.syr"
+ngdbuild -ise "C:/270/Lab5/Lab5.ise" -intstyle ise -dd _ngo  -nt timestamp -i -p xc3s1200e-fg320-4 "Digital_Clock.ngc" Digital_Clock.ngd
+map -ise "C:/270/Lab5/Lab5.ise" -intstyle ise -p xc3s1200e-fg320-4 -cm area -pr off -k 4 -c 100 -o Digital_Clock_map.ncd Digital_Clock.ngd Digital_Clock.pcf
+par -ise "C:/270/Lab5/Lab5.ise" -w -intstyle ise -ol std -t 1 Digital_Clock_map.ncd Digital_Clock.ncd Digital_Clock.pcf
+trce -ise "C:/270/Lab5/Lab5.ise" -intstyle ise -e 3 -s 4 -xml Digital_Clock Digital_Clock.ncd -o Digital_Clock.twr Digital_Clock.pcf -ucf Digital_Clock.ucf
+bitgen -ise "C:/270/Lab5/Lab5.ise" -intstyle ise -f Digital_Clock.ut Digital_Clock.ncd
+xst -ise "C:/270/Lab5/Lab5.ise" -intstyle ise -ifn "C:/270/Lab5/Digital_Clock.xst" -ofn "C:/270/Lab5/Digital_Clock.syr"
+ngdbuild -ise "C:/270/Lab5/Lab5.ise" -intstyle ise -dd _ngo  -nt timestamp -i -p xc3s1200e-fg320-4 "Digital_Clock.ngc" Digital_Clock.ngd
+map -ise "C:/270/Lab5/Lab5.ise" -intstyle ise -p xc3s1200e-fg320-4 -cm area -pr off -k 4 -c 100 -o Digital_Clock_map.ncd Digital_Clock.ngd Digital_Clock.pcf
+par -ise "C:/270/Lab5/Lab5.ise" -w -intstyle ise -ol std -t 1 Digital_Clock_map.ncd Digital_Clock.ncd Digital_Clock.pcf
+trce -ise "C:/270/Lab5/Lab5.ise" -intstyle ise -e 3 -s 4 -xml Digital_Clock Digital_Clock.ncd -o Digital_Clock.twr Digital_Clock.pcf -ucf Digital_Clock.ucf
+bitgen -ise "C:/270/Lab5/Lab5.ise" -intstyle ise -f Digital_Clock.ut Digital_Clock.ncd
+xst -ise "C:/270/Lab5/Lab5.ise" -intstyle ise -ifn "C:/270/Lab5/Digital_Clock.xst" -ofn "C:/270/Lab5/Digital_Clock.syr"
+ngdbuild -ise "C:/270/Lab5/Lab5.ise" -intstyle ise -dd _ngo  -nt timestamp -i -p xc3s1200e-fg320-4 "Digital_Clock.ngc" Digital_Clock.ngd
+map -ise "C:/270/Lab5/Lab5.ise" -intstyle ise -p xc3s1200e-fg320-4 -cm area -pr off -k 4 -c 100 -o Digital_Clock_map.ncd Digital_Clock.ngd Digital_Clock.pcf
+par -ise "C:/270/Lab5/Lab5.ise" -w -intstyle ise -ol std -t 1 Digital_Clock_map.ncd Digital_Clock.ncd Digital_Clock.pcf
+trce -ise "C:/270/Lab5/Lab5.ise" -intstyle ise -e 3 -s 4 -xml Digital_Clock Digital_Clock.ncd -o Digital_Clock.twr Digital_Clock.pcf -ucf Digital_Clock.ucf
+bitgen -ise "C:/270/Lab5/Lab5.ise" -intstyle ise -f Digital_Clock.ut Digital_Clock.ncd
+xst -ise "C:/270/Lab5/Lab5.ise" -intstyle ise -ifn "C:/270/Lab5/Digital_Clock.xst" -ofn "C:/270/Lab5/Digital_Clock.syr"
+ngdbuild -ise "C:/270/Lab5/Lab5.ise" -intstyle ise -dd _ngo  -nt timestamp -i -p xc3s1200e-fg320-4 "Digital_Clock.ngc" Digital_Clock.ngd
+map -ise "C:/270/Lab5/Lab5.ise" -intstyle ise -p xc3s1200e-fg320-4 -cm area -pr off -k 4 -c 100 -o Digital_Clock_map.ncd Digital_Clock.ngd Digital_Clock.pcf
+par -ise "C:/270/Lab5/Lab5.ise" -w -intstyle ise -ol std -t 1 Digital_Clock_map.ncd Digital_Clock.ncd Digital_Clock.pcf
+trce -ise "C:/270/Lab5/Lab5.ise" -intstyle ise -e 3 -s 4 -xml Digital_Clock Digital_Clock.ncd -o Digital_Clock.twr Digital_Clock.pcf -ucf Digital_Clock.ucf
+bitgen -ise "C:/270/Lab5/Lab5.ise" -intstyle ise -f Digital_Clock.ut Digital_Clock.ncd
+xst -ise "C:/270/Lab5/Lab5.ise" -intstyle ise -ifn "C:/270/Lab5/Digital_Clock.xst" -ofn "C:/270/Lab5/Digital_Clock.syr"
+xst -ise "C:/270/Lab5/Lab5.ise" -intstyle ise -ifn "C:/270/Lab5/Digital_Clock.xst" -ofn "C:/270/Lab5/Digital_Clock.syr"
+ngdbuild -ise "C:/270/Lab5/Lab5.ise" -intstyle ise -dd _ngo  -nt timestamp -i -p xc3s1200e-fg320-4 "Digital_Clock.ngc" Digital_Clock.ngd
+map -ise "C:/270/Lab5/Lab5.ise" -intstyle ise -p xc3s1200e-fg320-4 -cm area -pr off -k 4 -c 100 -o Digital_Clock_map.ncd Digital_Clock.ngd Digital_Clock.pcf
+par -ise "C:/270/Lab5/Lab5.ise" -w -intstyle ise -ol std -t 1 Digital_Clock_map.ncd Digital_Clock.ncd Digital_Clock.pcf
+trce -ise "C:/270/Lab5/Lab5.ise" -intstyle ise -e 3 -s 4 -xml Digital_Clock Digital_Clock.ncd -o Digital_Clock.twr Digital_Clock.pcf -ucf Digital_Clock.ucf
+bitgen -ise "C:/270/Lab5/Lab5.ise" -intstyle ise -f Digital_Clock.ut Digital_Clock.ncd

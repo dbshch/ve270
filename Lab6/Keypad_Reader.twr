@@ -1,0 +1,121 @@
+--------------------------------------------------------------------------------
+Release 10.1 Trace  (nt)
+Copyright (c) 1995-2008 Xilinx, Inc.  All rights reserved.
+
+C:\Xilinx\10.1\ISE\bin\nt\unwrapped\trce.exe -ise C:/270/Lab6/Lab6.ise
+-intstyle ise -e 3 -s 4 -xml Keypad_Reader Keypad_Reader.ncd -o
+Keypad_Reader.twr Keypad_Reader.pcf -ucf Keypad.ucf
+
+Design file:              Keypad_Reader.ncd
+Physical constraint file: Keypad_Reader.pcf
+Device,package,speed:     xc3s1200e,fg320,-4 (PRODUCTION 1.27 2008-01-09)
+Report level:             error report
+
+Environment Variable      Effect 
+--------------------      ------ 
+NONE                      No environment variables were set
+--------------------------------------------------------------------------------
+
+INFO:Timing:2698 - No timing constraints found, doing default enumeration.
+INFO:Timing:2752 - To get complete path coverage, use the unconstrained paths 
+   option. All paths that are not constrained will be reported in the 
+   unconstrained paths section(s) of the report.
+INFO:Timing:3339 - The clock-to-out numbers in this timing report are based on 
+   a 50 Ohm transmission line loading model.  For the details of this model, 
+   and for more information on accounting for different loading conditions, 
+   please see the device datasheet.
+
+
+
+Data Sheet report:
+-----------------
+All values displayed in nanoseconds (ns)
+
+Setup/Hold to clock Clk
+------------+------------+------------+------------------+--------+
+            |  Setup to  |  Hold to   |                  | Clock  |
+Source      | clk (edge) | clk (edge) |Internal Clock(s) | Phase  |
+------------+------------+------------+------------------+--------+
+Reset       |    3.178(R)|    0.750(R)|Clk_BUFGP         |   0.000|
+row<0>      |    4.061(R)|   -0.078(R)|Clk_BUFGP         |   0.000|
+row<1>      |    4.492(R)|   -0.423(R)|Clk_BUFGP         |   0.000|
+row<2>      |    4.924(R)|   -0.769(R)|Clk_BUFGP         |   0.000|
+row<3>      |    5.567(R)|   -1.284(R)|Clk_BUFGP         |   0.000|
+------------+------------+------------+------------------+--------+
+
+Clock Clk to Pad
+------------+------------+------------------+--------+
+            | clk (edge) |                  | Clock  |
+Destination |   to PAD   |Internal Clock(s) | Phase  |
+------------+------------+------------------+--------+
+AN<0>       |   10.861(R)|Clk_BUFGP         |   0.000|
+SSD<0>      |   12.043(R)|Clk_BUFGP         |   0.000|
+SSD<1>      |   12.756(R)|Clk_BUFGP         |   0.000|
+SSD<2>      |   11.971(R)|Clk_BUFGP         |   0.000|
+SSD<3>      |   12.138(R)|Clk_BUFGP         |   0.000|
+SSD<4>      |   11.635(R)|Clk_BUFGP         |   0.000|
+SSD<5>      |   11.322(R)|Clk_BUFGP         |   0.000|
+SSD<6>      |   12.900(R)|Clk_BUFGP         |   0.000|
+code<0>     |   11.139(R)|Clk_BUFGP         |   0.000|
+code<1>     |   11.459(R)|Clk_BUFGP         |   0.000|
+col<0>      |    8.055(R)|Clk_BUFGP         |   0.000|
+col<1>      |    8.365(R)|Clk_BUFGP         |   0.000|
+col<2>      |    8.330(R)|Clk_BUFGP         |   0.000|
+col<3>      |    8.326(R)|Clk_BUFGP         |   0.000|
+------------+------------+------------------+--------+
+
+Clock to Setup on destination clock Clk
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+Clk            |    4.341|         |         |         |
+---------------+---------+---------+---------+---------+
+
+Pad to Pad
+---------------+---------------+---------+
+Source Pad     |Destination Pad|  Delay  |
+---------------+---------------+---------+
+row<0>         |AN<0>          |    6.802|
+row<1>         |AN<0>          |    7.208|
+row<1>         |SSD<0>         |    7.394|
+row<1>         |SSD<1>         |    8.212|
+row<1>         |SSD<2>         |    7.185|
+row<1>         |SSD<3>         |    7.659|
+row<1>         |SSD<4>         |    7.814|
+row<1>         |SSD<5>         |    7.931|
+row<1>         |SSD<6>         |    8.347|
+row<1>         |code<2>        |    6.716|
+row<2>         |AN<0>          |    7.416|
+row<2>         |SSD<0>         |    9.140|
+row<2>         |SSD<1>         |    7.870|
+row<2>         |SSD<2>         |    9.088|
+row<2>         |SSD<3>         |    7.277|
+row<2>         |SSD<4>         |    7.999|
+row<2>         |SSD<5>         |    8.557|
+row<2>         |SSD<6>         |    7.372|
+row<2>         |code<3>        |    6.669|
+row<3>         |AN<0>          |    8.334|
+row<3>         |SSD<0>         |    9.549|
+row<3>         |SSD<1>         |    9.388|
+row<3>         |SSD<2>         |    9.497|
+row<3>         |SSD<3>         |    8.835|
+row<3>         |SSD<4>         |    8.990|
+row<3>         |SSD<5>         |    9.107|
+row<3>         |SSD<6>         |    9.523|
+row<3>         |code<2>        |    7.892|
+row<3>         |code<3>        |    7.078|
+---------------+---------------+---------+
+
+
+Analysis completed Fri Jul 14 18:52:38 2017 
+--------------------------------------------------------------------------------
+
+Trace Settings:
+-------------------------
+Trace Settings 
+
+Peak Memory Usage: 115 MB
+
+
+

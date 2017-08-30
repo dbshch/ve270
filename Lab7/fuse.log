@@ -1,0 +1,40 @@
+Determining compilation order of HDL files
+Analyzing Verilog file calculator.v
+Analyzing Verilog file test.v
+Analyzing Verilog file C:/Xilinx/10.1/ISE/verilog/src/glbl.v
+Saving Verilog parse-tree work.calculator into
+c:/270/lab7/isim/work/calculator.sdb
+Saving Verilog parse-tree work.calc into c:/270/lab7/isim/work/calc.sdb
+Saving Verilog parse-tree work.Show_ID into c:/270/lab7/isim/work/@show_@i@d.sdb
+Saving Verilog parse-tree work.Clock_Divider into
+c:/270/lab7/isim/work/@clock_@divider.sdb
+Saving Verilog parse-tree work.Clock_Divider_500Hz into
+c:/270/lab7/isim/work/@clock_@divider_500@hz.sdb
+Saving Verilog parse-tree work.SSD_Driver into
+c:/270/lab7/isim/work/@s@s@d_@driver.sdb
+Saving Verilog parse-tree work.SSD_Driver_neg into
+c:/270/lab7/isim/work/@s@s@d_@driver_neg.sdb
+Saving Verilog parse-tree work.Ring_Counter into
+c:/270/lab7/isim/work/@ring_@counter.sdb
+Saving Verilog parse-tree work.test into c:/270/lab7/isim/work/test.sdb
+Saving Verilog parse-tree work.glbl into c:/270/lab7/isim/work/glbl.sdb
+Starting static elaboration
+WARNING:HDLCompiler:1016 - "test.v" Line 39. Port add is not connected to this
+   instance
+Completed static elaboration
+Fuse Memory Usage: 67324 Kb
+Fuse CPU Usage: 155 ms
+Compiling module glbl
+Compiling module Show_ID
+Compiling module calc
+Compiling module Clock_Divider
+Compiling module Clock_Divider_500Hz
+Compiling module Ring_Counter
+Compiling module SSD_Driver
+Compiling module SSD_Driver_neg
+Compiling module calculator
+Compiling module test
+Compiled 10 Verilog Units
+Built simulation executable test_isim_beh.exe
+Fuse Memory Usage: 68608 Kb
+Fuse CPU Usage: 202 ms

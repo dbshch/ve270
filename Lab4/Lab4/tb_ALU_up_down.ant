@@ -1,0 +1,189 @@
+--------------------------------------------------------------------------------
+-- Copyright (c) 1995-2003 Xilinx, Inc.
+-- All Right Reserved.
+--------------------------------------------------------------------------------
+--   ____  ____ 
+--  /   /\/   / 
+-- /___/  \  /    Vendor: Xilinx 
+-- \   \   \/     Version : 10.1
+--  \   \         Application : ISE
+--  /   /         Filename : tb_ALU_up_down.ant
+-- /___/   /\     Timestamp : Thu Jun 22 10:55:29 2017
+-- \   \  /  \ 
+--  \___\/\___\ 
+--
+--Command: 
+--Design Name: tb_ALU_up_down
+--Device: Xilinx
+--
+
+library UNISIM;
+use UNISIM.Vcomponents.ALL;
+library ieee;
+use ieee.std_logic_1164.ALL;
+use ieee.numeric_std.ALL;
+USE IEEE.STD_LOGIC_TEXTIO.ALL;
+USE IEEE.STD_LOGIC_ARITH.ALL;
+USE IEEE.STD_LOGIC_UNSIGNED.ALL;
+USE STD.TEXTIO.ALL;
+
+ENTITY tb_ALU_up_down IS
+END tb_ALU_up_down;
+
+ARCHITECTURE testbench_arch OF tb_ALU_up_down IS
+    FILE RESULTS: TEXT OPEN WRITE_MODE IS "C:\Users\xiongzeyu\Desktop\Lab4\tb_ALU_up_down.ano";
+
+    COMPONENT ALU_up_down
+        PORT (
+            Q0 : In std_logic;
+            Q1 : In std_logic;
+            Q2 : In std_logic;
+            Q3 : In std_logic;
+            up : In std_logic;
+            newQ0 : Out std_logic;
+            newQ1 : Out std_logic;
+            newQ2 : Out std_logic;
+            newQ3 : Out std_logic
+        );
+    END COMPONENT;
+
+    SIGNAL Q0 : std_logic := '1';
+    SIGNAL Q1 : std_logic := '1';
+    SIGNAL Q2 : std_logic := '1';
+    SIGNAL Q3 : std_logic := '0';
+    SIGNAL up : std_logic := '0';
+    SIGNAL newQ0 : std_logic := '0';
+    SIGNAL newQ1 : std_logic := '0';
+    SIGNAL newQ2 : std_logic := '0';
+    SIGNAL newQ3 : std_logic := '0';
+
+    SHARED VARIABLE TX_ERROR : INTEGER := 0;
+    SHARED VARIABLE TX_OUT : LINE;
+
+    BEGIN
+        UUT : ALU_up_down
+        PORT MAP (
+            Q0 => Q0,
+            Q1 => Q1,
+            Q2 => Q2,
+            Q3 => Q3,
+            up => up,
+            newQ0 => newQ0,
+            newQ1 => newQ1,
+            newQ2 => newQ2,
+            newQ3 => newQ3
+        );
+
+        PROCESS    -- Annotation process
+            VARIABLE TX_TIME : INTEGER := 0;
+
+            PROCEDURE ANNOTATE_newQ0(
+                TX_TIME : INTEGER
+            ) IS
+                VARIABLE TX_STR : String(1 to 4096);
+                VARIABLE TX_LOC : LINE;
+            BEGIN
+                STD.TEXTIO.write(TX_LOC, string'("Annotate["));
+                STD.TEXTIO.write(TX_LOC, TX_TIME);
+                STD.TEXTIO.write(TX_LOC, string'(", newQ0, "));
+                IEEE.STD_LOGIC_TEXTIO.write(TX_LOC, newQ0);
+                STD.TEXTIO.write(TX_LOC, string'("]"));
+                TX_STR(TX_LOC.all'range) := TX_LOC.all;
+                STD.TEXTIO.writeline(RESULTS, TX_LOC);
+                STD.TEXTIO.Deallocate(TX_LOC);
+            END;
+            PROCEDURE ANNOTATE_newQ1(
+                TX_TIME : INTEGER
+            ) IS
+                VARIABLE TX_STR : String(1 to 4096);
+                VARIABLE TX_LOC : LINE;
+            BEGIN
+                STD.TEXTIO.write(TX_LOC, string'("Annotate["));
+                STD.TEXTIO.write(TX_LOC, TX_TIME);
+                STD.TEXTIO.write(TX_LOC, string'(", newQ1, "));
+                IEEE.STD_LOGIC_TEXTIO.write(TX_LOC, newQ1);
+                STD.TEXTIO.write(TX_LOC, string'("]"));
+                TX_STR(TX_LOC.all'range) := TX_LOC.all;
+                STD.TEXTIO.writeline(RESULTS, TX_LOC);
+                STD.TEXTIO.Deallocate(TX_LOC);
+            END;
+            PROCEDURE ANNOTATE_newQ2(
+                TX_TIME : INTEGER
+            ) IS
+                VARIABLE TX_STR : String(1 to 4096);
+                VARIABLE TX_LOC : LINE;
+            BEGIN
+                STD.TEXTIO.write(TX_LOC, string'("Annotate["));
+                STD.TEXTIO.write(TX_LOC, TX_TIME);
+                STD.TEXTIO.write(TX_LOC, string'(", newQ2, "));
+                IEEE.STD_LOGIC_TEXTIO.write(TX_LOC, newQ2);
+                STD.TEXTIO.write(TX_LOC, string'("]"));
+                TX_STR(TX_LOC.all'range) := TX_LOC.all;
+                STD.TEXTIO.writeline(RESULTS, TX_LOC);
+                STD.TEXTIO.Deallocate(TX_LOC);
+            END;
+            PROCEDURE ANNOTATE_newQ3(
+                TX_TIME : INTEGER
+            ) IS
+                VARIABLE TX_STR : String(1 to 4096);
+                VARIABLE TX_LOC : LINE;
+            BEGIN
+                STD.TEXTIO.write(TX_LOC, string'("Annotate["));
+                STD.TEXTIO.write(TX_LOC, TX_TIME);
+                STD.TEXTIO.write(TX_LOC, string'(", newQ3, "));
+                IEEE.STD_LOGIC_TEXTIO.write(TX_LOC, newQ3);
+                STD.TEXTIO.write(TX_LOC, string'("]"));
+                TX_STR(TX_LOC.all'range) := TX_LOC.all;
+                STD.TEXTIO.writeline(RESULTS, TX_LOC);
+                STD.TEXTIO.Deallocate(TX_LOC);
+            END;
+        BEGIN
+            WAIT for 1 fs;
+            ANNOTATE_newQ0(0);
+            ANNOTATE_newQ1(0);
+            ANNOTATE_newQ2(0);
+            ANNOTATE_newQ3(0);
+            ANNO_LOOP : LOOP
+                WAIT for 1 ns;
+                TX_TIME := TX_TIME + 1;
+                ANNOTATE_newQ0(TX_TIME);
+                ANNOTATE_newQ1(TX_TIME);
+                ANNOTATE_newQ2(TX_TIME);
+                ANNOTATE_newQ3(TX_TIME);
+                WAIT for 50 ns;
+                TX_TIME := TX_TIME + 50;
+            END LOOP ANNO_LOOP;
+        END PROCESS;
+
+        PROCESS
+            BEGIN
+                -- -------------  Current Time:  51ns
+                WAIT FOR 51 ns;
+                Q2 <= '0';
+                -- -------------------------------------
+                -- -------------  Current Time:  102ns
+                WAIT FOR 51 ns;
+                Q1 <= '0';
+                up <= '1';
+                -- -------------------------------------
+                -- -------------  Current Time:  153ns
+                WAIT FOR 51 ns;
+                Q2 <= '1';
+                -- -------------------------------------
+                -- -------------  Current Time:  204ns
+                WAIT FOR 51 ns;
+                Q0 <= '0';
+                Q2 <= '0';
+                up <= '0';
+                -- -------------------------------------
+                WAIT FOR 796 ns;
+
+                STD.TEXTIO.write(TX_OUT, string'("Total[]"));
+                STD.TEXTIO.writeline(RESULTS, TX_OUT);
+                ASSERT (FALSE) REPORT
+                    "Success! Simulation for annotation completed"
+                    SEVERITY FAILURE;
+            END PROCESS;
+
+    END testbench_arch;
+

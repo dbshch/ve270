@@ -1,0 +1,41 @@
+Command line:
+   ./Q5test_isim_beh.exe
+     -intstyle  ise
+     -ipchost  localhost
+     -ipcport  3319
+
+Thu Jun 22 02:32:35 2017
+
+Total Line Count : 25
+
+ Elaboration Time: 0.015625 sec
+
+ Current Memory Usage: 154.89 Meg
+
+ Total Signals          : 14
+ Total Nets             : 15
+ Total Signal Drivers   : 7
+ Total Blocks           : 3
+ Total Primitive Blocks : 2
+ Total Processes        : 12
+ Total Traceable Variables  : 20
+ Total Scalar Nets and Variables : 100
+ntrace select -o on -n /Q5test/Q 
+ntrace select -o on -n /Q5test/upper 
+ntrace select -o on -n /Q5test/reset 
+ntrace select -o on -n /Q5test/clock 
+ntrace start 
+isimrun 1000 ns 
+Simulator is doing circuit initialization process.
+Finished circuit initialization process.
+restart
+isimrun 3000 ns 
+Simulator is doing circuit initialization process.
+Finished circuit initialization process.
+
+ Total Simulation Time: 0.078125 sec
+
+ Current Memory Usage: 165.442 Meg
+
+Thu Jun 22 02:34:58 2017
+

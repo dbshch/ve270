@@ -1,0 +1,326 @@
+xst -ise "C:/270/Lab7/Lab7.ise" -intstyle ise -ifn "C:/270/Lab7/calculator.xst" -ofn "C:/270/Lab7/calculator.syr"
+xst -ise "C:/270/Lab7/Lab7.ise" -intstyle ise -ifn "C:/270/Lab7/calculator.xst" -ofn "C:/270/Lab7/calculator.syr"
+xst -ise "C:/270/Lab7/Lab7.ise" -intstyle ise -ifn "C:/270/Lab7/calculator.xst" -ofn "C:/270/Lab7/calculator.syr"
+xst -ise "C:/270/Lab7/Lab7.ise" -intstyle ise -ifn "C:/270/Lab7/calculator.xst" -ofn "C:/270/Lab7/calculator.syr"
+xst -ise "C:/270/Lab7/Lab7.ise" -intstyle ise -ifn "C:/270/Lab7/calculator.xst" -ofn "C:/270/Lab7/calculator.syr"
+xst -ise "C:/270/Lab7/Lab7.ise" -intstyle ise -ifn "C:/270/Lab7/calculator.xst" -ofn "C:/270/Lab7/calculator.syr"
+xst -ise "C:/270/Lab7/Lab7.ise" -intstyle ise -ifn "C:/270/Lab7/calculator.xst" -ofn "C:/270/Lab7/calculator.syr"
+xst -ise "C:/270/Lab7/Lab7.ise" -intstyle ise -ifn "C:/270/Lab7/calculator.xst" -ofn "C:/270/Lab7/calculator.syr"
+xst -ise "C:/270/Lab7/Lab7.ise" -intstyle ise -ifn "C:/270/Lab7/calculator.xst" -ofn "C:/270/Lab7/calculator.syr"
+xst -ise "C:/270/Lab7/Lab7.ise" -intstyle ise -ifn "C:/270/Lab7/calculator.xst" -ofn "C:/270/Lab7/calculator.syr"
+xst -ise "C:/270/Lab7/Lab7.ise" -intstyle ise -ifn "C:/270/Lab7/calculator.xst" -ofn "C:/270/Lab7/calculator.syr"
+xst -ise "C:/270/Lab7/Lab7.ise" -intstyle ise -ifn "C:/270/Lab7/calculator.xst" -ofn "C:/270/Lab7/calculator.syr"
+xst -ise "C:/270/Lab7/Lab7.ise" -intstyle ise -ifn "C:/270/Lab7/calculator.xst" -ofn "C:/270/Lab7/calculator.syr"
+xst -ise "C:/270/Lab7/Lab7.ise" -intstyle ise -ifn "C:/270/Lab7/calculator.xst" -ofn "C:/270/Lab7/calculator.syr"
+xst -ise "C:/270/Lab7/Lab7.ise" -intstyle ise -ifn "C:/270/Lab7/calculator.xst" -ofn "C:/270/Lab7/calculator.syr"
+xst -ise "C:/270/Lab7/Lab7.ise" -intstyle ise -ifn "C:/270/Lab7/calculator.xst" -ofn "C:/270/Lab7/calculator.syr"
+xst -ise "C:/270/Lab7/Lab7.ise" -intstyle ise -ifn "C:/270/Lab7/calculator.xst" -ofn "C:/270/Lab7/calculator.syr"
+xst -ise "C:/270/Lab7/Lab7.ise" -intstyle ise -ifn "C:/270/Lab7/calculator.xst" -ofn "C:/270/Lab7/calculator.syr"
+xst -ise "C:/270/Lab7/Lab7.ise" -intstyle ise -ifn "C:/270/Lab7/calculator.xst" -ofn "C:/270/Lab7/calculator.syr"
+xst -ise "C:/270/Lab7/Lab7.ise" -intstyle ise -ifn "C:/270/Lab7/calculator.xst" -ofn "C:/270/Lab7/calculator.syr"
+xst -ise "C:/270/Lab7/Lab7.ise" -intstyle ise -ifn "C:/270/Lab7/calculator.xst" -ofn "C:/270/Lab7/calculator.syr"
+xst -ise "C:/270/Lab7/Lab7.ise" -intstyle ise -ifn "C:/270/Lab7/calculator.xst" -ofn "C:/270/Lab7/calculator.syr"
+xst -ise "C:/270/Lab7/Lab7.ise" -intstyle ise -ifn "C:/270/Lab7/calculator.xst" -ofn "C:/270/Lab7/calculator.syr"
+ngdbuild -ise "C:/270/Lab7/Lab7.ise" -intstyle ise -dd _ngo  -nt timestamp -i -p xc3s1200e-fg320-4 "calculator.ngc" calculator.ngd
+map -ise "C:/270/Lab7/Lab7.ise" -intstyle ise -p xc3s1200e-fg320-4 -cm area -pr off -k 4 -c 100 -o calculator_map.ncd calculator.ngd calculator.pcf
+par -ise "C:/270/Lab7/Lab7.ise" -w -intstyle ise -ol std -t 1 calculator_map.ncd calculator.ncd calculator.pcf
+xst -ise "C:/270/Lab7/Lab7.ise" -intstyle ise -ifn "C:/270/Lab7/calculator.xst" -ofn "C:/270/Lab7/calculator.syr"
+ngdbuild -ise "C:/270/Lab7/Lab7.ise" -intstyle ise -dd _ngo  -nt timestamp -i -p xc3s1200e-fg320-4 "calculator.ngc" calculator.ngd
+map -ise "C:/270/Lab7/Lab7.ise" -intstyle ise -p xc3s1200e-fg320-4 -cm area -pr off -k 4 -c 100 -o calculator_map.ncd calculator.ngd calculator.pcf
+par -ise "C:/270/Lab7/Lab7.ise" -w -intstyle ise -ol std -t 1 calculator_map.ncd calculator.ncd calculator.pcf
+trce -ise "C:/270/Lab7/Lab7.ise" -intstyle ise -e 3 -s 4 -xml calculator calculator.ncd -o calculator.twr calculator.pcf -ucf calculator.ucf
+bitgen -ise "C:/270/Lab7/Lab7.ise" -intstyle ise -f calculator.ut calculator.ncd
+xst -ise "C:/270/Lab7/Lab7.ise" -intstyle ise -ifn "C:/270/Lab7/calculator.xst" -ofn "C:/270/Lab7/calculator.syr"
+xst -ise "C:/270/Lab7/Lab7.ise" -intstyle ise -ifn "C:/270/Lab7/calculator.xst" -ofn "C:/270/Lab7/calculator.syr"
+ngdbuild -ise "C:/270/Lab7/Lab7.ise" -intstyle ise -dd _ngo  -nt timestamp -i -p xc3s1200e-fg320-4 "calculator.ngc" calculator.ngd
+map -ise "C:/270/Lab7/Lab7.ise" -intstyle ise -p xc3s1200e-fg320-4 -cm area -pr off -k 4 -c 100 -o calculator_map.ncd calculator.ngd calculator.pcf
+par -ise "C:/270/Lab7/Lab7.ise" -w -intstyle ise -ol std -t 1 calculator_map.ncd calculator.ncd calculator.pcf
+ngdbuild -ise "C:/270/Lab7/Lab7.ise" -intstyle ise -dd _ngo  -nt timestamp -i -p xc3s1200e-fg320-4 "calculator.ngc" calculator.ngd
+map -ise "C:/270/Lab7/Lab7.ise" -intstyle ise -p xc3s1200e-fg320-4 -cm area -pr off -k 4 -c 100 -o calculator_map.ncd calculator.ngd calculator.pcf
+par -ise "C:/270/Lab7/Lab7.ise" -w -intstyle ise -ol std -t 1 calculator_map.ncd calculator.ncd calculator.pcf
+ngdbuild -ise "C:/270/Lab7/Lab7.ise" -intstyle ise -dd _ngo  -nt timestamp -i -p xc3s1200e-fg320-4 "calculator.ngc" calculator.ngd
+map -ise "C:/270/Lab7/Lab7.ise" -intstyle ise -p xc3s1200e-fg320-4 -cm area -pr off -k 4 -c 100 -o calculator_map.ncd calculator.ngd calculator.pcf
+par -ise "C:/270/Lab7/Lab7.ise" -w -intstyle ise -ol std -t 1 calculator_map.ncd calculator.ncd calculator.pcf
+ngdbuild -ise "C:/270/Lab7/Lab7.ise" -intstyle ise -dd _ngo  -nt timestamp -i -p xc3s1200e-fg320-4 "calculator.ngc" calculator.ngd
+ngdbuild -ise "C:/270/Lab7/Lab7.ise" -intstyle ise -dd _ngo  -nt timestamp -i -p xc3s1200e-fg320-4 "calculator.ngc" calculator.ngd
+map -ise "C:/270/Lab7/Lab7.ise" -intstyle ise -p xc3s1200e-fg320-4 -cm area -pr off -k 4 -c 100 -o calculator_map.ncd calculator.ngd calculator.pcf
+par -ise "C:/270/Lab7/Lab7.ise" -w -intstyle ise -ol std -t 1 calculator_map.ncd calculator.ncd calculator.pcf
+trce -ise "C:/270/Lab7/Lab7.ise" -intstyle ise -e 3 -s 4 -xml calculator calculator.ncd -o calculator.twr calculator.pcf -ucf calculator.ucf
+bitgen -ise "C:/270/Lab7/Lab7.ise" -intstyle ise -f calculator.ut calculator.ncd
+xst -ise "C:/270/Lab7/Lab7.ise" -intstyle ise -ifn "C:/270/Lab7/calculator.xst" -ofn "C:/270/Lab7/calculator.syr"
+ngdbuild -ise "C:/270/Lab7/Lab7.ise" -intstyle ise -dd _ngo  -nt timestamp -i -p xc3s1200e-fg320-4 "calculator.ngc" calculator.ngd
+map -ise "C:/270/Lab7/Lab7.ise" -intstyle ise -p xc3s1200e-fg320-4 -cm area -pr off -k 4 -c 100 -o calculator_map.ncd calculator.ngd calculator.pcf
+par -ise "C:/270/Lab7/Lab7.ise" -w -intstyle ise -ol std -t 1 calculator_map.ncd calculator.ncd calculator.pcf
+trce -ise "C:/270/Lab7/Lab7.ise" -intstyle ise -e 3 -s 4 -xml calculator calculator.ncd -o calculator.twr calculator.pcf -ucf calculator.ucf
+bitgen -ise "C:/270/Lab7/Lab7.ise" -intstyle ise -f calculator.ut calculator.ncd
+xst -ise "C:/270/Lab7/Lab7.ise" -intstyle ise -ifn "C:/270/Lab7/calculator.xst" -ofn "C:/270/Lab7/calculator.syr"
+ngdbuild -ise "C:/270/Lab7/Lab7.ise" -intstyle ise -dd _ngo  -nt timestamp -i -p xc3s1200e-fg320-4 "calculator.ngc" calculator.ngd
+map -ise "C:/270/Lab7/Lab7.ise" -intstyle ise -p xc3s1200e-fg320-4 -cm area -pr off -k 4 -c 100 -o calculator_map.ncd calculator.ngd calculator.pcf
+par -ise "C:/270/Lab7/Lab7.ise" -w -intstyle ise -ol std -t 1 calculator_map.ncd calculator.ncd calculator.pcf
+trce -ise "C:/270/Lab7/Lab7.ise" -intstyle ise -e 3 -s 4 -xml calculator calculator.ncd -o calculator.twr calculator.pcf -ucf calculator.ucf
+bitgen -ise "C:/270/Lab7/Lab7.ise" -intstyle ise -f calculator.ut calculator.ncd
+xst -ise "C:/270/Lab7/Lab7.ise" -intstyle ise -ifn "C:/270/Lab7/calculator.xst" -ofn "C:/270/Lab7/calculator.syr"
+ngdbuild -ise "C:/270/Lab7/Lab7.ise" -intstyle ise -dd _ngo  -nt timestamp -i -p xc3s1200e-fg320-4 "calculator.ngc" calculator.ngd
+map -ise "C:/270/Lab7/Lab7.ise" -intstyle ise -p xc3s1200e-fg320-4 -cm area -pr off -k 4 -c 100 -o calculator_map.ncd calculator.ngd calculator.pcf
+par -ise "C:/270/Lab7/Lab7.ise" -w -intstyle ise -ol std -t 1 calculator_map.ncd calculator.ncd calculator.pcf
+trce -ise "C:/270/Lab7/Lab7.ise" -intstyle ise -e 3 -s 4 -xml calculator calculator.ncd -o calculator.twr calculator.pcf -ucf calculator.ucf
+bitgen -ise "C:/270/Lab7/Lab7.ise" -intstyle ise -f calculator.ut calculator.ncd
+xst -ise "C:/270/Lab7/Lab7.ise" -intstyle ise -ifn "C:/270/Lab7/calculator.xst" -ofn "C:/270/Lab7/calculator.syr"
+ngdbuild -ise "C:/270/Lab7/Lab7.ise" -intstyle ise -dd _ngo  -nt timestamp -i -p xc3s1200e-fg320-4 "calculator.ngc" calculator.ngd
+map -ise "C:/270/Lab7/Lab7.ise" -intstyle ise -p xc3s1200e-fg320-4 -cm area -pr off -k 4 -c 100 -o calculator_map.ncd calculator.ngd calculator.pcf
+par -ise "C:/270/Lab7/Lab7.ise" -w -intstyle ise -ol std -t 1 calculator_map.ncd calculator.ncd calculator.pcf
+trce -ise "C:/270/Lab7/Lab7.ise" -intstyle ise -e 3 -s 4 -xml calculator calculator.ncd -o calculator.twr calculator.pcf -ucf calculator.ucf
+bitgen -ise "C:/270/Lab7/Lab7.ise" -intstyle ise -f calculator.ut calculator.ncd
+xst -ise "C:/270/Lab7/Lab7.ise" -intstyle ise -ifn "C:/270/Lab7/calculator.xst" -ofn "C:/270/Lab7/calculator.syr"
+xst -ise "C:/270/Lab7/Lab7.ise" -intstyle ise -ifn "C:/270/Lab7/calculator.xst" -ofn "C:/270/Lab7/calculator.syr"
+ngdbuild -ise "C:/270/Lab7/Lab7.ise" -intstyle ise -dd _ngo  -nt timestamp -i -p xc3s1200e-fg320-4 "calculator.ngc" calculator.ngd
+map -ise "C:/270/Lab7/Lab7.ise" -intstyle ise -p xc3s1200e-fg320-4 -cm area -pr off -k 4 -c 100 -o calculator_map.ncd calculator.ngd calculator.pcf
+par -ise "C:/270/Lab7/Lab7.ise" -w -intstyle ise -ol std -t 1 calculator_map.ncd calculator.ncd calculator.pcf
+trce -ise "C:/270/Lab7/Lab7.ise" -intstyle ise -e 3 -s 4 -xml calculator calculator.ncd -o calculator.twr calculator.pcf -ucf calculator.ucf
+bitgen -ise "C:/270/Lab7/Lab7.ise" -intstyle ise -f calculator.ut calculator.ncd
+ngdbuild -ise "C:/270/Lab7/Lab7.ise" -intstyle ise -dd _ngo  -nt timestamp -i -p xc3s1200e-fg320-4 "calculator.ngc" calculator.ngd
+map -ise "C:/270/Lab7/Lab7.ise" -intstyle ise -p xc3s1200e-fg320-4 -cm area -pr off -k 4 -c 100 -o calculator_map.ncd calculator.ngd calculator.pcf
+par -ise "C:/270/Lab7/Lab7.ise" -w -intstyle ise -ol std -t 1 calculator_map.ncd calculator.ncd calculator.pcf
+trce -ise "C:/270/Lab7/Lab7.ise" -intstyle ise -e 3 -s 4 -xml calculator calculator.ncd -o calculator.twr calculator.pcf -ucf calculator.ucf
+bitgen -ise "C:/270/Lab7/Lab7.ise" -intstyle ise -f calculator.ut calculator.ncd
+xst -ise "C:/270/Lab7/Lab7.ise" -intstyle ise -ifn "C:/270/Lab7/calculator.xst" -ofn "C:/270/Lab7/calculator.syr"
+xst -ise "C:/270/Lab7/Lab7.ise" -intstyle ise -ifn "C:/270/Lab7/calculator.xst" -ofn "C:/270/Lab7/calculator.syr"
+ngdbuild -ise "C:/270/Lab7/Lab7.ise" -intstyle ise -dd _ngo  -nt timestamp -i -p xc3s1200e-fg320-4 "calculator.ngc" calculator.ngd
+map -ise "C:/270/Lab7/Lab7.ise" -intstyle ise -p xc3s1200e-fg320-4 -cm area -pr off -k 4 -c 100 -o calculator_map.ncd calculator.ngd calculator.pcf
+par -ise "C:/270/Lab7/Lab7.ise" -w -intstyle ise -ol std -t 1 calculator_map.ncd calculator.ncd calculator.pcf
+trce -ise "C:/270/Lab7/Lab7.ise" -intstyle ise -e 3 -s 4 -xml calculator calculator.ncd -o calculator.twr calculator.pcf -ucf calculator.ucf
+bitgen -ise "C:/270/Lab7/Lab7.ise" -intstyle ise -f calculator.ut calculator.ncd
+xst -ise "C:/270/Lab7/Lab7.ise" -intstyle ise -ifn "C:/270/Lab7/calculator.xst" -ofn "C:/270/Lab7/calculator.syr"
+ngdbuild -ise "C:/270/Lab7/Lab7.ise" -intstyle ise -dd _ngo  -nt timestamp -i -p xc3s1200e-fg320-4 "calculator.ngc" calculator.ngd
+map -ise "C:/270/Lab7/Lab7.ise" -intstyle ise -p xc3s1200e-fg320-4 -cm area -pr off -k 4 -c 100 -o calculator_map.ncd calculator.ngd calculator.pcf
+par -ise "C:/270/Lab7/Lab7.ise" -w -intstyle ise -ol std -t 1 calculator_map.ncd calculator.ncd calculator.pcf
+par -ise "C:/270/Lab7/Lab7.ise" -w -intstyle ise -ol std -t 1 calculator_map.ncd calculator.ncd calculator.pcf
+xst -ise "C:/270/Lab7/Lab7.ise" -intstyle ise -ifn "C:/270/Lab7/calculator.xst" -ofn "C:/270/Lab7/calculator.syr"
+ngdbuild -ise "C:/270/Lab7/Lab7.ise" -intstyle ise -dd _ngo  -nt timestamp -i -p xc3s1200e-fg320-4 "calculator.ngc" calculator.ngd
+map -ise "C:/270/Lab7/Lab7.ise" -intstyle ise -p xc3s1200e-fg320-4 -cm area -pr off -k 4 -c 100 -o calculator_map.ncd calculator.ngd calculator.pcf
+par -ise "C:/270/Lab7/Lab7.ise" -w -intstyle ise -ol std -t 1 calculator_map.ncd calculator.ncd calculator.pcf
+xst -ise "C:/270/Lab7/Lab7.ise" -intstyle ise -ifn "C:/270/Lab7/calculator.xst" -ofn "C:/270/Lab7/calculator.syr"
+ngdbuild -ise "C:/270/Lab7/Lab7.ise" -intstyle ise -dd _ngo  -nt timestamp -i -p xc3s1200e-fg320-4 "calculator.ngc" calculator.ngd
+map -ise "C:/270/Lab7/Lab7.ise" -intstyle ise -p xc3s1200e-fg320-4 -cm area -pr off -k 4 -c 100 -o calculator_map.ncd calculator.ngd calculator.pcf
+par -ise "C:/270/Lab7/Lab7.ise" -w -intstyle ise -ol std -t 1 calculator_map.ncd calculator.ncd calculator.pcf
+xst -ise "C:/270/Lab7/Lab7.ise" -intstyle ise -ifn "C:/270/Lab7/calculator.xst" -ofn "C:/270/Lab7/calculator.syr"
+ngdbuild -ise "C:/270/Lab7/Lab7.ise" -intstyle ise -dd _ngo  -nt timestamp -i -p xc3s1200e-fg320-4 "calculator.ngc" calculator.ngd
+map -ise "C:/270/Lab7/Lab7.ise" -intstyle ise -p xc3s1200e-fg320-4 -cm area -pr off -k 4 -c 100 -o calculator_map.ncd calculator.ngd calculator.pcf
+par -ise "C:/270/Lab7/Lab7.ise" -w -intstyle ise -ol std -t 1 calculator_map.ncd calculator.ncd calculator.pcf
+trce -ise "C:/270/Lab7/Lab7.ise" -intstyle ise -e 3 -s 4 -xml calculator calculator.ncd -o calculator.twr calculator.pcf -ucf calculator.ucf
+bitgen -ise "C:/270/Lab7/Lab7.ise" -intstyle ise -f calculator.ut calculator.ncd
+ngdbuild -ise "C:/270/Lab7/Lab7.ise" -intstyle ise -dd _ngo  -nt timestamp -i -p xc3s1200e-fg320-4 "calculator.ngc" calculator.ngd
+map -ise "C:/270/Lab7/Lab7.ise" -intstyle ise -p xc3s1200e-fg320-4 -cm area -pr off -k 4 -c 100 -o calculator_map.ncd calculator.ngd calculator.pcf
+par -ise "C:/270/Lab7/Lab7.ise" -w -intstyle ise -ol std -t 1 calculator_map.ncd calculator.ncd calculator.pcf
+trce -ise "C:/270/Lab7/Lab7.ise" -intstyle ise -e 3 -s 4 -xml calculator calculator.ncd -o calculator.twr calculator.pcf -ucf calculator.ucf
+bitgen -ise "C:/270/Lab7/Lab7.ise" -intstyle ise -f calculator.ut calculator.ncd
+xst -ise "C:/270/Lab7/Lab7.ise" -intstyle ise -ifn "C:/270/Lab7/calculator.xst" -ofn "C:/270/Lab7/calculator.syr"
+xst -ise "C:/270/Lab7/Lab7.ise" -intstyle ise -ifn "C:/270/Lab7/calculator.xst" -ofn "C:/270/Lab7/calculator.syr"
+xst -ise "C:/270/Lab7/Lab7.ise" -intstyle ise -ifn "C:/270/Lab7/calculator.xst" -ofn "C:/270/Lab7/calculator.syr"
+xst -ise "C:/270/Lab7/Lab7.ise" -intstyle ise -ifn "C:/270/Lab7/calculator.xst" -ofn "C:/270/Lab7/calculator.syr"
+ngdbuild -ise "C:/270/Lab7/Lab7.ise" -intstyle ise -dd _ngo  -nt timestamp -i -p xc3s1200e-fg320-4 "calculator.ngc" calculator.ngd
+map -ise "C:/270/Lab7/Lab7.ise" -intstyle ise -p xc3s1200e-fg320-4 -cm area -pr off -k 4 -c 100 -o calculator_map.ncd calculator.ngd calculator.pcf
+par -ise "C:/270/Lab7/Lab7.ise" -w -intstyle ise -ol std -t 1 calculator_map.ncd calculator.ncd calculator.pcf
+trce -ise "C:/270/Lab7/Lab7.ise" -intstyle ise -e 3 -s 4 -xml calculator calculator.ncd -o calculator.twr calculator.pcf -ucf calculator.ucf
+bitgen -ise "C:/270/Lab7/Lab7.ise" -intstyle ise -f calculator.ut calculator.ncd
+xst -ise "C:/270/Lab7/Lab7.ise" -intstyle ise -ifn "C:/270/Lab7/calculator.xst" -ofn "C:/270/Lab7/calculator.syr"
+ngdbuild -ise "C:/270/Lab7/Lab7.ise" -intstyle ise -dd _ngo  -nt timestamp -i -p xc3s1200e-fg320-4 "calculator.ngc" calculator.ngd
+map -ise "C:/270/Lab7/Lab7.ise" -intstyle ise -p xc3s1200e-fg320-4 -cm area -pr off -k 4 -c 100 -o calculator_map.ncd calculator.ngd calculator.pcf
+par -ise "C:/270/Lab7/Lab7.ise" -w -intstyle ise -ol std -t 1 calculator_map.ncd calculator.ncd calculator.pcf
+trce -ise "C:/270/Lab7/Lab7.ise" -intstyle ise -e 3 -s 4 -xml calculator calculator.ncd -o calculator.twr calculator.pcf -ucf calculator.ucf
+bitgen -ise "C:/270/Lab7/Lab7.ise" -intstyle ise -f calculator.ut calculator.ncd
+xst -ise "C:/270/Lab7/Lab7.ise" -intstyle ise -ifn "C:/270/Lab7/calculator.xst" -ofn "C:/270/Lab7/calculator.syr"
+xst -ise "C:/270/Lab7/Lab7.ise" -intstyle ise -ifn "C:/270/Lab7/calculator.xst" -ofn "C:/270/Lab7/calculator.syr"
+xst -ise "C:/270/Lab7/Lab7.ise" -intstyle ise -ifn "C:/270/Lab7/calculator.xst" -ofn "C:/270/Lab7/calculator.syr"
+xst -ise "C:/270/Lab7/Lab7.ise" -intstyle ise -ifn "C:/270/Lab7/calculator.xst" -ofn "C:/270/Lab7/calculator.syr"
+ngdbuild -ise "C:/270/Lab7/Lab7.ise" -intstyle ise -dd _ngo  -nt timestamp -i -p xc3s1200e-fg320-4 "calculator.ngc" calculator.ngd
+map -ise "C:/270/Lab7/Lab7.ise" -intstyle ise -p xc3s1200e-fg320-4 -cm area -pr off -k 4 -c 100 -o calculator_map.ncd calculator.ngd calculator.pcf
+par -ise "C:/270/Lab7/Lab7.ise" -w -intstyle ise -ol std -t 1 calculator_map.ncd calculator.ncd calculator.pcf
+trce -ise "C:/270/Lab7/Lab7.ise" -intstyle ise -e 3 -s 4 -xml calculator calculator.ncd -o calculator.twr calculator.pcf -ucf calculator.ucf
+bitgen -ise "C:/270/Lab7/Lab7.ise" -intstyle ise -f calculator.ut calculator.ncd
+ngdbuild -ise "C:/270/Lab7/Lab7.ise" -intstyle ise -dd _ngo  -nt timestamp -i -p xc3s1200e-fg320-4 "calculator.ngc" calculator.ngd
+map -ise "C:/270/Lab7/Lab7.ise" -intstyle ise -p xc3s1200e-fg320-4 -cm area -pr off -k 4 -c 100 -o calculator_map.ncd calculator.ngd calculator.pcf
+par -ise "C:/270/Lab7/Lab7.ise" -w -intstyle ise -ol std -t 1 calculator_map.ncd calculator.ncd calculator.pcf
+trce -ise "C:/270/Lab7/Lab7.ise" -intstyle ise -e 3 -s 4 -xml calculator calculator.ncd -o calculator.twr calculator.pcf -ucf calculator.ucf
+bitgen -ise "C:/270/Lab7/Lab7.ise" -intstyle ise -f calculator.ut calculator.ncd
+xst -ise "C:/270/Lab7/Lab7.ise" -intstyle ise -ifn "C:/270/Lab7/calculator.xst" -ofn "C:/270/Lab7/calculator.syr"
+ngdbuild -ise "C:/270/Lab7/Lab7.ise" -intstyle ise -dd _ngo  -nt timestamp -i -p xc3s1200e-fg320-4 "calculator.ngc" calculator.ngd
+map -ise "C:/270/Lab7/Lab7.ise" -intstyle ise -p xc3s1200e-fg320-4 -cm area -pr off -k 4 -c 100 -o calculator_map.ncd calculator.ngd calculator.pcf
+par -ise "C:/270/Lab7/Lab7.ise" -w -intstyle ise -ol std -t 1 calculator_map.ncd calculator.ncd calculator.pcf
+trce -ise "C:/270/Lab7/Lab7.ise" -intstyle ise -e 3 -s 4 -xml calculator calculator.ncd -o calculator.twr calculator.pcf -ucf calculator.ucf
+bitgen -ise "C:/270/Lab7/Lab7.ise" -intstyle ise -f calculator.ut calculator.ncd
+xst -ise "C:/270/Lab7/Lab7.ise" -intstyle ise -ifn "C:/270/Lab7/calculator.xst" -ofn "C:/270/Lab7/calculator.syr"
+ngdbuild -ise "C:/270/Lab7/Lab7.ise" -intstyle ise -dd _ngo  -nt timestamp -i -p xc3s1200e-fg320-4 "calculator.ngc" calculator.ngd
+map -ise "C:/270/Lab7/Lab7.ise" -intstyle ise -p xc3s1200e-fg320-4 -cm area -pr off -k 4 -c 100 -o calculator_map.ncd calculator.ngd calculator.pcf
+par -ise "C:/270/Lab7/Lab7.ise" -w -intstyle ise -ol std -t 1 calculator_map.ncd calculator.ncd calculator.pcf
+trce -ise "C:/270/Lab7/Lab7.ise" -intstyle ise -e 3 -s 4 -xml calculator calculator.ncd -o calculator.twr calculator.pcf -ucf calculator.ucf
+bitgen -ise "C:/270/Lab7/Lab7.ise" -intstyle ise -f calculator.ut calculator.ncd
+ngdbuild -ise "C:/270/Lab7/Lab7.ise" -intstyle ise -dd _ngo  -nt timestamp -i -p xc3s1200e-fg320-4 "calculator.ngc" calculator.ngd
+map -ise "C:/270/Lab7/Lab7.ise" -intstyle ise -p xc3s1200e-fg320-4 -cm area -pr off -k 4 -c 100 -o calculator_map.ncd calculator.ngd calculator.pcf
+par -ise "C:/270/Lab7/Lab7.ise" -w -intstyle ise -ol std -t 1 calculator_map.ncd calculator.ncd calculator.pcf
+trce -ise "C:/270/Lab7/Lab7.ise" -intstyle ise -e 3 -s 4 -xml calculator calculator.ncd -o calculator.twr calculator.pcf -ucf calculator.ucf
+bitgen -ise "C:/270/Lab7/Lab7.ise" -intstyle ise -f calculator.ut calculator.ncd
+xst -ise "C:/270/Lab7/Lab7.ise" -intstyle ise -ifn "C:/270/Lab7/calculator.xst" -ofn "C:/270/Lab7/calculator.syr"
+ngdbuild -ise "C:/270/Lab7/Lab7.ise" -intstyle ise -dd _ngo  -nt timestamp -i -p xc3s1200e-fg320-4 "calculator.ngc" calculator.ngd
+map -ise "C:/270/Lab7/Lab7.ise" -intstyle ise -p xc3s1200e-fg320-4 -cm area -pr off -k 4 -c 100 -o calculator_map.ncd calculator.ngd calculator.pcf
+par -ise "C:/270/Lab7/Lab7.ise" -w -intstyle ise -ol std -t 1 calculator_map.ncd calculator.ncd calculator.pcf
+trce -ise "C:/270/Lab7/Lab7.ise" -intstyle ise -e 3 -s 4 -xml calculator calculator.ncd -o calculator.twr calculator.pcf -ucf calculator.ucf
+bitgen -ise "C:/270/Lab7/Lab7.ise" -intstyle ise -f calculator.ut calculator.ncd
+xst -ise "C:/270/Lab7/Lab7.ise" -intstyle ise -ifn "C:/270/Lab7/calculator.xst" -ofn "C:/270/Lab7/calculator.syr"
+ngdbuild -ise "C:/270/Lab7/Lab7.ise" -intstyle ise -dd _ngo  -nt timestamp -i -p xc3s1200e-fg320-4 "calculator.ngc" calculator.ngd
+map -ise "C:/270/Lab7/Lab7.ise" -intstyle ise -p xc3s1200e-fg320-4 -cm area -pr off -k 4 -c 100 -o calculator_map.ncd calculator.ngd calculator.pcf
+par -ise "C:/270/Lab7/Lab7.ise" -w -intstyle ise -ol std -t 1 calculator_map.ncd calculator.ncd calculator.pcf
+trce -ise "C:/270/Lab7/Lab7.ise" -intstyle ise -e 3 -s 4 -xml calculator calculator.ncd -o calculator.twr calculator.pcf -ucf calculator.ucf
+bitgen -ise "C:/270/Lab7/Lab7.ise" -intstyle ise -f calculator.ut calculator.ncd
+ngdbuild -ise "C:/270/Lab7/Lab7.ise" -intstyle ise -dd _ngo  -nt timestamp -i -p xc3s1200e-fg320-4 "calculator.ngc" calculator.ngd
+map -ise "C:/270/Lab7/Lab7.ise" -intstyle ise -p xc3s1200e-fg320-4 -cm area -pr off -k 4 -c 100 -o calculator_map.ncd calculator.ngd calculator.pcf
+par -ise "C:/270/Lab7/Lab7.ise" -w -intstyle ise -ol std -t 1 calculator_map.ncd calculator.ncd calculator.pcf
+trce -ise "C:/270/Lab7/Lab7.ise" -intstyle ise -e 3 -s 4 -xml calculator calculator.ncd -o calculator.twr calculator.pcf -ucf calculator.ucf
+bitgen -ise "C:/270/Lab7/Lab7.ise" -intstyle ise -f calculator.ut calculator.ncd
+xst -ise "C:/270/Lab7/Lab7.ise" -intstyle ise -ifn "C:/270/Lab7/calculator.xst" -ofn "C:/270/Lab7/calculator.syr"
+ngdbuild -ise "C:/270/Lab7/Lab7.ise" -intstyle ise -dd _ngo  -nt timestamp -i -p xc3s1200e-fg320-4 "calculator.ngc" calculator.ngd
+map -ise "C:/270/Lab7/Lab7.ise" -intstyle ise -p xc3s1200e-fg320-4 -cm area -pr off -k 4 -c 100 -o calculator_map.ncd calculator.ngd calculator.pcf
+par -ise "C:/270/Lab7/Lab7.ise" -w -intstyle ise -ol std -t 1 calculator_map.ncd calculator.ncd calculator.pcf
+trce -ise "C:/270/Lab7/Lab7.ise" -intstyle ise -e 3 -s 4 -xml calculator calculator.ncd -o calculator.twr calculator.pcf -ucf calculator.ucf
+bitgen -ise "C:/270/Lab7/Lab7.ise" -intstyle ise -f calculator.ut calculator.ncd
+xst -ise "C:/270/Lab7/Lab7.ise" -intstyle ise -ifn "C:/270/Lab7/calculator.xst" -ofn "C:/270/Lab7/calculator.syr"
+xst -ise "C:/270/Lab7/Lab7.ise" -intstyle ise -ifn "C:/270/Lab7/calculator.xst" -ofn "C:/270/Lab7/calculator.syr"
+ngdbuild -ise "C:/270/Lab7/Lab7.ise" -intstyle ise -dd _ngo  -nt timestamp -i -p xc3s1200e-fg320-4 "calculator.ngc" calculator.ngd
+map -ise "C:/270/Lab7/Lab7.ise" -intstyle ise -p xc3s1200e-fg320-4 -cm area -pr off -k 4 -c 100 -o calculator_map.ncd calculator.ngd calculator.pcf
+par -ise "C:/270/Lab7/Lab7.ise" -w -intstyle ise -ol std -t 1 calculator_map.ncd calculator.ncd calculator.pcf
+trce -ise "C:/270/Lab7/Lab7.ise" -intstyle ise -e 3 -s 4 -xml calculator calculator.ncd -o calculator.twr calculator.pcf -ucf calculator.ucf
+bitgen -ise "C:/270/Lab7/Lab7.ise" -intstyle ise -f calculator.ut calculator.ncd
+xst -ise "C:/270/Lab7/Lab7.ise" -intstyle ise -ifn "C:/270/Lab7/calculator.xst" -ofn "C:/270/Lab7/calculator.syr"
+ngdbuild -ise "C:/270/Lab7/Lab7.ise" -intstyle ise -dd _ngo  -nt timestamp -i -p xc3s1200e-fg320-4 "calculator.ngc" calculator.ngd
+map -ise "C:/270/Lab7/Lab7.ise" -intstyle ise -p xc3s1200e-fg320-4 -cm area -pr off -k 4 -c 100 -o calculator_map.ncd calculator.ngd calculator.pcf
+par -ise "C:/270/Lab7/Lab7.ise" -w -intstyle ise -ol std -t 1 calculator_map.ncd calculator.ncd calculator.pcf
+trce -ise "C:/270/Lab7/Lab7.ise" -intstyle ise -e 3 -s 4 -xml calculator calculator.ncd -o calculator.twr calculator.pcf -ucf calculator.ucf
+bitgen -ise "C:/270/Lab7/Lab7.ise" -intstyle ise -f calculator.ut calculator.ncd
+xst -ise "C:/270/Lab7/Lab7.ise" -intstyle ise -ifn "C:/270/Lab7/calculator.xst" -ofn "C:/270/Lab7/calculator.syr"
+ngdbuild -ise "C:/270/Lab7/Lab7.ise" -intstyle ise -dd _ngo  -nt timestamp -i -p xc3s1200e-fg320-4 "calculator.ngc" calculator.ngd
+map -ise "C:/270/Lab7/Lab7.ise" -intstyle ise -p xc3s1200e-fg320-4 -cm area -pr off -k 4 -c 100 -o calculator_map.ncd calculator.ngd calculator.pcf
+par -ise "C:/270/Lab7/Lab7.ise" -w -intstyle ise -ol std -t 1 calculator_map.ncd calculator.ncd calculator.pcf
+trce -ise "C:/270/Lab7/Lab7.ise" -intstyle ise -e 3 -s 4 -xml calculator calculator.ncd -o calculator.twr calculator.pcf -ucf calculator.ucf
+bitgen -ise "C:/270/Lab7/Lab7.ise" -intstyle ise -f calculator.ut calculator.ncd
+xst -ise "C:/270/Lab7/Lab7.ise" -intstyle ise -ifn "C:/270/Lab7/calculator.xst" -ofn "C:/270/Lab7/calculator.syr"
+xst -ise "C:/270/Lab7/Lab7.ise" -intstyle ise -ifn "C:/270/Lab7/calculator.xst" -ofn "C:/270/Lab7/calculator.syr"
+ngdbuild -ise "C:/270/Lab7/Lab7.ise" -intstyle ise -dd _ngo  -nt timestamp -i -p xc3s1200e-fg320-4 "calculator.ngc" calculator.ngd
+map -ise "C:/270/Lab7/Lab7.ise" -intstyle ise -p xc3s1200e-fg320-4 -cm area -pr off -k 4 -c 100 -o calculator_map.ncd calculator.ngd calculator.pcf
+par -ise "C:/270/Lab7/Lab7.ise" -w -intstyle ise -ol std -t 1 calculator_map.ncd calculator.ncd calculator.pcf
+trce -ise "C:/270/Lab7/Lab7.ise" -intstyle ise -e 3 -s 4 -xml calculator calculator.ncd -o calculator.twr calculator.pcf -ucf calculator.ucf
+bitgen -ise "C:/270/Lab7/Lab7.ise" -intstyle ise -f calculator.ut calculator.ncd
+xst -ise "C:/270/Lab7/Lab7.ise" -intstyle ise -ifn "C:/270/Lab7/calculator.xst" -ofn "C:/270/Lab7/calculator.syr"
+ngdbuild -ise "C:/270/Lab7/Lab7.ise" -intstyle ise -dd _ngo  -nt timestamp -i -p xc3s1200e-fg320-4 "calculator.ngc" calculator.ngd
+map -ise "C:/270/Lab7/Lab7.ise" -intstyle ise -p xc3s1200e-fg320-4 -cm area -pr off -k 4 -c 100 -o calculator_map.ncd calculator.ngd calculator.pcf
+par -ise "C:/270/Lab7/Lab7.ise" -w -intstyle ise -ol std -t 1 calculator_map.ncd calculator.ncd calculator.pcf
+trce -ise "C:/270/Lab7/Lab7.ise" -intstyle ise -e 3 -s 4 -xml calculator calculator.ncd -o calculator.twr calculator.pcf -ucf calculator.ucf
+bitgen -ise "C:/270/Lab7/Lab7.ise" -intstyle ise -f calculator.ut calculator.ncd
+xst -ise "C:/270/Lab7/Lab7.ise" -intstyle ise -ifn "C:/270/Lab7/calculator.xst" -ofn "C:/270/Lab7/calculator.syr"
+xst -ise "C:/270/Lab7/Lab7.ise" -intstyle ise -ifn "C:/270/Lab7/calculator.xst" -ofn "C:/270/Lab7/calculator.syr"
+ngdbuild -ise "C:/270/Lab7/Lab7.ise" -intstyle ise -dd _ngo  -nt timestamp -i -p xc3s1200e-fg320-4 "calculator.ngc" calculator.ngd
+map -ise "C:/270/Lab7/Lab7.ise" -intstyle ise -p xc3s1200e-fg320-4 -cm area -pr off -k 4 -c 100 -o calculator_map.ncd calculator.ngd calculator.pcf
+par -ise "C:/270/Lab7/Lab7.ise" -w -intstyle ise -ol std -t 1 calculator_map.ncd calculator.ncd calculator.pcf
+trce -ise "C:/270/Lab7/Lab7.ise" -intstyle ise -e 3 -s 4 -xml calculator calculator.ncd -o calculator.twr calculator.pcf -ucf calculator.ucf
+bitgen -ise "C:/270/Lab7/Lab7.ise" -intstyle ise -f calculator.ut calculator.ncd
+xst -ise "C:/270/Lab7/Lab7.ise" -intstyle ise -ifn "C:/270/Lab7/calculator.xst" -ofn "C:/270/Lab7/calculator.syr"
+ngdbuild -ise "C:/270/Lab7/Lab7.ise" -intstyle ise -dd _ngo  -nt timestamp -i -p xc3s1200e-fg320-4 "calculator.ngc" calculator.ngd
+map -ise "C:/270/Lab7/Lab7.ise" -intstyle ise -p xc3s1200e-fg320-4 -cm area -pr off -k 4 -c 100 -o calculator_map.ncd calculator.ngd calculator.pcf
+par -ise "C:/270/Lab7/Lab7.ise" -w -intstyle ise -ol std -t 1 calculator_map.ncd calculator.ncd calculator.pcf
+trce -ise "C:/270/Lab7/Lab7.ise" -intstyle ise -e 3 -s 4 -xml calculator calculator.ncd -o calculator.twr calculator.pcf -ucf calculator.ucf
+bitgen -ise "C:/270/Lab7/Lab7.ise" -intstyle ise -f calculator.ut calculator.ncd
+xst -ise "C:/270/Lab7/Lab7.ise" -intstyle ise -ifn "C:/270/Lab7/calculator.xst" -ofn "C:/270/Lab7/calculator.syr"
+ngdbuild -ise "C:/270/Lab7/Lab7.ise" -intstyle ise -dd _ngo  -nt timestamp -i -p xc3s1200e-fg320-4 "calculator.ngc" calculator.ngd
+map -ise "C:/270/Lab7/Lab7.ise" -intstyle ise -p xc3s1200e-fg320-4 -cm area -pr off -k 4 -c 100 -o calculator_map.ncd calculator.ngd calculator.pcf
+par -ise "C:/270/Lab7/Lab7.ise" -w -intstyle ise -ol std -t 1 calculator_map.ncd calculator.ncd calculator.pcf
+trce -ise "C:/270/Lab7/Lab7.ise" -intstyle ise -e 3 -s 4 -xml calculator calculator.ncd -o calculator.twr calculator.pcf -ucf calculator.ucf
+bitgen -ise "C:/270/Lab7/Lab7.ise" -intstyle ise -f calculator.ut calculator.ncd
+xst -ise "C:/270/Lab7/Lab7.ise" -intstyle ise -ifn "C:/270/Lab7/calculator.xst" -ofn "C:/270/Lab7/calculator.syr"
+ngdbuild -ise "C:/270/Lab7/Lab7.ise" -intstyle ise -dd _ngo  -nt timestamp -i -p xc3s1200e-fg320-4 "calculator.ngc" calculator.ngd
+map -ise "C:/270/Lab7/Lab7.ise" -intstyle ise -p xc3s1200e-fg320-4 -cm area -pr off -k 4 -c 100 -o calculator_map.ncd calculator.ngd calculator.pcf
+par -ise "C:/270/Lab7/Lab7.ise" -w -intstyle ise -ol std -t 1 calculator_map.ncd calculator.ncd calculator.pcf
+trce -ise "C:/270/Lab7/Lab7.ise" -intstyle ise -e 3 -s 4 -xml calculator calculator.ncd -o calculator.twr calculator.pcf -ucf calculator.ucf
+bitgen -ise "C:/270/Lab7/Lab7.ise" -intstyle ise -f calculator.ut calculator.ncd
+xst -ise "C:/270/Lab7/Lab7.ise" -intstyle ise -ifn "C:/270/Lab7/calculator.xst" -ofn "C:/270/Lab7/calculator.syr"
+ngdbuild -ise "C:/270/Lab7/Lab7.ise" -intstyle ise -dd _ngo  -nt timestamp -i -p xc3s1200e-fg320-4 "calculator.ngc" calculator.ngd
+map -ise "C:/270/Lab7/Lab7.ise" -intstyle ise -p xc3s1200e-fg320-4 -cm area -pr off -k 4 -c 100 -o calculator_map.ncd calculator.ngd calculator.pcf
+par -ise "C:/270/Lab7/Lab7.ise" -w -intstyle ise -ol std -t 1 calculator_map.ncd calculator.ncd calculator.pcf
+trce -ise "C:/270/Lab7/Lab7.ise" -intstyle ise -e 3 -s 4 -xml calculator calculator.ncd -o calculator.twr calculator.pcf -ucf calculator.ucf
+bitgen -ise "C:/270/Lab7/Lab7.ise" -intstyle ise -f calculator.ut calculator.ncd
+xst -ise "C:/270/Lab7/Lab7.ise" -intstyle ise -ifn "C:/270/Lab7/calculator.xst" -ofn "C:/270/Lab7/calculator.syr"
+ngdbuild -ise "C:/270/Lab7/Lab7.ise" -intstyle ise -dd _ngo  -nt timestamp -i -p xc3s1200e-fg320-4 "calculator.ngc" calculator.ngd
+map -ise "C:/270/Lab7/Lab7.ise" -intstyle ise -p xc3s1200e-fg320-4 -cm area -pr off -k 4 -c 100 -o calculator_map.ncd calculator.ngd calculator.pcf
+par -ise "C:/270/Lab7/Lab7.ise" -w -intstyle ise -ol std -t 1 calculator_map.ncd calculator.ncd calculator.pcf
+trce -ise "C:/270/Lab7/Lab7.ise" -intstyle ise -e 3 -s 4 -xml calculator calculator.ncd -o calculator.twr calculator.pcf -ucf calculator.ucf
+bitgen -ise "C:/270/Lab7/Lab7.ise" -intstyle ise -f calculator.ut calculator.ncd
+xst -ise "C:/270/Lab7/Lab7.ise" -intstyle ise -ifn "C:/270/Lab7/calculator.xst" -ofn "C:/270/Lab7/calculator.syr"
+ngdbuild -ise "C:/270/Lab7/Lab7.ise" -intstyle ise -dd _ngo  -nt timestamp -i -p xc3s1200e-fg320-4 "calculator.ngc" calculator.ngd
+map -ise "C:/270/Lab7/Lab7.ise" -intstyle ise -p xc3s1200e-fg320-4 -cm area -pr off -k 4 -c 100 -o calculator_map.ncd calculator.ngd calculator.pcf
+par -ise "C:/270/Lab7/Lab7.ise" -w -intstyle ise -ol std -t 1 calculator_map.ncd calculator.ncd calculator.pcf
+trce -ise "C:/270/Lab7/Lab7.ise" -intstyle ise -e 3 -s 4 -xml calculator calculator.ncd -o calculator.twr calculator.pcf -ucf calculator.ucf
+bitgen -ise "C:/270/Lab7/Lab7.ise" -intstyle ise -f calculator.ut calculator.ncd
+xst -ise "C:/270/Lab7/Lab7.ise" -intstyle ise -ifn "C:/270/Lab7/calculator.xst" -ofn "C:/270/Lab7/calculator.syr"
+ngdbuild -ise "C:/270/Lab7/Lab7.ise" -intstyle ise -dd _ngo  -nt timestamp -i -p xc3s1200e-fg320-4 "calculator.ngc" calculator.ngd
+map -ise "C:/270/Lab7/Lab7.ise" -intstyle ise -p xc3s1200e-fg320-4 -cm area -pr off -k 4 -c 100 -o calculator_map.ncd calculator.ngd calculator.pcf
+par -ise "C:/270/Lab7/Lab7.ise" -w -intstyle ise -ol std -t 1 calculator_map.ncd calculator.ncd calculator.pcf
+trce -ise "C:/270/Lab7/Lab7.ise" -intstyle ise -e 3 -s 4 -xml calculator calculator.ncd -o calculator.twr calculator.pcf -ucf calculator.ucf
+bitgen -ise "C:/270/Lab7/Lab7.ise" -intstyle ise -f calculator.ut calculator.ncd
+xst -ise "C:/270/Lab7/Lab7.ise" -intstyle ise -ifn "C:/270/Lab7/calculator.xst" -ofn "C:/270/Lab7/calculator.syr"
+ngdbuild -ise "C:/270/Lab7/Lab7.ise" -intstyle ise -dd _ngo  -nt timestamp -i -p xc3s1200e-fg320-4 "calculator.ngc" calculator.ngd
+map -ise "C:/270/Lab7/Lab7.ise" -intstyle ise -p xc3s1200e-fg320-4 -cm area -pr off -k 4 -c 100 -o calculator_map.ncd calculator.ngd calculator.pcf
+par -ise "C:/270/Lab7/Lab7.ise" -w -intstyle ise -ol std -t 1 calculator_map.ncd calculator.ncd calculator.pcf
+trce -ise "C:/270/Lab7/Lab7.ise" -intstyle ise -e 3 -s 4 -xml calculator calculator.ncd -o calculator.twr calculator.pcf -ucf calculator.ucf
+bitgen -ise "C:/270/Lab7/Lab7.ise" -intstyle ise -f calculator.ut calculator.ncd
+xst -ise "C:/270/Lab7/Lab7.ise" -intstyle ise -ifn "C:/270/Lab7/calculator.xst" -ofn "C:/270/Lab7/calculator.syr"
+ngdbuild -ise "C:/270/Lab7/Lab7.ise" -intstyle ise -dd _ngo  -nt timestamp -i -p xc3s1200e-fg320-4 "calculator.ngc" calculator.ngd
+map -ise "C:/270/Lab7/Lab7.ise" -intstyle ise -p xc3s1200e-fg320-4 -cm area -pr off -k 4 -c 100 -o calculator_map.ncd calculator.ngd calculator.pcf
+par -ise "C:/270/Lab7/Lab7.ise" -w -intstyle ise -ol std -t 1 calculator_map.ncd calculator.ncd calculator.pcf
+trce -ise "C:/270/Lab7/Lab7.ise" -intstyle ise -e 3 -s 4 -xml calculator calculator.ncd -o calculator.twr calculator.pcf -ucf calculator.ucf
+bitgen -ise "C:/270/Lab7/Lab7.ise" -intstyle ise -f calculator.ut calculator.ncd
+xst -ise "C:/270/Lab7/Lab7.ise" -intstyle ise -ifn "C:/270/Lab7/calculator.xst" -ofn "C:/270/Lab7/calculator.syr"
+ngdbuild -ise "C:/270/Lab7/Lab7.ise" -intstyle ise -dd _ngo  -nt timestamp -i -p xc3s1200e-fg320-4 "calculator.ngc" calculator.ngd
+map -ise "C:/270/Lab7/Lab7.ise" -intstyle ise -p xc3s1200e-fg320-4 -cm area -pr off -k 4 -c 100 -o calculator_map.ncd calculator.ngd calculator.pcf
+par -ise "C:/270/Lab7/Lab7.ise" -w -intstyle ise -ol std -t 1 calculator_map.ncd calculator.ncd calculator.pcf
+trce -ise "C:/270/Lab7/Lab7.ise" -intstyle ise -e 3 -s 4 -xml calculator calculator.ncd -o calculator.twr calculator.pcf -ucf calculator.ucf
+bitgen -ise "C:/270/Lab7/Lab7.ise" -intstyle ise -f calculator.ut calculator.ncd
+xst -ise "C:/270/Lab7/Lab7.ise" -intstyle ise -ifn "C:/270/Lab7/calculator.xst" -ofn "C:/270/Lab7/calculator.syr"
+ngdbuild -ise "C:/270/Lab7/Lab7.ise" -intstyle ise -dd _ngo  -nt timestamp -i -p xc3s1200e-fg320-4 "calculator.ngc" calculator.ngd
+map -ise "C:/270/Lab7/Lab7.ise" -intstyle ise -p xc3s1200e-fg320-4 -cm area -pr off -k 4 -c 100 -o calculator_map.ncd calculator.ngd calculator.pcf
+par -ise "C:/270/Lab7/Lab7.ise" -w -intstyle ise -ol std -t 1 calculator_map.ncd calculator.ncd calculator.pcf
+trce -ise "C:/270/Lab7/Lab7.ise" -intstyle ise -e 3 -s 4 -xml calculator calculator.ncd -o calculator.twr calculator.pcf -ucf calculator.ucf
+bitgen -ise "C:/270/Lab7/Lab7.ise" -intstyle ise -f calculator.ut calculator.ncd
+xst -ise "C:/270/Lab7/Lab7.ise" -intstyle ise -ifn "C:/270/Lab7/calculator.xst" -ofn "C:/270/Lab7/calculator.syr"
+ngdbuild -ise "C:/270/Lab7/Lab7.ise" -intstyle ise -dd _ngo  -nt timestamp -i -p xc3s1200e-fg320-4 "calculator.ngc" calculator.ngd
+map -ise "C:/270/Lab7/Lab7.ise" -intstyle ise -p xc3s1200e-fg320-4 -cm area -pr off -k 4 -c 100 -o calculator_map.ncd calculator.ngd calculator.pcf
+par -ise "C:/270/Lab7/Lab7.ise" -w -intstyle ise -ol std -t 1 calculator_map.ncd calculator.ncd calculator.pcf
+trce -ise "C:/270/Lab7/Lab7.ise" -intstyle ise -e 3 -s 4 -xml calculator calculator.ncd -o calculator.twr calculator.pcf -ucf calculator.ucf
+bitgen -ise "C:/270/Lab7/Lab7.ise" -intstyle ise -f calculator.ut calculator.ncd
+xst -ise "C:/270/Lab7/Lab7.ise" -intstyle ise -ifn "C:/270/Lab7/calculator.xst" -ofn "C:/270/Lab7/calculator.syr"
+ngdbuild -ise "C:/270/Lab7/Lab7.ise" -intstyle ise -dd _ngo  -nt timestamp -i -p xc3s1200e-fg320-4 "calculator.ngc" calculator.ngd
+map -ise "C:/270/Lab7/Lab7.ise" -intstyle ise -p xc3s1200e-fg320-4 -cm area -pr off -k 4 -c 100 -o calculator_map.ncd calculator.ngd calculator.pcf
+par -ise "C:/270/Lab7/Lab7.ise" -w -intstyle ise -ol std -t 1 calculator_map.ncd calculator.ncd calculator.pcf
+trce -ise "C:/270/Lab7/Lab7.ise" -intstyle ise -e 3 -s 4 -xml calculator calculator.ncd -o calculator.twr calculator.pcf -ucf calculator.ucf
+bitgen -ise "C:/270/Lab7/Lab7.ise" -intstyle ise -f calculator.ut calculator.ncd
+xst -ise "C:/270/Lab7/Lab7.ise" -intstyle ise -ifn "C:/270/Lab7/calculator.xst" -ofn "C:/270/Lab7/calculator.syr"
+ngdbuild -ise "C:/270/Lab7/Lab7.ise" -intstyle ise -dd _ngo  -nt timestamp -i -p xc3s1200e-fg320-4 "calculator.ngc" calculator.ngd
+map -ise "C:/270/Lab7/Lab7.ise" -intstyle ise -p xc3s1200e-fg320-4 -cm area -pr off -k 4 -c 100 -o calculator_map.ncd calculator.ngd calculator.pcf
+par -ise "C:/270/Lab7/Lab7.ise" -w -intstyle ise -ol std -t 1 calculator_map.ncd calculator.ncd calculator.pcf
+trce -ise "C:/270/Lab7/Lab7.ise" -intstyle ise -e 3 -s 4 -xml calculator calculator.ncd -o calculator.twr calculator.pcf -ucf calculator.ucf
+bitgen -ise "C:/270/Lab7/Lab7.ise" -intstyle ise -f calculator.ut calculator.ncd
+xst -ise "C:/270/Lab7/Lab7.ise" -intstyle ise -ifn "C:/270/Lab7/calculator.xst" -ofn "C:/270/Lab7/calculator.syr"
+ngdbuild -ise "C:/270/Lab7/Lab7.ise" -intstyle ise -dd _ngo  -nt timestamp -i -p xc3s1200e-fg320-4 "calculator.ngc" calculator.ngd
+map -ise "C:/270/Lab7/Lab7.ise" -intstyle ise -p xc3s1200e-fg320-4 -cm area -pr off -k 4 -c 100 -o calculator_map.ncd calculator.ngd calculator.pcf
+par -ise "C:/270/Lab7/Lab7.ise" -w -intstyle ise -ol std -t 1 calculator_map.ncd calculator.ncd calculator.pcf
+trce -ise "C:/270/Lab7/Lab7.ise" -intstyle ise -e 3 -s 4 -xml calculator calculator.ncd -o calculator.twr calculator.pcf -ucf calculator.ucf
+bitgen -ise "C:/270/Lab7/Lab7.ise" -intstyle ise -f calculator.ut calculator.ncd
+xst -ise "C:/270/Lab7/Lab7.ise" -intstyle ise -ifn "C:/270/Lab7/calculator.xst" -ofn "C:/270/Lab7/calculator.syr"
+ngdbuild -ise "C:/270/Lab7/Lab7.ise" -intstyle ise -dd _ngo  -nt timestamp -i -p xc3s1200e-fg320-4 "calculator.ngc" calculator.ngd
+map -ise "C:/270/Lab7/Lab7.ise" -intstyle ise -p xc3s1200e-fg320-4 -cm area -pr off -k 4 -c 100 -o calculator_map.ncd calculator.ngd calculator.pcf
+par -ise "C:/270/Lab7/Lab7.ise" -w -intstyle ise -ol std -t 1 calculator_map.ncd calculator.ncd calculator.pcf
+trce -ise "C:/270/Lab7/Lab7.ise" -intstyle ise -e 3 -s 4 -xml calculator calculator.ncd -o calculator.twr calculator.pcf -ucf calculator.ucf
+bitgen -ise "C:/270/Lab7/Lab7.ise" -intstyle ise -f calculator.ut calculator.ncd
+xst -ise "C:/270/Lab7/Lab7.ise" -intstyle ise -ifn "C:/270/Lab7/calculator.xst" -ofn "C:/270/Lab7/calculator.syr"
+ngdbuild -ise "C:/270/Lab7/Lab7.ise" -intstyle ise -dd _ngo  -nt timestamp -i -p xc3s1200e-fg320-4 "calculator.ngc" calculator.ngd
+map -ise "C:/270/Lab7/Lab7.ise" -intstyle ise -p xc3s1200e-fg320-4 -cm area -pr off -k 4 -c 100 -o calculator_map.ncd calculator.ngd calculator.pcf
+par -ise "C:/270/Lab7/Lab7.ise" -w -intstyle ise -ol std -t 1 calculator_map.ncd calculator.ncd calculator.pcf
+trce -ise "C:/270/Lab7/Lab7.ise" -intstyle ise -e 3 -s 4 -xml calculator calculator.ncd -o calculator.twr calculator.pcf -ucf calculator.ucf
+bitgen -ise "C:/270/Lab7/Lab7.ise" -intstyle ise -f calculator.ut calculator.ncd

@@ -1,0 +1,18 @@
+Determining compilation order of HDL files
+Analyzing Verilog file Q5.v
+Analyzing Verilog file Q5test.v
+Analyzing Verilog file C:/Xilinx/10.1/ISE/verilog/src/glbl.v
+Saving Verilog parse-tree work.Q5 into c:/270/hw5/isim/work/@q5.sdb
+Saving Verilog parse-tree work.Q5test into c:/270/hw5/isim/work/@q5test.sdb
+Saving Verilog parse-tree work.glbl into c:/270/hw5/isim/work/glbl.sdb
+Starting static elaboration
+Completed static elaboration
+Fuse Memory Usage: 67324 Kb
+Fuse CPU Usage: 140 ms
+Compiling module glbl
+Compiling module Q5
+Compiling module Q5test
+Compiled 3 Verilog Units
+Built simulation executable Q5test_isim_beh.exe
+Fuse Memory Usage: 68608 Kb
+Fuse CPU Usage: 187 ms

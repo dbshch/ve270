@@ -1,0 +1,2 @@
+xst -ise "C:/270/HW5/HW5.ise" -intstyle ise -ifn "C:/270/HW5/Q4.xst" -ofn "C:/270/HW5/Q4.syr"
+netgen -ise "C:/270/HW5/HW5.ise" -intstyle ise -ar Structure -tm Q4 -w -dir netgen/synthesis -ofmt vhdl -sim Q4.ngc Q4_synthesis.vhd

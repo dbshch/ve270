@@ -1,0 +1,21 @@
+V3 18
+FL C:/270/Lab4/Lab4/ALU_up_down.vhf 2017/06/23.14:00:06 K.31
+EN work/ALU_up_down 1498215091 FL C:/270/Lab4/Lab4/ALU_up_down.vhf \
+      PB ieee/std_logic_1164 1200023565 PH ieee/NUMERIC_STD 1200023568 LB UNISIM \
+      PH unisim/VCOMPONENTS 1200023571
+AR work/ALU_up_down/BEHAVIORAL 1498215092 \
+      FL C:/270/Lab4/Lab4/ALU_up_down.vhf EN work/ALU_up_down 1498215091 CP INV \
+      CP XOR2 CP AND2
+FL C:/270/Lab4/Lab4/Counter.vhf 2017/06/23.18:51:29 K.31
+EN work/M2_1_MXILINX_Counter 1498215093 FL C:/270/Lab4/Lab4/Counter.vhf \
+      PB ieee/std_logic_1164 1200023565 PH ieee/NUMERIC_STD 1200023568 LB UNISIM \
+      PH unisim/VCOMPONENTS 1200023571
+AR work/M2_1_MXILINX_Counter/BEHAVIORAL 1498215094 \
+      FL C:/270/Lab4/Lab4/Counter.vhf EN work/M2_1_MXILINX_Counter 1498215093 \
+      CP AND2B1 CP OR2 CP AND2
+EN work/Counter 1498215095 \
+      FL C:/270/Lab4/Lab4/Counter.vhf PB ieee/std_logic_1164 1200023565 \
+      PH ieee/NUMERIC_STD 1200023568 LB UNISIM PH unisim/VCOMPONENTS 1200023571
+AR work/Counter/BEHAVIORAL 1498215096 \
+      FL C:/270/Lab4/Lab4/Counter.vhf EN work/Counter 1498215095 CP ALU_up_down \
+      CP M2_1_MXILINX_Counter CP INV CP FDC

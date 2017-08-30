@@ -1,0 +1,514 @@
+Release 10.1 - xst K.31 (nt)
+Copyright (c) 1995-2008 Xilinx, Inc.  All rights reserved.
+--> Parameter TMPDIR set to C:/270/Lab5/xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.09 secs
+ 
+--> Parameter xsthdpdir set to C:/270/Lab5/xst
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.09 secs
+ 
+--> Reading design: Digital_Clock.prj
+
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Compilation
+  3) Design Hierarchy Analysis
+  4) HDL Analysis
+  5) HDL Synthesis
+     5.1) HDL Synthesis Report
+  6) Advanced HDL Synthesis
+     6.1) Advanced HDL Synthesis Report
+  7) Low Level Synthesis
+  8) Partition Report
+  9) Final Report
+     9.1) Device utilization summary
+     9.2) Partition Resource Summary
+     9.3) TIMING REPORT
+
+
+=========================================================================
+*                      Synthesis Options Summary                        *
+=========================================================================
+---- Source Parameters
+Input File Name                    : "Digital_Clock.prj"
+Input Format                       : mixed
+Ignore Synthesis Constraint File   : NO
+
+---- Target Parameters
+Output File Name                   : "Digital_Clock"
+Output Format                      : NGC
+Target Device                      : xc3s1200e-4-fg320
+
+---- Source Options
+Top Module Name                    : Digital_Clock
+Automatic FSM Extraction           : YES
+FSM Encoding Algorithm             : Auto
+Safe Implementation                : No
+FSM Style                          : lut
+RAM Extraction                     : Yes
+RAM Style                          : Auto
+ROM Extraction                     : Yes
+Mux Style                          : Auto
+Decoder Extraction                 : YES
+Priority Encoder Extraction        : YES
+Shift Register Extraction          : YES
+Logical Shifter Extraction         : YES
+XOR Collapsing                     : YES
+ROM Style                          : Auto
+Mux Extraction                     : YES
+Resource Sharing                   : YES
+Asynchronous To Synchronous        : NO
+Multiplier Style                   : auto
+Automatic Register Balancing       : No
+
+---- Target Options
+Add IO Buffers                     : YES
+Global Maximum Fanout              : 500
+Add Generic Clock Buffer(BUFG)     : 24
+Register Duplication               : YES
+Slice Packing                      : YES
+Optimize Instantiated Primitives   : NO
+Use Clock Enable                   : Yes
+Use Synchronous Set                : Yes
+Use Synchronous Reset              : Yes
+Pack IO Registers into IOBs        : auto
+Equivalent register Removal        : YES
+
+---- General Options
+Optimization Goal                  : Speed
+Optimization Effort                : 1
+Library Search Order               : Digital_Clock.lso
+Keep Hierarchy                     : NO
+Netlist Hierarchy                  : as_optimized
+RTL Output                         : Yes
+Global Optimization                : AllClockNets
+Read Cores                         : YES
+Write Timing Constraints           : NO
+Cross Clock Analysis               : NO
+Hierarchy Separator                : /
+Bus Delimiter                      : <>
+Case Specifier                     : maintain
+Slice Utilization Ratio            : 100
+BRAM Utilization Ratio             : 100
+Verilog 2001                       : YES
+Auto BRAM Packing                  : NO
+Slice Utilization Ratio Delta      : 5
+
+=========================================================================
+
+
+=========================================================================
+*                          HDL Compilation                              *
+=========================================================================
+Compiling verilog file "Digital_Clock.v" in library work
+Module <Digital_Clock> compiled
+Module <Timer> compiled
+Module <SSD_Driver> compiled
+Module <Clock_Divider_500Hz> compiled
+Module <Clock_Divider_1Hz> compiled
+Module <Ring_Counter> compiled
+No errors in compilation
+Analysis of file <"Digital_Clock.prj"> succeeded.
+ 
+
+=========================================================================
+*                     Design Hierarchy Analysis                         *
+=========================================================================
+Analyzing hierarchy for module <Digital_Clock> in library <work>.
+
+Analyzing hierarchy for module <Clock_Divider_500Hz> in library <work>.
+
+Analyzing hierarchy for module <Clock_Divider_1Hz> in library <work>.
+
+Analyzing hierarchy for module <Timer> in library <work>.
+
+Analyzing hierarchy for module <Ring_Counter> in library <work>.
+
+Analyzing hierarchy for module <SSD_Driver> in library <work>.
+
+
+=========================================================================
+*                            HDL Analysis                               *
+=========================================================================
+Analyzing top module <Digital_Clock>.
+WARNING:Xst:905 - "Digital_Clock.v" line 44: One or more signals are missing in the sensitivity list of always block. To enable synthesis of FPGA/CPLD hardware, XST will assume that all necessary signals are present in the sensitivity list. Please note that the result of the synthesis may differ from the initial design specification. The missing signals are:
+   <SSD3>, <SSD2>, <SSD1>, <SSD0>
+Module <Digital_Clock> is correct for synthesis.
+ 
+Analyzing module <Clock_Divider_500Hz> in library <work>.
+Module <Clock_Divider_500Hz> is correct for synthesis.
+ 
+Analyzing module <Clock_Divider_1Hz> in library <work>.
+Module <Clock_Divider_1Hz> is correct for synthesis.
+ 
+Analyzing module <Timer> in library <work>.
+Module <Timer> is correct for synthesis.
+ 
+Analyzing module <Ring_Counter> in library <work>.
+Module <Ring_Counter> is correct for synthesis.
+ 
+Analyzing module <SSD_Driver> in library <work>.
+Module <SSD_Driver> is correct for synthesis.
+ 
+
+=========================================================================
+*                           HDL Synthesis                               *
+=========================================================================
+
+Performing bidirectional port resolution...
+
+Synthesizing Unit <Clock_Divider_500Hz>.
+    Related source file is "Digital_Clock.v".
+WARNING:Xst:647 - Input <reset> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+    Found 1-bit register for signal <Clk_500Hz>.
+    Found 18-bit up counter for signal <Count>.
+    Summary:
+	inferred   1 Counter(s).
+	inferred   1 D-type flip-flop(s).
+Unit <Clock_Divider_500Hz> synthesized.
+
+
+Synthesizing Unit <Clock_Divider_1Hz>.
+    Related source file is "Digital_Clock.v".
+WARNING:Xst:647 - Input <reset> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+    Found 1-bit register for signal <Clk_1Hz>.
+    Found 10-bit up counter for signal <Count>.
+    Summary:
+	inferred   1 Counter(s).
+	inferred   1 D-type flip-flop(s).
+Unit <Clock_Divider_1Hz> synthesized.
+
+
+Synthesizing Unit <Timer>.
+    Related source file is "Digital_Clock.v".
+    Found 4-bit up counter for signal <Q_L>.
+    Found 4-bit up counter for signal <Q_R>.
+    Summary:
+	inferred   2 Counter(s).
+Unit <Timer> synthesized.
+
+
+Synthesizing Unit <Ring_Counter>.
+    Related source file is "Digital_Clock.v".
+WARNING:Xst:647 - Input <reset> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <SSD0> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <SSD1> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <SSD2> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <SSD3> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+    Found 4-bit register for signal <AN>.
+    Summary:
+	inferred   4 D-type flip-flop(s).
+Unit <Ring_Counter> synthesized.
+
+
+Synthesizing Unit <SSD_Driver>.
+    Related source file is "Digital_Clock.v".
+    Found 16x7-bit ROM for signal <SSD>.
+    Summary:
+	inferred   1 ROM(s).
+Unit <SSD_Driver> synthesized.
+
+
+Synthesizing Unit <Digital_Clock>.
+    Related source file is "Digital_Clock.v".
+Unit <Digital_Clock> synthesized.
+
+
+=========================================================================
+HDL Synthesis Report
+
+Macro Statistics
+# ROMs                                                 : 2
+ 16x7-bit ROM                                          : 2
+# Counters                                             : 4
+ 10-bit up counter                                     : 1
+ 18-bit up counter                                     : 1
+ 4-bit up counter                                      : 2
+# Registers                                            : 6
+ 1-bit register                                        : 6
+
+=========================================================================
+
+=========================================================================
+*                       Advanced HDL Synthesis                          *
+=========================================================================
+
+Loading device for application Rf_Device from file '3s1200e.nph' in environment C:\Xilinx\10.1\ISE.
+
+=========================================================================
+Advanced HDL Synthesis Report
+
+Macro Statistics
+# ROMs                                                 : 2
+ 16x7-bit ROM                                          : 2
+# Counters                                             : 4
+ 10-bit up counter                                     : 1
+ 18-bit up counter                                     : 1
+ 4-bit up counter                                      : 2
+# Registers                                            : 6
+ Flip-Flops                                            : 6
+
+=========================================================================
+
+=========================================================================
+*                         Low Level Synthesis                           *
+=========================================================================
+
+Optimizing unit <Digital_Clock> ...
+
+Mapping all equations...
+Building and optimizing final netlist ...
+Found area constraint ratio of 100 (+ 5) on block Digital_Clock, actual ratio is 0.
+
+Final Macro Processing ...
+
+=========================================================================
+Final Register Report
+
+Macro Statistics
+# Registers                                            : 42
+ Flip-Flops                                            : 42
+
+=========================================================================
+
+=========================================================================
+*                           Partition Report                             *
+=========================================================================
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+=========================================================================
+*                            Final Report                               *
+=========================================================================
+Final Results
+RTL Top Level Output File Name     : Digital_Clock.ngr
+Top Level Output File Name         : Digital_Clock
+Output Format                      : NGC
+Optimization Goal                  : Speed
+Keep Hierarchy                     : NO
+
+Design Statistics
+# IOs                              : 13
+
+Cell Usage :
+# BELS                             : 139
+#      GND                         : 1
+#      INV                         : 4
+#      LUT1                        : 26
+#      LUT2                        : 3
+#      LUT3                        : 1
+#      LUT4                        : 39
+#      LUT4_L                      : 2
+#      MUXCY                       : 36
+#      VCC                         : 1
+#      XORCY                       : 26
+# FlipFlops/Latches                : 42
+#      FD                          : 4
+#      FDC                         : 4
+#      FDCE                        : 4
+#      FDR                         : 30
+# Clock Buffers                    : 1
+#      BUFGP                       : 1
+# IO Buffers                       : 12
+#      IBUF                        : 1
+#      OBUF                        : 11
+=========================================================================
+
+Device utilization summary:
+---------------------------
+
+Selected Device : 3s1200efg320-4 
+
+ Number of Slices:                       41  out of   8672     0%  
+ Number of Slice Flip Flops:             42  out of  17344     0%  
+ Number of 4 input LUTs:                 75  out of  17344     0%  
+ Number of IOs:                          13
+ Number of bonded IOBs:                  13  out of    250     5%  
+ Number of GCLKs:                         1  out of     24     4%  
+
+---------------------------
+Partition Resource Summary:
+---------------------------
+
+  No Partitions were found in this design.
+
+---------------------------
+
+
+=========================================================================
+TIMING REPORT
+
+NOTE: THESE TIMING NUMBERS ARE ONLY A SYNTHESIS ESTIMATE.
+      FOR ACCURATE TIMING INFORMATION PLEASE REFER TO THE TRACE REPORT
+      GENERATED AFTER PLACE-and-ROUTE.
+
+Clock Information:
+------------------
+-----------------------------------+------------------------+-------+
+Clock Signal                       | Clock buffer(FF name)  | Load  |
+-----------------------------------+------------------------+-------+
+clk                                | BUFGP                  | 19    |
+Div1/Clk_500Hz                     | NONE(Div2/Clk_1Hz)     | 15    |
+Div2/Clk_1Hz                       | NONE(C1/Q_L_0)         | 8     |
+-----------------------------------+------------------------+-------+
+INFO:Xst:2169 - HDL ADVISOR - Some clock signals were not automatically buffered by XST with BUFG/BUFR resources. Please use the buffer_type constraint in order to insert these buffers to the clock signals to help prevent skew problems.
+
+Asynchronous Control Signals Information:
+----------------------------------------
+-----------------------------------+------------------------+-------+
+Control Signal                     | Buffer(FF name)        | Load  |
+-----------------------------------+------------------------+-------+
+reset                              | IBUF                   | 8     |
+-----------------------------------+------------------------+-------+
+
+Timing Summary:
+---------------
+Speed Grade: -4
+
+   Minimum period: 4.952ns (Maximum Frequency: 201.939MHz)
+   Minimum input arrival time before clock: No path found
+   Maximum output required time after clock: 7.326ns
+   Maximum combinational path delay: No path found
+
+Timing Detail:
+--------------
+All values displayed in nanoseconds (ns)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'clk'
+  Clock period: 4.952ns (frequency: 201.939MHz)
+  Total number of paths / destination ports: 513 / 37
+-------------------------------------------------------------------------
+Delay:               4.952ns (Levels of Logic = 6)
+  Source:            Div1/Count_4 (FF)
+  Destination:       Div1/Count_0 (FF)
+  Source Clock:      clk rising
+  Destination Clock: clk rising
+
+  Data Path: Div1/Count_4 to Div1/Count_0
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDR:C->Q              3   0.591   0.706  Div1/Count_4 (Div1/Count_4)
+     LUT2:I0->O            1   0.704   0.000  Div1/Count_cmp_eq0000_wg_lut<0> (Div1/Count_cmp_eq0000_wg_lut<0>)
+     MUXCY:S->O            1   0.464   0.000  Div1/Count_cmp_eq0000_wg_cy<0> (Div1/Count_cmp_eq0000_wg_cy<0>)
+     MUXCY:CI->O           1   0.059   0.000  Div1/Count_cmp_eq0000_wg_cy<1> (Div1/Count_cmp_eq0000_wg_cy<1>)
+     MUXCY:CI->O           1   0.059   0.000  Div1/Count_cmp_eq0000_wg_cy<2> (Div1/Count_cmp_eq0000_wg_cy<2>)
+     MUXCY:CI->O           1   0.059   0.000  Div1/Count_cmp_eq0000_wg_cy<3> (Div1/Count_cmp_eq0000_wg_cy<3>)
+     MUXCY:CI->O          18   0.331   1.068  Div1/Count_cmp_eq0000_wg_cy<4> (Div1/Count_cmp_eq0000)
+     FDR:R                     0.911          Div1/Count_0
+    ----------------------------------------
+    Total                      4.952ns (3.178ns logic, 1.774ns route)
+                                       (64.2% logic, 35.8% route)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'Div1/Clk_500Hz'
+  Clock period: 4.922ns (frequency: 203.169MHz)
+  Total number of paths / destination ports: 169 / 25
+-------------------------------------------------------------------------
+Delay:               4.922ns (Levels of Logic = 2)
+  Source:            Div2/Count_3 (FF)
+  Destination:       Div2/Count_0 (FF)
+  Source Clock:      Div1/Clk_500Hz rising
+  Destination Clock: Div1/Clk_500Hz rising
+
+  Data Path: Div2/Count_3 to Div2/Count_0
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDR:C->Q              3   0.591   0.706  Div2/Count_3 (Div2/Count_3)
+     LUT4:I0->O            1   0.704   0.424  Div2/Count_cmp_eq000010 (Div2/Count_cmp_eq000010)
+     LUT4:I3->O           10   0.704   0.882  Div2/Count_cmp_eq000027 (Div2/Count_cmp_eq0000)
+     FDR:R                     0.911          Div2/Count_0
+    ----------------------------------------
+    Total                      4.922ns (2.910ns logic, 2.012ns route)
+                                       (59.1% logic, 40.9% route)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'Div2/Clk_1Hz'
+  Clock period: 3.545ns (frequency: 282.087MHz)
+  Total number of paths / destination ports: 41 / 12
+-------------------------------------------------------------------------
+Delay:               3.545ns (Levels of Logic = 1)
+  Source:            C1/Q_R_2 (FF)
+  Destination:       C1/Q_L_0 (FF)
+  Source Clock:      Div2/Clk_1Hz rising
+  Destination Clock: Div2/Clk_1Hz rising
+
+  Data Path: C1/Q_R_2 to C1/Q_L_0
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDC:C->Q             11   0.591   1.108  C1/Q_R_2 (C1/Q_R_2)
+     LUT4:I0->O            4   0.704   0.587  C1/Q_R_cmp_eq00001 (C1/Q_R_cmp_eq0000)
+     FDCE:CE                   0.555          C1/Q_L_0
+    ----------------------------------------
+    Total                      3.545ns (1.850ns logic, 1.695ns route)
+                                       (52.2% logic, 47.8% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'Div1/Clk_500Hz'
+  Total number of paths / destination ports: 25 / 11
+-------------------------------------------------------------------------
+Offset:              7.109ns (Levels of Logic = 3)
+  Source:            RC/AN_1 (FF)
+  Destination:       SSD<6> (PAD)
+  Source Clock:      Div1/Clk_500Hz rising
+
+  Data Path: RC/AN_1 to SSD<6>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FD:C->Q               3   0.591   0.706  RC/AN_1 (RC/AN_1)
+     LUT2:I0->O            7   0.704   0.712  SSD<4>1160_SW0 (N0)
+     LUT4:I3->O            1   0.704   0.420  SSD<4>1160 (SSD_4_OBUF)
+     OBUF:I->O                 3.272          SSD_4_OBUF (SSD<4>)
+    ----------------------------------------
+    Total                      7.109ns (5.271ns logic, 1.838ns route)
+                                       (74.1% logic, 25.9% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'Div2/Clk_1Hz'
+  Total number of paths / destination ports: 56 / 7
+-------------------------------------------------------------------------
+Offset:              7.326ns (Levels of Logic = 3)
+  Source:            C1/Q_R_0 (FF)
+  Destination:       SSD<3> (PAD)
+  Source Clock:      Div2/Clk_1Hz rising
+
+  Data Path: C1/Q_R_0 to SSD<3>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDC:C->Q             12   0.591   1.136  C1/Q_R_0 (C1/Q_R_0)
+     LUT4:I0->O            1   0.704   0.499  SSD<3>157 (SSD<3>157)
+     LUT4:I1->O            1   0.704   0.420  SSD<3>1176 (SSD_3_OBUF)
+     OBUF:I->O                 3.272          SSD_3_OBUF (SSD<3>)
+    ----------------------------------------
+    Total                      7.326ns (5.271ns logic, 2.055ns route)
+                                       (71.9% logic, 28.1% route)
+
+=========================================================================
+
+
+Total REAL time to Xst completion: 3.00 secs
+Total CPU time to Xst completion: 2.92 secs
+ 
+--> 
+
+Total memory usage is 153352 kilobytes
+
+Number of errors   :    0 (   0 filtered)
+Number of warnings :   12 (   0 filtered)
+Number of infos    :    1 (   0 filtered)
+

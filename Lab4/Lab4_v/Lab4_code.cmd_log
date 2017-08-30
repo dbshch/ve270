@@ -1,0 +1,58 @@
+xst -ise "C:/270/Lab4/Lab4_v/Lab4_v.ise" -intstyle ise -ifn "C:/270/Lab4/Lab4_v/Lab4_code.xst" -ofn "C:/270/Lab4/Lab4_v/Lab4_code.syr"
+xst -ise "C:/270/Lab4/Lab4_v/Lab4_v.ise" -intstyle ise -ifn "C:/270/Lab4/Lab4_v/Lab4_code.xst" -ofn "C:/270/Lab4/Lab4_v/Lab4_code.syr"
+xst -ise "C:/270/Lab4/Lab4_v/Lab4_v.ise" -intstyle ise -ifn "C:/270/Lab4/Lab4_v/Lab4_code.xst" -ofn "C:/270/Lab4/Lab4_v/Lab4_code.syr"
+ngdbuild -ise "C:/270/Lab4/Lab4_v/Lab4_v.ise" -intstyle ise -dd _ngo  -nt timestamp -i -p xc3s1200e-fg320-4 "Lab4_code.ngc" Lab4_code.ngd
+map -ise "C:/270/Lab4/Lab4_v/Lab4_v.ise" -intstyle ise -p xc3s1200e-fg320-4 -cm area -pr off -k 4 -c 100 -o Lab4_code_map.ncd Lab4_code.ngd Lab4_code.pcf
+par -ise "C:/270/Lab4/Lab4_v/Lab4_v.ise" -w -intstyle ise -ol std -t 1 Lab4_code_map.ncd Lab4_code.ncd Lab4_code.pcf
+trce -ise "C:/270/Lab4/Lab4_v/Lab4_v.ise" -intstyle ise -e 3 -s 4 -xml Lab4_code Lab4_code.ncd -o Lab4_code.twr Lab4_code.pcf -ucf Lab4_code.ucf
+bitgen -ise "C:/270/Lab4/Lab4_v/Lab4_v.ise" -intstyle ise -f Lab4_code.ut Lab4_code.ncd
+bitgen -ise "C:/270/Lab4/Lab4_v/Lab4_v.ise" -intstyle ise -f Lab4_code.ut Lab4_code.ncd
+xst -ise "C:/270/Lab4/Lab4_v/Lab4_v.ise" -intstyle ise -ifn "C:/270/Lab4/Lab4_v/Lab4_code.xst" -ofn "C:/270/Lab4/Lab4_v/Lab4_code.syr"
+xst -ise "C:/270/Lab4/Lab4_v/Lab4_v.ise" -intstyle ise -ifn "C:/270/Lab4/Lab4_v/Lab4_code.xst" -ofn "C:/270/Lab4/Lab4_v/Lab4_code.syr"
+ngdbuild -ise "C:/270/Lab4/Lab4_v/Lab4_v.ise" -intstyle ise -dd _ngo  -nt timestamp -i -p xc3s1200e-fg320-4 "Lab4_code.ngc" Lab4_code.ngd
+map -ise "C:/270/Lab4/Lab4_v/Lab4_v.ise" -intstyle ise -p xc3s1200e-fg320-4 -cm area -pr off -k 4 -c 100 -o Lab4_code_map.ncd Lab4_code.ngd Lab4_code.pcf
+par -ise "C:/270/Lab4/Lab4_v/Lab4_v.ise" -w -intstyle ise -ol std -t 1 Lab4_code_map.ncd Lab4_code.ncd Lab4_code.pcf
+trce -ise "C:/270/Lab4/Lab4_v/Lab4_v.ise" -intstyle ise -e 3 -s 4 -xml Lab4_code Lab4_code.ncd -o Lab4_code.twr Lab4_code.pcf -ucf Lab4_code.ucf
+bitgen -ise "C:/270/Lab4/Lab4_v/Lab4_v.ise" -intstyle ise -f Lab4_code.ut Lab4_code.ncd
+xst -ise "C:/270/Lab4/Lab4_v/Lab4_v.ise" -intstyle ise -ifn "C:/270/Lab4/Lab4_v/Lab4_code.xst" -ofn "C:/270/Lab4/Lab4_v/Lab4_code.syr"
+xst -ise "C:/270/Lab4/Lab4_v/Lab4_v.ise" -intstyle ise -ifn "C:/270/Lab4/Lab4_v/Lab4_code.xst" -ofn "C:/270/Lab4/Lab4_v/Lab4_code.syr"
+ngdbuild -ise "C:/270/Lab4/Lab4_v/Lab4_v.ise" -intstyle ise -dd _ngo  -nt timestamp -i -p xc3s1200e-fg320-4 "Lab4_code.ngc" Lab4_code.ngd
+map -ise "C:/270/Lab4/Lab4_v/Lab4_v.ise" -intstyle ise -p xc3s1200e-fg320-4 -cm area -pr off -k 4 -c 100 -o Lab4_code_map.ncd Lab4_code.ngd Lab4_code.pcf
+par -ise "C:/270/Lab4/Lab4_v/Lab4_v.ise" -w -intstyle ise -ol std -t 1 Lab4_code_map.ncd Lab4_code.ncd Lab4_code.pcf
+trce -ise "C:/270/Lab4/Lab4_v/Lab4_v.ise" -intstyle ise -e 3 -s 4 -xml Lab4_code Lab4_code.ncd -o Lab4_code.twr Lab4_code.pcf -ucf Lab4_code.ucf
+bitgen -ise "C:/270/Lab4/Lab4_v/Lab4_v.ise" -intstyle ise -f Lab4_code.ut Lab4_code.ncd
+xst -ise "C:/270/Lab4/Lab4_v/Lab4_v.ise" -intstyle ise -ifn "C:/270/Lab4/Lab4_v/Lab4_code.xst" -ofn "C:/270/Lab4/Lab4_v/Lab4_code.syr"
+ngdbuild -ise "C:/270/Lab4/Lab4_v/Lab4_v.ise" -intstyle ise -dd _ngo  -nt timestamp -i -p xc3s1200e-fg320-4 "Lab4_code.ngc" Lab4_code.ngd
+map -ise "C:/270/Lab4/Lab4_v/Lab4_v.ise" -intstyle ise -p xc3s1200e-fg320-4 -cm area -pr off -k 4 -c 100 -o Lab4_code_map.ncd Lab4_code.ngd Lab4_code.pcf
+par -ise "C:/270/Lab4/Lab4_v/Lab4_v.ise" -w -intstyle ise -ol std -t 1 Lab4_code_map.ncd Lab4_code.ncd Lab4_code.pcf
+trce -ise "C:/270/Lab4/Lab4_v/Lab4_v.ise" -intstyle ise -e 3 -s 4 -xml Lab4_code Lab4_code.ncd -o Lab4_code.twr Lab4_code.pcf -ucf Lab4_code.ucf
+bitgen -ise "C:/270/Lab4/Lab4_v/Lab4_v.ise" -intstyle ise -f Lab4_code.ut Lab4_code.ncd
+ngdbuild -ise "C:/270/Lab4/Lab4_v/Lab4_v.ise" -intstyle ise -dd _ngo  -nt timestamp -i -p xc3s1200e-fg320-4 "Lab4_code.ngc" Lab4_code.ngd
+map -ise "C:/270/Lab4/Lab4_v/Lab4_v.ise" -intstyle ise -p xc3s1200e-fg320-4 -cm area -pr off -k 4 -c 100 -o Lab4_code_map.ncd Lab4_code.ngd Lab4_code.pcf
+par -ise "C:/270/Lab4/Lab4_v/Lab4_v.ise" -w -intstyle ise -ol std -t 1 Lab4_code_map.ncd Lab4_code.ncd Lab4_code.pcf
+trce -ise "C:/270/Lab4/Lab4_v/Lab4_v.ise" -intstyle ise -e 3 -s 4 -xml Lab4_code Lab4_code.ncd -o Lab4_code.twr Lab4_code.pcf -ucf Lab4_code.ucf
+bitgen -ise "C:/270/Lab4/Lab4_v/Lab4_v.ise" -intstyle ise -f Lab4_code.ut Lab4_code.ncd
+xst -ise "C:/270/Lab4/Lab4_v/Lab4_v.ise" -intstyle ise -ifn "C:/270/Lab4/Lab4_v/Lab4_code.xst" -ofn "C:/270/Lab4/Lab4_v/Lab4_code.syr"
+ngdbuild -ise "C:/270/Lab4/Lab4_v/Lab4_v.ise" -intstyle ise -dd _ngo  -nt timestamp -i -p xc3s1200e-fg320-4 "Lab4_code.ngc" Lab4_code.ngd
+map -ise "C:/270/Lab4/Lab4_v/Lab4_v.ise" -intstyle ise -p xc3s1200e-fg320-4 -cm area -pr off -k 4 -c 100 -o Lab4_code_map.ncd Lab4_code.ngd Lab4_code.pcf
+par -ise "C:/270/Lab4/Lab4_v/Lab4_v.ise" -w -intstyle ise -ol std -t 1 Lab4_code_map.ncd Lab4_code.ncd Lab4_code.pcf
+trce -ise "C:/270/Lab4/Lab4_v/Lab4_v.ise" -intstyle ise -e 3 -s 4 -xml Lab4_code Lab4_code.ncd -o Lab4_code.twr Lab4_code.pcf -ucf Lab4_code.ucf
+bitgen -ise "C:/270/Lab4/Lab4_v/Lab4_v.ise" -intstyle ise -f Lab4_code.ut Lab4_code.ncd
+xst -ise "C:/270/Lab4/Lab4_v/Lab4_v.ise" -intstyle ise -ifn "C:/270/Lab4/Lab4_v/Lab4_code.xst" -ofn "C:/270/Lab4/Lab4_v/Lab4_code.syr"
+ngdbuild -ise "C:/270/Lab4/Lab4_v/Lab4_v.ise" -intstyle ise -dd _ngo  -nt timestamp -i -p xc3s1200e-fg320-4 "Lab4_code.ngc" Lab4_code.ngd
+map -ise "C:/270/Lab4/Lab4_v/Lab4_v.ise" -intstyle ise -p xc3s1200e-fg320-4 -cm area -pr off -k 4 -c 100 -o Lab4_code_map.ncd Lab4_code.ngd Lab4_code.pcf
+par -ise "C:/270/Lab4/Lab4_v/Lab4_v.ise" -w -intstyle ise -ol std -t 1 Lab4_code_map.ncd Lab4_code.ncd Lab4_code.pcf
+trce -ise "C:/270/Lab4/Lab4_v/Lab4_v.ise" -intstyle ise -e 3 -s 4 -xml Lab4_code Lab4_code.ncd -o Lab4_code.twr Lab4_code.pcf -ucf Lab4_code.ucf
+bitgen -ise "C:/270/Lab4/Lab4_v/Lab4_v.ise" -intstyle ise -f Lab4_code.ut Lab4_code.ncd
+xst -ise "C:/270/Lab4/Lab4_v/Lab4_v.ise" -intstyle ise -ifn "C:/270/Lab4/Lab4_v/Lab4_code.xst" -ofn "C:/270/Lab4/Lab4_v/Lab4_code.syr"
+ngdbuild -ise "C:/270/Lab4/Lab4_v/Lab4_v.ise" -intstyle ise -dd _ngo  -nt timestamp -i -p xc3s1200e-fg320-4 "Lab4_code.ngc" Lab4_code.ngd
+map -ise "C:/270/Lab4/Lab4_v/Lab4_v.ise" -intstyle ise -p xc3s1200e-fg320-4 -cm area -pr off -k 4 -c 100 -o Lab4_code_map.ncd Lab4_code.ngd Lab4_code.pcf
+par -ise "C:/270/Lab4/Lab4_v/Lab4_v.ise" -w -intstyle ise -ol std -t 1 Lab4_code_map.ncd Lab4_code.ncd Lab4_code.pcf
+trce -ise "C:/270/Lab4/Lab4_v/Lab4_v.ise" -intstyle ise -e 3 -s 4 -xml Lab4_code Lab4_code.ncd -o Lab4_code.twr Lab4_code.pcf -ucf Lab4_code.ucf
+bitgen -ise "C:/270/Lab4/Lab4_v/Lab4_v.ise" -intstyle ise -f Lab4_code.ut Lab4_code.ncd
+xst -ise "C:/270/Lab4/Lab4_v/Lab4_v.ise" -intstyle ise -ifn "C:/270/Lab4/Lab4_v/Lab4_code.xst" -ofn "C:/270/Lab4/Lab4_v/Lab4_code.syr"
+ngdbuild -ise "C:/270/Lab4/Lab4_v/Lab4_v.ise" -intstyle ise -dd _ngo  -nt timestamp -i -p xc3s1200e-fg320-4 "Lab4_code.ngc" Lab4_code.ngd
+map -ise "C:/270/Lab4/Lab4_v/Lab4_v.ise" -intstyle ise -p xc3s1200e-fg320-4 -cm area -pr off -k 4 -c 100 -o Lab4_code_map.ncd Lab4_code.ngd Lab4_code.pcf
+par -ise "C:/270/Lab4/Lab4_v/Lab4_v.ise" -w -intstyle ise -ol std -t 1 Lab4_code_map.ncd Lab4_code.ncd Lab4_code.pcf
+trce -ise "C:/270/Lab4/Lab4_v/Lab4_v.ise" -intstyle ise -e 3 -s 4 -xml Lab4_code Lab4_code.ncd -o Lab4_code.twr Lab4_code.pcf -ucf Lab4_code.ucf
+bitgen -ise "C:/270/Lab4/Lab4_v/Lab4_v.ise" -intstyle ise -f Lab4_code.ut Lab4_code.ncd

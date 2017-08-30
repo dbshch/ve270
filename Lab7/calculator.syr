@@ -1,0 +1,652 @@
+Release 10.1 - xst K.31 (nt)
+Copyright (c) 1995-2008 Xilinx, Inc.  All rights reserved.
+--> Parameter TMPDIR set to C:/270/Lab7/xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.13 secs
+ 
+--> Parameter xsthdpdir set to C:/270/Lab7/xst
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.13 secs
+ 
+--> Reading design: calculator.prj
+
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Compilation
+  3) Design Hierarchy Analysis
+  4) HDL Analysis
+  5) HDL Synthesis
+     5.1) HDL Synthesis Report
+  6) Advanced HDL Synthesis
+     6.1) Advanced HDL Synthesis Report
+  7) Low Level Synthesis
+  8) Partition Report
+  9) Final Report
+     9.1) Device utilization summary
+     9.2) Partition Resource Summary
+     9.3) TIMING REPORT
+
+
+=========================================================================
+*                      Synthesis Options Summary                        *
+=========================================================================
+---- Source Parameters
+Input File Name                    : "calculator.prj"
+Input Format                       : mixed
+Ignore Synthesis Constraint File   : NO
+
+---- Target Parameters
+Output File Name                   : "calculator"
+Output Format                      : NGC
+Target Device                      : xc3s1200e-4-fg320
+
+---- Source Options
+Top Module Name                    : calculator
+Automatic FSM Extraction           : YES
+FSM Encoding Algorithm             : Auto
+Safe Implementation                : No
+FSM Style                          : lut
+RAM Extraction                     : Yes
+RAM Style                          : Auto
+ROM Extraction                     : Yes
+Mux Style                          : Auto
+Decoder Extraction                 : YES
+Priority Encoder Extraction        : YES
+Shift Register Extraction          : YES
+Logical Shifter Extraction         : YES
+XOR Collapsing                     : YES
+ROM Style                          : Auto
+Mux Extraction                     : YES
+Resource Sharing                   : YES
+Asynchronous To Synchronous        : NO
+Multiplier Style                   : auto
+Automatic Register Balancing       : No
+
+---- Target Options
+Add IO Buffers                     : YES
+Global Maximum Fanout              : 500
+Add Generic Clock Buffer(BUFG)     : 24
+Register Duplication               : YES
+Slice Packing                      : YES
+Optimize Instantiated Primitives   : NO
+Use Clock Enable                   : Yes
+Use Synchronous Set                : Yes
+Use Synchronous Reset              : Yes
+Pack IO Registers into IOBs        : auto
+Equivalent register Removal        : YES
+
+---- General Options
+Optimization Goal                  : Speed
+Optimization Effort                : 1
+Library Search Order               : calculator.lso
+Keep Hierarchy                     : NO
+Netlist Hierarchy                  : as_optimized
+RTL Output                         : Yes
+Global Optimization                : AllClockNets
+Read Cores                         : YES
+Write Timing Constraints           : NO
+Cross Clock Analysis               : NO
+Hierarchy Separator                : /
+Bus Delimiter                      : <>
+Case Specifier                     : maintain
+Slice Utilization Ratio            : 100
+BRAM Utilization Ratio             : 100
+Verilog 2001                       : YES
+Auto BRAM Packing                  : NO
+Slice Utilization Ratio Delta      : 5
+
+=========================================================================
+
+
+=========================================================================
+*                          HDL Compilation                              *
+=========================================================================
+Compiling verilog file "calculator.v" in library work
+Module <calculator> compiled
+Module <calc> compiled
+Module <Show_ID> compiled
+Module <Clock_Divider> compiled
+Module <Clock_Divider_500Hz> compiled
+Module <SSD_Driver> compiled
+Module <SSD_Driver_neg> compiled
+Module <Ring_Counter> compiled
+No errors in compilation
+Analysis of file <"calculator.prj"> succeeded.
+ 
+
+=========================================================================
+*                     Design Hierarchy Analysis                         *
+=========================================================================
+Analyzing hierarchy for module <calculator> in library <work>.
+
+Analyzing hierarchy for module <Show_ID> in library <work>.
+
+Analyzing hierarchy for module <calc> in library <work>.
+
+Analyzing hierarchy for module <Clock_Divider> in library <work>.
+
+Analyzing hierarchy for module <Clock_Divider_500Hz> in library <work>.
+
+Analyzing hierarchy for module <Ring_Counter> in library <work>.
+
+Analyzing hierarchy for module <SSD_Driver> in library <work>.
+
+Analyzing hierarchy for module <SSD_Driver_neg> in library <work>.
+
+
+=========================================================================
+*                            HDL Analysis                               *
+=========================================================================
+Analyzing top module <calculator>.
+WARNING:Xst:905 - "calculator.v" line 50: One or more signals are missing in the sensitivity list of always block. To enable synthesis of FPGA/CPLD hardware, XST will assume that all necessary signals are present in the sensitivity list. Please note that the result of the synthesis may differ from the initial design specification. The missing signals are:
+   <is_end>, <S0>, <SSD3>, <SSD5>, <SSD2>, <SSD4>, <SSD1>, <zero>, <SSD0>
+Module <calculator> is correct for synthesis.
+ 
+Analyzing module <Show_ID> in library <work>.
+Module <Show_ID> is correct for synthesis.
+ 
+Analyzing module <calc> in library <work>.
+Module <calc> is correct for synthesis.
+ 
+Analyzing module <Clock_Divider> in library <work>.
+Module <Clock_Divider> is correct for synthesis.
+ 
+Analyzing module <Clock_Divider_500Hz> in library <work>.
+Module <Clock_Divider_500Hz> is correct for synthesis.
+ 
+Analyzing module <Ring_Counter> in library <work>.
+Module <Ring_Counter> is correct for synthesis.
+ 
+Analyzing module <SSD_Driver> in library <work>.
+Module <SSD_Driver> is correct for synthesis.
+ 
+Analyzing module <SSD_Driver_neg> in library <work>.
+Module <SSD_Driver_neg> is correct for synthesis.
+ 
+
+=========================================================================
+*                           HDL Synthesis                               *
+=========================================================================
+
+Performing bidirectional port resolution...
+
+Synthesizing Unit <Show_ID>.
+    Related source file is "calculator.v".
+WARNING:Xst:647 - Input <reset> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:646 - Signal <id<47:40>> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+    Found 4-bit register for signal <SSD0>.
+    Found 4-bit register for signal <SSD1>.
+    Found 4-bit register for signal <SSD2>.
+    Found 4-bit register for signal <SSD3>.
+    Found 4-bit up counter for signal <n>.
+    Summary:
+	inferred   1 Counter(s).
+	inferred  16 D-type flip-flop(s).
+Unit <Show_ID> synthesized.
+
+
+Synthesizing Unit <calc>.
+    Related source file is "calculator.v".
+WARNING:Xst:646 - Signal <tmp> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+    Found 4-bit register for signal <sum>.
+    Found 1-bit register for signal <overflow>.
+    Found 4-bit adder for signal <$add0000> created at line 104.
+    Found 4-bit adder carry out for signal <add0001$addsub0000> created at line 99.
+    Found 5-bit comparator greater for signal <overflow$cmp_gt0000> created at line 99.
+    Found 4-bit comparator greater for signal <overflow$cmp_gt0001> created at line 99.
+    Found 4-bit comparator greater for signal <overflow$cmp_gt0002> created at line 99.
+    Found 4-bit comparator less for signal <overflow$cmp_lt0000> created at line 99.
+    Found 4-bit comparator less for signal <overflow$cmp_lt0001> created at line 99.
+    Found 5-bit comparator less for signal <overflow$cmp_lt0002> created at line 99.
+    Found 1-bit register for signal <status>.
+    Summary:
+	inferred   6 D-type flip-flop(s).
+	inferred   2 Adder/Subtractor(s).
+	inferred   6 Comparator(s).
+Unit <calc> synthesized.
+
+
+Synthesizing Unit <Clock_Divider>.
+    Related source file is "calculator.v".
+WARNING:Xst:647 - Input <reset> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+    Found 18-bit up counter for signal <Count>.
+    Summary:
+	inferred   1 Counter(s).
+Unit <Clock_Divider> synthesized.
+
+
+Synthesizing Unit <Clock_Divider_500Hz>.
+    Related source file is "calculator.v".
+WARNING:Xst:647 - Input <reset> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+    Found 1-bit register for signal <Clk_500Hz>.
+    Found 18-bit up counter for signal <Count>.
+    Summary:
+	inferred   1 Counter(s).
+	inferred   1 D-type flip-flop(s).
+Unit <Clock_Divider_500Hz> synthesized.
+
+
+Synthesizing Unit <Ring_Counter>.
+    Related source file is "calculator.v".
+WARNING:Xst:647 - Input <reset> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+    Found 4-bit register for signal <AN>.
+    Summary:
+	inferred   4 D-type flip-flop(s).
+Unit <Ring_Counter> synthesized.
+
+
+Synthesizing Unit <SSD_Driver>.
+    Related source file is "calculator.v".
+    Found 16x7-bit ROM for signal <SSD>.
+    Summary:
+	inferred   1 ROM(s).
+Unit <SSD_Driver> synthesized.
+
+
+Synthesizing Unit <SSD_Driver_neg>.
+    Related source file is "calculator.v".
+WARNING:Xst:647 - Input <Q<2:0>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+Unit <SSD_Driver_neg> synthesized.
+
+
+Synthesizing Unit <calculator>.
+    Related source file is "calculator.v".
+WARNING:Xst:646 - Signal <neg> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:1780 - Signal <SSD7> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:1780 - Signal <SSD6> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:737 - Found 1-bit latch for signal <is_end>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 4-bit latch for signal <result>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+Unit <calculator> synthesized.
+
+
+=========================================================================
+HDL Synthesis Report
+
+Macro Statistics
+# ROMs                                                 : 5
+ 16x7-bit ROM                                          : 5
+# Adders/Subtractors                                   : 2
+ 4-bit adder                                           : 1
+ 4-bit adder carry out                                 : 1
+# Counters                                             : 2
+ 18-bit up counter                                     : 1
+ 4-bit up counter                                      : 1
+# Registers                                            : 12
+ 1-bit register                                        : 7
+ 4-bit register                                        : 5
+# Latches                                              : 2
+ 1-bit latch                                           : 1
+ 4-bit latch                                           : 1
+# Comparators                                          : 6
+ 4-bit comparator greater                              : 2
+ 4-bit comparator less                                 : 2
+ 5-bit comparator greater                              : 1
+ 5-bit comparator less                                 : 1
+
+=========================================================================
+
+=========================================================================
+*                       Advanced HDL Synthesis                          *
+=========================================================================
+
+Loading device for application Rf_Device from file '3s1200e.nph' in environment C:\Xilinx\10.1\ISE.
+WARNING:Xst:1426 - The value init of the FF/Latch 0 hinder the constant cleaning in the block is_end.
+   You should achieve better results by setting this init to 1.
+WARNING:Xst:1710 - FF/Latch <0> (without init value) has a constant value of 0 in block <3>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <0> (without init value) has a constant value of 0 in block <2>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <0> (without init value) has a constant value of 0 in block <1>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <0> (without init value) has a constant value of 0 in block <0>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <SSD3_3> (without init value) has a constant value of 0 in block <SH>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <SSD3_2> (without init value) has a constant value of 0 in block <SH>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <SSD3_1> (without init value) has a constant value of 0 in block <SH>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <SSD3_0> (without init value) has a constant value of 0 in block <SH>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <SSD2_3> (without init value) has a constant value of 0 in block <SH>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <SSD2_2> (without init value) has a constant value of 0 in block <SH>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <SSD2_1> (without init value) has a constant value of 0 in block <SH>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <SSD2_0> (without init value) has a constant value of 0 in block <SH>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <SSD0_3> (without init value) has a constant value of 0 in block <SH>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <SSD0_2> (without init value) has a constant value of 0 in block <SH>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <SSD0_1> (without init value) has a constant value of 0 in block <SH>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <SSD0_0> (without init value) has a constant value of 0 in block <SH>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <SSD1_3> (without init value) has a constant value of 0 in block <SH>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <SSD1_2> (without init value) has a constant value of 0 in block <SH>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <SSD1_1> (without init value) has a constant value of 0 in block <SH>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <SSD1_0> (without init value) has a constant value of 0 in block <SH>. This FF/Latch will be trimmed during the optimization process.
+
+=========================================================================
+Advanced HDL Synthesis Report
+
+Macro Statistics
+# ROMs                                                 : 5
+ 16x7-bit ROM                                          : 5
+# Adders/Subtractors                                   : 2
+ 4-bit adder                                           : 1
+ 4-bit adder carry out                                 : 1
+# Counters                                             : 2
+ 18-bit up counter                                     : 1
+ 4-bit up counter                                      : 1
+# Registers                                            : 27
+ Flip-Flops                                            : 27
+# Latches                                              : 2
+ 1-bit latch                                           : 1
+ 4-bit latch                                           : 1
+# Comparators                                          : 6
+ 4-bit comparator greater                              : 2
+ 4-bit comparator less                                 : 2
+ 5-bit comparator greater                              : 1
+ 5-bit comparator less                                 : 1
+
+=========================================================================
+
+=========================================================================
+*                         Low Level Synthesis                           *
+=========================================================================
+WARNING:Xst:1710 - FF/Latch <SSD1_0> (without init value) has a constant value of 0 in block <Show_ID>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <SSD1_1> (without init value) has a constant value of 0 in block <Show_ID>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <SSD1_2> (without init value) has a constant value of 0 in block <Show_ID>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <SSD1_3> (without init value) has a constant value of 0 in block <Show_ID>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <SSD0_0> (without init value) has a constant value of 0 in block <Show_ID>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <SSD0_1> (without init value) has a constant value of 0 in block <Show_ID>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <SSD0_2> (without init value) has a constant value of 0 in block <Show_ID>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <SSD0_3> (without init value) has a constant value of 0 in block <Show_ID>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <SSD2_0> (without init value) has a constant value of 0 in block <Show_ID>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <SSD2_1> (without init value) has a constant value of 0 in block <Show_ID>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <SSD2_2> (without init value) has a constant value of 0 in block <Show_ID>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <SSD2_3> (without init value) has a constant value of 0 in block <Show_ID>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <SSD3_0> (without init value) has a constant value of 0 in block <Show_ID>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <SSD3_1> (without init value) has a constant value of 0 in block <Show_ID>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <SSD3_2> (without init value) has a constant value of 0 in block <Show_ID>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <SSD3_3> (without init value) has a constant value of 0 in block <Show_ID>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1426 - The value init of the FF/Latch is_end hinder the constant cleaning in the block calculator.
+   You should achieve better results by setting this init to 1.
+WARNING:Xst:1710 - FF/Latch <result_0> (without init value) has a constant value of 0 in block <calculator>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <result_1> (without init value) has a constant value of 0 in block <calculator>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <result_2> (without init value) has a constant value of 0 in block <calculator>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <result_3> (without init value) has a constant value of 0 in block <calculator>. This FF/Latch will be trimmed during the optimization process.
+
+Optimizing unit <calculator> ...
+
+Optimizing unit <calc> ...
+
+Mapping all equations...
+Building and optimizing final netlist ...
+Found area constraint ratio of 100 (+ 5) on block calculator, actual ratio is 0.
+
+Final Macro Processing ...
+
+=========================================================================
+Final Register Report
+
+Macro Statistics
+# Registers                                            : 29
+ Flip-Flops                                            : 29
+
+=========================================================================
+
+=========================================================================
+*                           Partition Report                             *
+=========================================================================
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+=========================================================================
+*                            Final Report                               *
+=========================================================================
+Final Results
+RTL Top Level Output File Name     : calculator.ngr
+Top Level Output File Name         : calculator
+Output Format                      : NGC
+Optimization Goal                  : Speed
+Keep Hierarchy                     : NO
+
+Design Statistics
+# IOs                              : 23
+
+Cell Usage :
+# BELS                             : 95
+#      GND                         : 1
+#      INV                         : 2
+#      LUT1                        : 17
+#      LUT2                        : 5
+#      LUT3                        : 6
+#      LUT4                        : 21
+#      LUT4_D                      : 1
+#      MUXCY                       : 22
+#      MUXF5                       : 2
+#      VCC                         : 1
+#      XORCY                       : 17
+# FlipFlops/Latches                : 30
+#      FD                          : 4
+#      FDCE                        : 4
+#      FDE                         : 2
+#      FDR                         : 19
+#      LD                          : 1
+# Clock Buffers                    : 2
+#      BUFG                        : 1
+#      BUFGP                       : 1
+# IO Buffers                       : 22
+#      IBUF                        : 6
+#      OBUF                        : 16
+=========================================================================
+
+Device utilization summary:
+---------------------------
+
+Selected Device : 3s1200efg320-4 
+
+ Number of Slices:                       30  out of   8672     0%  
+ Number of Slice Flip Flops:             30  out of  17344     0%  
+ Number of 4 input LUTs:                 52  out of  17344     0%  
+ Number of IOs:                          23
+ Number of bonded IOBs:                  23  out of    250     9%  
+ Number of GCLKs:                         2  out of     24     8%  
+
+---------------------------
+Partition Resource Summary:
+---------------------------
+
+  No Partitions were found in this design.
+
+---------------------------
+
+
+=========================================================================
+TIMING REPORT
+
+NOTE: THESE TIMING NUMBERS ARE ONLY A SYNTHESIS ESTIMATE.
+      FOR ACCURATE TIMING INFORMATION PLEASE REFER TO THE TRACE REPORT
+      GENERATED AFTER PLACE-and-ROUTE.
+
+Clock Information:
+------------------
+-----------------------------------+------------------------+-------+
+Clock Signal                       | Clock buffer(FF name)  | Load  |
+-----------------------------------+------------------------+-------+
+reset                              | IBUF+BUFG              | 1     |
+Clk                                | BUFGP                  | 19    |
+Div2/Clk_500Hz                     | NONE(RC/AN_0)          | 10    |
+-----------------------------------+------------------------+-------+
+INFO:Xst:2169 - HDL ADVISOR - Some clock signals were not automatically buffered by XST with BUFG/BUFR resources. Please use the buffer_type constraint in order to insert these buffers to the clock signals to help prevent skew problems.
+
+Asynchronous Control Signals Information:
+----------------------------------------
+-----------------------------------+------------------------+-------+
+Control Signal                     | Buffer(FF name)        | Load  |
+-----------------------------------+------------------------+-------+
+reset                              | IBUF                   | 4     |
+-----------------------------------+------------------------+-------+
+
+Timing Summary:
+---------------
+Speed Grade: -4
+
+   Minimum period: 6.009ns (Maximum Frequency: 166.417MHz)
+   Minimum input arrival time before clock: 4.877ns
+   Maximum output required time after clock: 8.484ns
+   Maximum combinational path delay: 9.468ns
+
+Timing Detail:
+--------------
+All values displayed in nanoseconds (ns)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'Clk'
+  Clock period: 6.009ns (frequency: 166.417MHz)
+  Total number of paths / destination ports: 513 / 37
+-------------------------------------------------------------------------
+Delay:               6.009ns (Levels of Logic = 7)
+  Source:            Div2/Count_4 (FF)
+  Destination:       Div2/Clk_500Hz (FF)
+  Source Clock:      Clk rising
+  Destination Clock: Clk rising
+
+  Data Path: Div2/Count_4 to Div2/Clk_500Hz
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDR:C->Q              2   0.591   0.622  Div2/Count_4 (Div2/Count_4)
+     LUT2:I0->O            1   0.704   0.000  Div2/Count_cmp_eq0000_wg_lut<0> (Div2/Count_cmp_eq0000_wg_lut<0>)
+     MUXCY:S->O            1   0.464   0.000  Div2/Count_cmp_eq0000_wg_cy<0> (Div2/Count_cmp_eq0000_wg_cy<0>)
+     MUXCY:CI->O           1   0.059   0.000  Div2/Count_cmp_eq0000_wg_cy<1> (Div2/Count_cmp_eq0000_wg_cy<1>)
+     MUXCY:CI->O           1   0.059   0.000  Div2/Count_cmp_eq0000_wg_cy<2> (Div2/Count_cmp_eq0000_wg_cy<2>)
+     MUXCY:CI->O           1   0.059   0.000  Div2/Count_cmp_eq0000_wg_cy<3> (Div2/Count_cmp_eq0000_wg_cy<3>)
+     MUXCY:CI->O          19   0.331   1.085  Div2/Count_cmp_eq0000_wg_cy<4> (Div2/Count_cmp_eq0000)
+     INV:I->O              1   0.704   0.420  Div2/Clk_500Hz_not00011_INV_0 (Div2/Clk_500Hz_not0001)
+     FDR:R                     0.911          Div2/Clk_500Hz
+    ----------------------------------------
+    Total                      6.009ns (3.882ns logic, 2.127ns route)
+                                       (64.6% logic, 35.4% route)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'Div2/Clk_500Hz'
+  Clock period: 4.545ns (frequency: 220.022MHz)
+  Total number of paths / destination ports: 25 / 16
+-------------------------------------------------------------------------
+Delay:               4.545ns (Levels of Logic = 3)
+  Source:            CA/sum_0 (FF)
+  Destination:       CA/sum_3 (FF)
+  Source Clock:      Div2/Clk_500Hz rising
+  Destination Clock: Div2/Clk_500Hz rising
+
+  Data Path: CA/sum_0 to CA/sum_3
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDCE:C->Q            10   0.591   0.917  CA/sum_0 (CA/sum_0)
+     LUT4_D:I2->LO         1   0.704   0.135  CA/Madd__add0000_cy<1>1 (N38)
+     LUT3:I2->O            2   0.704   0.482  CA/Madd__add0000_cy<2>1 (CA/Madd__add0000_cy<2>)
+     LUT3:I2->O            1   0.704   0.000  CA/overflow_or00001 (CA/overflow_or0000)
+     FDE:D                     0.308          CA/overflow
+    ----------------------------------------
+    Total                      4.545ns (3.011ns logic, 1.534ns route)
+                                       (66.2% logic, 33.8% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'Div2/Clk_500Hz'
+  Total number of paths / destination ports: 23 / 12
+-------------------------------------------------------------------------
+Offset:              4.877ns (Levels of Logic = 4)
+  Source:            data_in<1> (PAD)
+  Destination:       CA/sum_3 (FF)
+  Destination Clock: Div2/Clk_500Hz rising
+
+  Data Path: data_in<1> to CA/sum_3
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O             2   1.218   0.622  data_in_1_IBUF (data_in_1_IBUF)
+     LUT4_D:I0->LO         1   0.704   0.135  CA/Madd__add0000_cy<1>1 (N38)
+     LUT3:I2->O            2   0.704   0.482  CA/Madd__add0000_cy<2>1 (CA/Madd__add0000_cy<2>)
+     LUT3:I2->O            1   0.704   0.000  CA/overflow_or00001 (CA/overflow_or0000)
+     FDE:D                     0.308          CA/overflow
+    ----------------------------------------
+    Total                      4.877ns (3.638ns logic, 1.239ns route)
+                                       (74.6% logic, 25.4% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'Div2/Clk_500Hz'
+  Total number of paths / destination ports: 54 / 12
+-------------------------------------------------------------------------
+Offset:              7.365ns (Levels of Logic = 3)
+  Source:            CA/sum_3 (FF)
+  Destination:       SSD<6> (PAD)
+  Source Clock:      Div2/Clk_500Hz rising
+
+  Data Path: CA/sum_3 to SSD<6>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDCE:C->Q            11   0.591   1.108  CA/sum_3 (CA/sum_3)
+     LUT2:I0->O            3   0.704   0.566  SSD<0>_SW1 (N23)
+     LUT4:I2->O            1   0.704   0.420  SSD<6> (SSD_6_OBUF)
+     OBUF:I->O                 3.272          SSD_6_OBUF (SSD<6>)
+    ----------------------------------------
+    Total                      7.365ns (5.271ns logic, 2.094ns route)
+                                       (71.6% logic, 28.4% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'reset'
+  Total number of paths / destination ports: 10 / 7
+-------------------------------------------------------------------------
+Offset:              8.484ns (Levels of Logic = 4)
+  Source:            is_end (LATCH)
+  Destination:       SSD<4> (PAD)
+  Source Clock:      reset falling
+
+  Data Path: is_end to SSD<4>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     LD:G->Q               4   0.676   0.666  is_end (is_end)
+     LUT2:I1->O            7   0.704   0.883  _old_is_end_11 (_old_is_end_1)
+     LUT4:I0->O            1   0.704   0.455  SSD<4>_SW1 (N17)
+     LUT4:I2->O            1   0.704   0.420  SSD<4> (SSD_4_OBUF)
+     OBUF:I->O                 3.272          SSD_4_OBUF (SSD<4>)
+    ----------------------------------------
+    Total                      8.484ns (6.060ns logic, 2.424ns route)
+                                       (71.4% logic, 28.6% route)
+
+=========================================================================
+Timing constraint: Default path analysis
+  Total number of paths / destination ports: 10 / 7
+-------------------------------------------------------------------------
+Delay:               9.468ns (Levels of Logic = 5)
+  Source:            reset (PAD)
+  Destination:       SSD<4> (PAD)
+
+  Data Path: reset to SSD<4>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O            11   1.218   1.108  reset_IBUF (reset_IBUF1)
+     LUT2:I0->O            7   0.704   0.883  _old_is_end_11 (_old_is_end_1)
+     LUT4:I0->O            1   0.704   0.455  SSD<4>_SW1 (N17)
+     LUT4:I2->O            1   0.704   0.420  SSD<4> (SSD_4_OBUF)
+     OBUF:I->O                 3.272          SSD_4_OBUF (SSD<4>)
+    ----------------------------------------
+    Total                      9.468ns (6.602ns logic, 2.866ns route)
+                                       (69.7% logic, 30.3% route)
+
+=========================================================================
+
+
+Total REAL time to Xst completion: 3.00 secs
+Total CPU time to Xst completion: 2.84 secs
+ 
+--> 
+
+Total memory usage is 152328 kilobytes
+
+Number of errors   :    0 (   0 filtered)
+Number of warnings :   55 (   0 filtered)
+Number of infos    :    1 (   0 filtered)
+

@@ -1,0 +1,23 @@
+Determining compilation order of HDL files
+Analyzing Verilog file Lab4_code.v
+Analyzing Verilog file Lab4_test.v
+Analyzing Verilog file C:/Xilinx/10.1/ISE/verilog/src/glbl.v
+Saving Verilog parse-tree work.Lab4_code into
+c:/users/xiongzeyu/desktop/lab4_v/isim/work/@lab4_code.sdb
+Saving Verilog parse-tree work.Lab4_test into
+c:/users/xiongzeyu/desktop/lab4_v/isim/work/@lab4_test.sdb
+Saving Verilog parse-tree work.glbl into
+c:/users/xiongzeyu/desktop/lab4_v/isim/work/glbl.sdb
+Starting static elaboration
+WARNING:HDLCompiler:835 - "Lab4_test.v" Line 27. Too many parameters for module
+   instance UUT
+Completed static elaboration
+Fuse Memory Usage: 86204 Kb
+Fuse CPU Usage: 108 ms
+Compiling module glbl
+Compiling module Lab4_code
+Compiling module Lab4_test
+Compiled 3 Verilog Units
+Built simulation executable Lab4_test_isim_beh.exe
+Fuse Memory Usage: 87292 Kb
+Fuse CPU Usage: 124 ms

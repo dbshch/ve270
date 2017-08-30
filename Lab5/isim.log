@@ -1,0 +1,37 @@
+Command line:
+   ./Digital_Clock_Test_isim_beh.exe
+     -intstyle  ise
+     -ipchost  localhost
+     -ipcport  2291
+WARNING:Simulator:678 -  For instance UUT/RC/, width 1 of formal port SSD0 is
+   not equal to width 7 of actual signal SSD0.
+WARNING:Simulator:678 -  For instance UUT/RC/, width 1 of formal port SSD1 is
+   not equal to width 7 of actual signal SSD1.
+WARNING:Simulator:678 -  For instance UUT/RC/, width 1 of formal port SSD2 is
+   not equal to width 7 of actual signal SSD2.
+WARNING:Simulator:678 -  For instance UUT/RC/, width 1 of formal port SSD3 is
+   not equal to width 7 of actual signal SSD3.
+WARNING:Simulator:678 -  For instance Digital_Clock_Test/UUT/, width 7 of formal
+   port SSD is not equal to width 1 of actual signal SSD.
+
+Fri Jun 30 19:25:32 2017
+
+Total Line Count : 91
+
+ Elaboration Time: 0 sec
+
+ Current Memory Usage: 156.991 Meg
+
+ Total Signals          : 48
+ Total Nets             : 87
+ Total Signal Drivers   : 14
+ Total Blocks           : 9
+ Total Primitive Blocks : 7
+ Total Processes        : 26
+ Total Traceable Variables  : 28
+ Total Scalar Nets and Variables : 230
+ntrace select -o on -m / -l this 
+ntrace start 
+isimrun 1000 ns 
+Simulator is doing circuit initialization process.
+Finished circuit initialization process.

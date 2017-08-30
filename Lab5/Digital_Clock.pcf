@@ -1,0 +1,21 @@
+//! **************************************************************************
+// Written by: Map K.31 on Fri Jun 30 19:21:45 2017
+//! **************************************************************************
+
+SCHEMATIC START;
+COMP "clk" LOCATE = SITE "B8" LEVEL 1;
+COMP "AN<0>" LOCATE = SITE "F15" LEVEL 1;
+COMP "AN<1>" LOCATE = SITE "C18" LEVEL 1;
+COMP "AN<2>" LOCATE = SITE "H17" LEVEL 1;
+COMP "AN<3>" LOCATE = SITE "F17" LEVEL 1;
+COMP "reset" LOCATE = SITE "G18" LEVEL 1;
+COMP "SSD<0>" LOCATE = SITE "H14" LEVEL 1;
+COMP "SSD<1>" LOCATE = SITE "J17" LEVEL 1;
+COMP "SSD<2>" LOCATE = SITE "G14" LEVEL 1;
+COMP "SSD<3>" LOCATE = SITE "D16" LEVEL 1;
+COMP "SSD<4>" LOCATE = SITE "D17" LEVEL 1;
+COMP "SSD<5>" LOCATE = SITE "F18" LEVEL 1;
+COMP "SSD<6>" LOCATE = SITE "L18" LEVEL 1;
+NET "clk_BUFGP/IBUFG" BEL "clk_BUFGP/BUFG.GCLKMUX" USELOCALCONNECT;
+SCHEMATIC END;
+

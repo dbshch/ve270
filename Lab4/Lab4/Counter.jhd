@@ -1,0 +1,3 @@
+MODULE Counter
+	SUBMODULE ALU_up_down
+		INSTANCE XLXI_1

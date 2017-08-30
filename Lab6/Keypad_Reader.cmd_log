@@ -1,0 +1,12 @@
+xst -ise "C:/270/Lab6/Lab6.ise" -intstyle ise -ifn "C:/270/Lab6/Keypad_Reader.xst" -ofn "C:/270/Lab6/Keypad_Reader.syr"
+xst -ise "C:/270/Lab6/Lab6.ise" -intstyle ise -ifn "C:/270/Lab6/Keypad_Reader.xst" -ofn "C:/270/Lab6/Keypad_Reader.syr"
+xst -ise "C:/270/Lab6/Lab6.ise" -intstyle ise -ifn "C:/270/Lab6/Keypad_Reader.xst" -ofn "C:/270/Lab6/Keypad_Reader.syr"
+xst -ise "C:/270/Lab6/Lab6.ise" -intstyle ise -ifn "C:/270/Lab6/Keypad_Reader.xst" -ofn "C:/270/Lab6/Keypad_Reader.syr"
+xst -ise "C:/270/Lab6/Lab6.ise" -intstyle ise -ifn "C:/270/Lab6/Keypad_Reader.xst" -ofn "C:/270/Lab6/Keypad_Reader.syr"
+xst -ise "C:/270/Lab6/Lab6.ise" -intstyle ise -ifn "C:/270/Lab6/Keypad_Reader.xst" -ofn "C:/270/Lab6/Keypad_Reader.syr"
+xst -ise "C:/270/Lab6/Lab6.ise" -intstyle ise -ifn "C:/270/Lab6/Keypad_Reader.xst" -ofn "C:/270/Lab6/Keypad_Reader.syr"
+ngdbuild -ise "C:/270/Lab6/Lab6.ise" -intstyle ise -dd _ngo  -nt timestamp -i -p xc3s1200e-fg320-4 "Keypad_Reader.ngc" Keypad_Reader.ngd
+map -ise "C:/270/Lab6/Lab6.ise" -intstyle ise -p xc3s1200e-fg320-4 -cm area -pr off -k 4 -c 100 -o Keypad_Reader_map.ncd Keypad_Reader.ngd Keypad_Reader.pcf
+par -ise "C:/270/Lab6/Lab6.ise" -w -intstyle ise -ol std -t 1 Keypad_Reader_map.ncd Keypad_Reader.ncd Keypad_Reader.pcf
+trce -ise "C:/270/Lab6/Lab6.ise" -intstyle ise -e 3 -s 4 -xml Keypad_Reader Keypad_Reader.ncd -o Keypad_Reader.twr Keypad_Reader.pcf -ucf Keypad.ucf
+bitgen -ise "C:/270/Lab6/Lab6.ise" -intstyle ise -f Keypad_Reader.ut Keypad_Reader.ncd

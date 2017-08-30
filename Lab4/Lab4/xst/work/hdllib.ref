@@ -1,0 +1,6 @@
+AR counter behavioral C:/270/Lab4/Lab4/Counter.vhf sub00/vhpl05 1498215096
+EN counter NULL C:/270/Lab4/Lab4/Counter.vhf sub00/vhpl04 1498215095
+EN alu_up_down NULL C:/270/Lab4/Lab4/ALU_up_down.vhf sub00/vhpl00 1498215091
+AR alu_up_down behavioral C:/270/Lab4/Lab4/ALU_up_down.vhf sub00/vhpl01 1498215092
+AR m2_1_mxilinx_counter behavioral C:/270/Lab4/Lab4/Counter.vhf sub00/vhpl03 1498215094
+EN m2_1_mxilinx_counter NULL C:/270/Lab4/Lab4/Counter.vhf sub00/vhpl02 1498215093
